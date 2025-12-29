@@ -23,7 +23,7 @@ header{ /*Propriétés du haut de page*/
     margin: 0 0 10px 0; /*espace autour de la bordure*/
 }
 
-.NomPrénom {
+.NomPrenom {
     font-size: 40px; /*taille de la police*/
     font-family: "Oswald", sans-serif; /*police et style d'écriture*/
     font-weight: 800; /*Epaisseur de police*/

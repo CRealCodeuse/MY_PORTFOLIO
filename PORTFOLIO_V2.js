@@ -1,5 +1,5 @@
 // Sélectionner l'élément
-const nomPrenom = document.querySelector('.NomPrénom'); // Sélectionner le lien dans l'élément avec la classe 'NomPrénom'
+const nomPrenom = document.querySelector('.NomPrenom'); // Sélectionner le lien dans l'élément avec la classe 'NomPrénom'
 let clickCount = 0; // Initialisation du compteur de clics
 
 // Fonction pour créer et afficher le toast
