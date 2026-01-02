@@ -34,6 +34,8 @@ header { /*Propriétés de l'en-tête*/
     display: flex; /*Utilisation de Flexbox*/
     flex-direction: column; /* Empilement vertical */
     align-items: center; /* Centre tout horizontalement */
+    position: sticky; /*position fixe*/
+    top: 0; /*position en haut de la page*/
 }
 
 .NomPrénom { /*Nom et prénom dans l'en-tête*/
@@ -42,9 +44,9 @@ header { /*Propriétés de l'en-tête*/
     font-style: normal; /*Style de police*/
 }
 
-.English { /*Bouton pour la version anglaise*/
-    align-self: flex-end; /* Aligne uniquement le bouton à droite */
-    margin: 0 10px 10px 0; /* Espace depuis le bord droit */
+.English { /*Bouton pour passer en anglais*/
+    display: block; /* Nécessaire pour que margin fonctionne */
+    margin: 0 20px 10px auto; /* Positionne le bouton en haut à droite */
     font-size: 20px; /*taille de la police*/
     border: black 2px solid; /*bordure du bouton*/
     background-color: white; /*couleur de fond du bouton*/
@@ -141,6 +143,10 @@ header { /*Propriétés de l'en-tête*/
 }
 
 /***************COMPETENCES ET OUTILS UTILISES******************/
+
+.CompEtOutils{ /*Titre des compétences et outils utilisés*/
+    margin: 0 0 20px 20px ; /*marge autour du titre*/
+}
 
 .divCompetencesOutils{ /*Compétences et outils utilisés*/
     display: grid; /*disposition en grille*/

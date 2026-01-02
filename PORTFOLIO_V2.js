@@ -147,8 +147,10 @@ button.addEventListener('click', function() {
     // Démarrer la traduction depuis le body
     translateAllTextNodes(document.body);
 
-    // Changer le texte du bouton
-    button.textContent = isTranslated ? 'English' : 'Français';
+    // Changer le texte du bouton AVEC IMAGE DE DRAPEAU
+    button.innerHTML = isTranslated 
+        ? '<img src="Flag - England.png" alt="UK" width="20px" height="15px"> English' 
+        : '<img src="Flag - France.svg.png" alt="FR" width="20px" height="15px"> Français';
     
     isTranslated = !isTranslated;
 });
