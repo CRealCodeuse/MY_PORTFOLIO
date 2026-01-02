@@ -65,7 +65,7 @@ header { /*Propriétés de l'en-tête*/
     border-radius: 15px; /*bords arrondis*/
 }
 
-.presentation{ /Texte de la présentation générale
+.presentation{ /*Texte de la présentation générale*/
     text-align: left; /*alignement du texte*/
     padding: 0 0 0 20px; /*espace autour du texte*/
 }
