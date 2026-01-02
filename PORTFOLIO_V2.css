@@ -59,7 +59,7 @@ header { /*Propriétés de l'en-tête*/
 .divPresentation { /*Présentation générale*/
     background-color: #fff3f3; /*couleur de fond de la présentation*/
     margin: 0 20px 0 20px; /*marge autour de la présentation*/
-    padding: 0 0 0 20px ; /*espace autour du texte*/
+    padding: 0 20px 0 20px ; /*espace autour du texte*/
     border: 3px solid darkgrey; /*bordure de la présentation*/
     box-shadow: 10px 10px 20px grey; /*ombre portée de la présentation*/
     border-radius: 15px; /*bords arrondis*/
@@ -106,18 +106,6 @@ header { /*Propriétés de l'en-tête*/
 /*PROJET 2 : TO DO LIST */
 
 .divToDoList{ /*Projet 2*/
-    display: grid; /*disposition en grille*/
-    grid-template-columns: 50% 50%; /*taille des colonnes*/
-    grid-template-rows: flex flex; /*la grille s'adapte à la taille du plus grand des items*/
-    background-color: #f6b1b1; /*couleur de fond de la grille*/
-    margin: 30px 0 10px 0 ; /*marge autour de la grille*/
-    box-shadow: 10px 10px 10px rgb(192, 83, 83); /*ombre portée de la grille*/
-    border-radius: 15px; /*bords arrondis*/
-}
-
-/*PROJET 3 : TIC TAC TOE ...*/
-
-.divTicTacToe{ /*Projet 3*/
     display: grid; /*disposition en grille*/
     grid-template-columns: 50% 50%; /*taille des colonnes*/
     grid-template-rows: flex flex; /*la grille s'adapte à la taille du plus grand des items*/
