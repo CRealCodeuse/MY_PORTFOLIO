@@ -29,13 +29,14 @@ body{  /*Propriétés du corps de page*/
 
 header { /*Propriétés de l'en-tête*/
     background-color: #f1aaaf; /*couleur de fond de l'en-tête*/
-    margin: 0 0 35px 0; /*espace en dessous de l'en-tête*/
-    box-shadow: 5px 10px 5px grey; /*ombre portée de l'en-tête*/
+    margin: 0 0 30px 0; /*espace en dessous de l'en-tête*/
+    box-shadow: 5px 10px 15px grey; /*ombre portée de l'en-tête*/
     display: flex; /*Utilisation de Flexbox*/
     flex-direction: column; /* Empilement vertical */
     align-items: center; /* Centre tout horizontalement */
     position: sticky; /*position fixe*/
     top: 0; /*position en haut de la page*/
+    border-radius: 10px; /*bords arrondis*/
 }
 
 .NomPrénom { /*Nom et prénom dans l'en-tête*/
@@ -46,7 +47,7 @@ header { /*Propriétés de l'en-tête*/
 
 .English { /*Bouton pour passer en anglais*/
     display: block; /* Nécessaire pour que margin fonctionne */
-    margin: 0 20px 10px auto; /* Positionne le bouton en haut à droite */
+    margin: 0 20px 25px auto; /* Positionne le bouton en haut à droite */
     font-size: 20px; /*taille de la police*/
     border: black 2px solid; /*bordure du bouton*/
     background-color: white; /*couleur de fond du bouton*/
@@ -83,7 +84,6 @@ header { /*Propriétés de l'en-tête*/
     grid-template-rows: flex flex; /*la grille s'adapte à la taille du plus grand des items*/
     background-color: #f6b1b1; /*couleur de fond de la grille*/
     padding: 10px 0 10px 0 ; /*marge autour de la grille*/
-    border: 2px solid #f05454; /*bordure de la grille*/
     box-shadow: 10px 10px 10px rgb(192, 83, 83); /*ombre portée de la grille*/
     border-radius: 15px; /*bords arrondis*/
 }
@@ -111,7 +111,6 @@ header { /*Propriétés de l'en-tête*/
     grid-template-rows: flex flex; /*la grille s'adapte à la taille du plus grand des items*/
     background-color: #f6b1b1; /*couleur de fond de la grille*/
     margin: 30px 0 10px 0 ; /*marge autour de la grille*/
-    border: 2px solid #f05454; /*bordure de la grille*/
     box-shadow: 10px 10px 10px rgb(192, 83, 83); /*ombre portée de la grille*/
     border-radius: 15px; /*bords arrondis*/
 }
@@ -124,7 +123,6 @@ header { /*Propriétés de l'en-tête*/
     grid-template-rows: flex flex; /*la grille s'adapte à la taille du plus grand des items*/
     background-color: #f6b1b1; /*couleur de fond de la grille*/
     margin: 30px 0 10px 0 ; /*marge autour de la grille*/
-    border: 2px solid #f05454; /*bordure de la grille*/
     box-shadow: 10px 10px 10px rgb(192, 83, 83); /*ombre portée de la grille*/
     border-radius: 15px; /*bords arrondis*/
 }
@@ -137,14 +135,13 @@ header { /*Propriétés de l'en-tête*/
     grid-template-rows: flex flex; /*la grille s'adapte à la taille du plus grand des items*/
     background-color: #f6b1b1; /*couleur de fond de la grille*/
     margin: 30px 0 10px 0 ; /*marge autour de la grille*/
-    border: 2px solid #f05454; /*bordure de la grille*/
     box-shadow: 10px 10px 10px rgb(192, 83, 83); /*ombre portée de la grille*/
     border-radius: 15px; /*bords arrondis*/
 }
 
 /***************COMPETENCES ET OUTILS UTILISES******************/
 
-.CompEtOutils{ /*Titre des compétences et outils utilisés*/
+.CompEtOutils{ /*Titre au dessus des compétences et outils utilisés*/
     margin: 0 0 20px 20px ; /*marge autour du titre*/
 }
 
@@ -153,7 +150,7 @@ header { /*Propriétés de l'en-tête*/
     grid-template-columns: 50% 50%; /*taille des colonnes*/
     grid-template-rows: flex flex; /*la grille s'adapte à la taille du plus grand des items*/
     background-color: #fff3f3; /*couleur de fond de la grille*/
-    margin: 10px 20px 10px 20px ; /*marge autour de la grille*/
+    margin: 10px 20px 30px 20px ; /*marge autour de la grille*/
     padding: 0 0 0 30px;
     border: 2px solid darkgrey;
     box-shadow: 10px 10px 20px grey;
@@ -170,5 +167,7 @@ footer{ /*Propriétés du bas de page*/
     font-size: 20px ; /*taille de la police*/
     font-family: "Oswald", sans-serif; /*police et style d'écriture*/
     font-weight: 300; /*Epaisseur de police*/
-    font-style: normal; /**/
+    font-style: normal; /*Style de police*/
+    border-radius: 10px; /*bords arrondis*/
+    box-shadow: 5px 10px 10px grey; /*ombre portée du bas de page*/
 }
