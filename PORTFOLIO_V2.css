@@ -3,7 +3,10 @@
 a{ /*propriétés des liens*/
     text-decoration: none; /*décoration du texte des liens*/
     color: black; /*couleur des liens*/
-    
+}
+
+p{
+    padding: 0 20px 0 20px;
 }
 
 strong {
@@ -14,40 +17,47 @@ h2, h4 {
     font-weight: 800;
 }
 
-/**********************************HEADER**************************************/
-
-header{ /*Propriétés du haut de page*/
-    background-color: #f1aaaf; /*couleur de fond du haut de page*/
-    padding: 5px; /*espace entre le texte et la bordure*/
-    text-align:center; /*alignement du texte*/
-    margin: 0 0 10px 0; /*espace autour de la bordure*/
-}
-
-.NomPrénom {
-    font-size: 40px; /*taille de la police*/
-    font-family: "Oswald", sans-serif; /*police et style d'écriture*/
-    font-weight: 800; /*Epaisseur de police*/
-    font-style: normal;
-    
-}
-
-/***********************************BODY**************************************/
-
 body{  /*Propriétés du corps de page*/
-    background-color: #fff3f3; /*couleur de fond du corps de page*/
+    background-color: #f5e6e6; /*couleur de fond du corps de page*/
     font-family: "Oswald", sans-serif; /*police et style d'écriture*/
     font-weight: 300; /*Epaisseur de police*/
     font-style: normal;
     font-size: 20px; /*taille de la police*/
 }
 
+/**********************************HEADER**************************************/
 
-p{
-    padding: 0 20px 0 20px;
+header {
+    background-color: #f1aaaf; /*couleur de fond de l'en-tête*/
+    margin: 0 0 35px 0; /*espace en dessous de l'en-tête*/
+    box-shadow: 5px 10px 5px grey; /*ombre portée de l'en-tête*/
+    display: flex; /*Utilisation de Flexbox*/
+    flex-direction: column; /* Empilement vertical */
+    align-items: center; /* Centre tout horizontalement */
 }
 
+.NomPrénom {
+    font-family: "Oswald", sans-serif; /*police et style d'écriture*/
+    font-weight: 800; /*Epaisseur de police*/
+    font-style: normal; /*Style de police*/
+}
+
+.English {
+    align-self: flex-end; /* Aligne uniquement le bouton à droite */
+    margin: 0 10px 10px 0; /* Espace depuis le bord droit */
+    font-size: 20px; /*taille de la police*/
+    border: black 2px solid; /*bordure du bouton*/
+    background-color: white; /*couleur de fond du bouton*/
+    font-family: "Oswald", sans-serif; /*police et style d'écriture*/
+}
+
+/***********************************BODY**************************************/
+
 .divPresentation {
+    margin: 0 20px 0 20px;
     padding: 0 0 0 20px ;
+    border: 3px solid darkgrey;
+    box-shadow: 5px 5px 5px grey;
 }
 
 .presentation{
@@ -58,17 +68,19 @@ p{
 /*Grande grille*/
 
 .grandeGrille{
-    padding: 0 20px 0 20px;
+    padding: 0 20px 15px 20px;
 }
 
-/*PROJET 1 : PIPOUNES CREATION*/
+/*PROJET 1 : PIPOUNES CREATION VERSION */
 
-.gridContainer1{ /*Projet 1*/
+.divPipCreation{ /*Projet 1*/
     display: grid; /*disposition en grille*/
     grid-template-columns: 50% 50%; /*taille des colonnes*/
     grid-template-rows: flex flex; /*la grille s'adapte à la taille du plus grand des items*/
     background-color: #f6b1b1; /*couleur de fond de la grille*/
     padding: 10px 0 10px 0 ; /*marge autour de la grille*/
+    border: 2px solid #f05454; /*bordure de la grille*/
+    box-shadow: 10px 10px 5px rgb(192, 83, 83); /*ombre portée de la grille*/
 }
 
 .grid-item{
@@ -84,51 +96,53 @@ p{
     align-self: center; /*alignement de la capture d'écran*/
 }
 
-/*PROJET 2 : TIMER ANTI DISTRACTIONS*/
+/*PROJET 2 : TO DO LIST */
 
-.grid-container2{ /*Projet 2*/
+.divToDoList{ /*Projet 2*/
     display: grid; /*disposition en grille*/
     grid-template-columns: 50% 50%; /*taille des colonnes*/
     grid-template-rows: flex flex; /*la grille s'adapte à la taille du plus grand des items*/
     background-color: #f6b1b1; /*couleur de fond de la grille*/
     margin: 30px 0 10px 0 ; /*marge autour de la grille*/
+    border: 2px solid #f05454; /*bordure de la grille*/
+    box-shadow: 10px 10px 5px rgb(192, 83, 83); /*ombre portée de la grille*/
 }
 
-.EnConstruction{ /*Texte En Construction...*/
-    text-align: center; /*alignement du texte*/
-    border: 1px solid white; /*bordure du texte*/
-}
+/*PROJET 3 : TIC TAC TOE ...*/
 
-/*PROJET 3 : A VENIR ...*/
-
-.grid-container3{
+.divTicTacToe{ /*Projet 3*/
     display: grid; /*disposition en grille*/
     grid-template-columns: 50% 50%; /*taille des colonnes*/
     grid-template-rows: flex flex; /*la grille s'adapte à la taille du plus grand des items*/
     background-color: #f6b1b1; /*couleur de fond de la grille*/
     margin: 30px 0 10px 0 ; /*marge autour de la grille*/
-    border: 1px solid white;
+    border: 2px solid #f05454; /*bordure de la grille*/
+    box-shadow: 10px 10px 5px rgb(192, 83, 83); /*ombre portée de la grille*/
 }
 
-.AVenir{ /*Texte A Venir...*/
-    text-align: center; /*alignement du texte*/
-    border: 1px solid white; /*bordure du texte*/
+/*PROJET 4 : AMELIORATION SITE CAF - En construction*/
+
+.divSiteCAF{ /*Projet 4*/
+    display: grid; /*disposition en grille*/
+    grid-template-columns: 50% 50%; /*taille des colonnes*/
+    grid-template-rows: flex flex; /*la grille s'adapte à la taille du plus grand des items*/
+    background-color: #f6b1b1; /*couleur de fond de la grille*/
+    margin: 30px 0 10px 0 ; /*marge autour de la grille*/
+    border: 2px solid #f05454; /*bordure de la grille*/
+    box-shadow: 10px 10px 5px rgb(192, 83, 83); /*ombre portée de la grille*/
 }
 
-.Reflexion{ /*Texte {Elise_Degardin} est en train de réfléchir uà un futur projet...*/
-    text-align: center; /*alignement du texte*/
-    border: 1px solid white; /*Bordure du texte*/
-}
+/***************COMPETENCES ET OUTILS UTILISES******************/
 
-/*PROJET 4 : A VENIR ...*/
-
-.grid-container4{
+.divCompetencesOutils{
     display: grid; /*disposition en grille*/
     grid-template-columns: 50% 50%; /*taille des colonnes*/
     grid-template-rows: flex flex; /*la grille s'adapte à la taille du plus grand des items*/
     background-color: #fff3f3; /*couleur de fond de la grille*/
-    margin: 10px 0 10px 0 ; /*marge autour de la grille*/
+    margin: 10px 20px 10px 20px ; /*marge autour de la grille*/
     padding: 0 0 0 30px;
+    border: 2px solid darkgrey;
+    box-shadow: 5px 5px 5px grey;
 }
 
 /***********************************FOOTER**************************************/
@@ -136,7 +150,6 @@ p{
 footer{ /*Propriétés du bas de page*/
     background-color: #f1aaaf; /*couleur de fond*/
     position: bottom; /*position fixe*/
-    
     width: 100%; /*largeur du bas de page*/
     text-align: center; /*alignement du texte*/
     font-size: 20px ; /*taille de la police*/
