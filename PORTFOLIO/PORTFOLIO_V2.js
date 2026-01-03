@@ -149,8 +149,8 @@ button.addEventListener('click', function() {
 
     // Changer le texte du bouton AVEC IMAGE DE DRAPEAU
     button.innerHTML = isTranslated 
-        ? '<img src="PORTFOLIO\PorfImages\Flag - England.png" alt="UK" width="20px" height="15px"> English' 
-        : '<img src="PORTFOLIO\PorfImages\Flag - France.svg.png" alt="FR" width="20px" height="15px"> Français';
+        ? '<img src="PORTFOLIO/PorfImages/Flag - England.png" alt="UK" width="20px" height="15px"> English' 
+        : '<img src="PORTFOLIO/PorfImages/Flag - France.svg.png" alt="FR" width="20px" height="15px"> Français';
     
     isTranslated = !isTranslated;
 });
