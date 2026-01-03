@@ -7,9 +7,10 @@
 💻 I'm in a Web Developpement Bachelor and currently looking for an apprenticeship for now.
 
 💼 There you can see projects I coded or working on currently.
-🔗 NB : My portfolio now has a web domain, I'm just working on the files and folders needed on the app.
 
-![Coding](<Image - Programmation.jpg>)
+🔗 LINKS to my PORTFOLIO and my LINKEDIN are both on my profile.
+
+![Image coding](<Image - Programmation.jpg>)
 
 ✅​ LANGUAGES I WORK WITH : 
 - HTML, CSS : Basic but needed so I put it everywhere.
@@ -19,12 +20,14 @@
 - Php : Learned some.
 - And others I want to learn soon (TypeScript, Angular, Rust, React, etc).
 
+![Image projets](<Image - Projets.png>)
+
 💻 PROJECTS :
-- Portfolio : HTML, CSS - Always updating it.
-- To Do List : HTML, CSS, JavaScript - Finished.
-- TIC TAC TOE : Python, CSS.
-- CAF WEBSITE RECODING : HTML, CSS, JavaScript.
-- Others on the way !
+- Portfolio : Always updating it (HTML, CSS, JS)
+- Project 1 : Pipounes Création - FINISHED (HTML, CSS, JS)
+- Project 2 : To Do List - FINISHED (HTML, CSS, JS)
+- Project 3 : CAF WEBSITE RECODING : UNDER CONSTRUCTION
+- Others are on the way !
 
 👌 PROS : 
 May be obsessed with having a clean code, and learning fast.
