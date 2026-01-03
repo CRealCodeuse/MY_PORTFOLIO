@@ -29,11 +29,15 @@
 - Project 3 : CAF WEBSITE RECODING : UNDER CONSTRUCTION
 - Others are on the way !
 
+![Image - Pros and Cons](<Image - Pros and Cons.png>)
+
 👌 PROS : 
 May be obsessed with having a clean code, and learning fast.
 
 🥲 CONS : 
 I hate letting some bug interfere in my work, so I always try to debog my code by myself as soon as I see one even If I have to spend time on it.
+
+![Image Heart](<Image - Heart.png>)
 
 💖 I'd appreciate if you like my work. If you have any productive comment or advice to give me, please do. 
 
