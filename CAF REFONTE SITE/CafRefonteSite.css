@@ -10,6 +10,11 @@ h1, h2, h3, h4, h5, h6 { /*Propriétés des titres*/
     padding: 0 10px 0 10px; /*espace autour des titres*/
 }
 
+p{
+    padding: 0 20px 0 20px; /*espace autour des paragraphes*/
+    font-size: 20px;
+}
+
 /*HEADER*/
 
 header { /*Propriétés de l'en-tête*/
@@ -52,3 +57,32 @@ header { /*Propriétés de l'en-tête*/
     margin-left: auto; /*espace automatique à gauche*/
 }
 
+/*BODY*/
+
+.DescriptionSite {
+    padding: 5px 15px; /*espace autour de la description*/
+    background-color: #e3e3f1; /*couleur de fond de la description*/
+    margin: 20px 20px 20px 20px; /*marge autour de la description*/
+    border: 2px solid #5e5e5e; /*bordure de la description*/
+    box-shadow: 10px 10px 20px grey; /*ombre portée de la description*/
+    border-radius: 15px; /*bords arrondis*/
+}
+
+.Informations { /*Propriétés des informations*/
+    padding: 5px 15px; /*espace autour des informations*/
+    background-color: #e3e3f1; /*couleur de fond des informations*/
+    margin: 20px 20px 20px 20px; /*marge autour des informations*/
+    border: 2px solid #5e5e5e; /*bordure des informations*/
+    box-shadow: 10px 10px 20px grey; /*ombre portée des informations*/
+    border-radius: 15px; /*bords arrondis*/
+    display: flex;
+}
+
+.Informations h1 {
+    text-align: center;
+}
+
+.imageInformation {
+    padding-left: 90px;
+    padding-bottom: 15px;
+}
