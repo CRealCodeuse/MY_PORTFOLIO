@@ -1,4 +1,4 @@
-![Hello Image](<Image - Hello.png>)
+![alt text](<README-Images/Image - Hello.png>)
 
 🤩 HEY THERE ! Welcome on my GitHub !
 
@@ -10,7 +10,7 @@
 
 🔗 LINKS to my PORTFOLIO and my LINKEDIN are both on my profile.
 
-![Image Coding](<Image - Coding.png>)
+![Image Coding](<README-Images/Image - Coding.png>)
 
 ✅​ LANGUAGES I WORK WITH : 
 - HTML, CSS : Basic but needed so I put it everywhere.
@@ -20,7 +20,7 @@
 - Php : Learned some.
 - And others I want to learn soon (TypeScript, Angular, Rust, React, etc).
 
-![Image projets](<Image - Projets.png>)
+![Image projets](<README-Images/Image - Projets.png>)
 
 💻 PROJECTS :
 - Portfolio : Always updating it (HTML, CSS, JS)
@@ -29,7 +29,7 @@
 - Project 3 : CAF WEBSITE RECODING : UNDER CONSTRUCTION
 - Others are on the way !
 
-![Image - Pros and Cons](<Image - Pros and Cons.png>)
+![Image - Pros and Cons](<README-Images/Image - Pros and Cons.png>)
 
 👌 PROS : 
 May be obsessed with having a clean code, and learning fast.
@@ -37,7 +37,7 @@ May be obsessed with having a clean code, and learning fast.
 🥲 CONS : 
 I hate letting some bug interfere in my work, so I always try to debog my code by myself as soon as I see one even If I have to spend time on it.
 
-![Image Heart](<Image - Heart.png>)
+![Image Heart](<README-Images/Image - Heart.png>)
 
 💖 I'd appreciate if you like my work. If you have any productive comment or advice to give me, please do. 
 
