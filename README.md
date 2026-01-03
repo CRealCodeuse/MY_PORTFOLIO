@@ -1,15 +1,17 @@
+<video controls src="Video - Hello.mp4" title="Hello"></video>
+
 🤩 HEY THERE ! Welcome on my GitHub !
-
-
 
 🎓 My name is Elise. 
 
 💻 I'm in a Web Developpement Bachelor and currently looking for an apprenticeship for now.
 
 💼 There you can see projects I coded or working on currently.
-🔗 NB : My portfolio doesn't have a web domain bought yet, but I'm working on it.
+🔗 NB : My portfolio now has a web domain, I'm just working on the files and folders needed on the app.
 
-✅​ Languages I work with : 
+<video controls src="Vidéo - Programmation.mp4" title"Programmation"></video>
+
+✅​ LANGUAGES I WORK WITH : 
 - HTML, CSS : Basic but needed so I put it everywhere.
 - JavaScript : Portfolio, ToDoList and other projects have it. 
 - Python : Really love this one. Learned but not on any project yet.
@@ -17,16 +19,18 @@
 - Php : Learned some.
 - And others I want to learn soon (TypeScript, Angular, Rust, React, etc).
 
-💻 Projects :
-- Portfolio : HTML, CSS.
-- To Do List : HTML, CSS, JavaScript.
+💻 PROJECTS :
+- Portfolio : HTML, CSS - Always updating it.
+- To Do List : HTML, CSS, JavaScript - Finished.
 - TIC TAC TOE : Python, CSS.
 - CAF WEBSITE RECODING : HTML, CSS, JavaScript.
 - Others on the way !
 
-👌 Pros: May be obsessed with having a clean code, and learning fast.
+👌 PROS : 
+May be obsessed with having a clean code, and learning fast.
 
-🥲 Cons: I hate letting some bug interfere in my work, so I always try to debog my code by myself as soon as I see one even If I have to spend time on it.
+🥲 CONS : 
+I hate letting some bug interfere in my work, so I always try to debog my code by myself as soon as I see one even If I have to spend time on it.
 
 💖 I'd appreciate if you like my work. If you have any productive comment or advice to give me, please do. 
 
