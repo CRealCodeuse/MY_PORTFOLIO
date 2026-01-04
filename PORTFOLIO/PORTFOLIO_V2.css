@@ -105,7 +105,8 @@ header { /*Propriétés de l'en-tête*/
     align-self: center; /*alignement de la capture d'écran*/
     border: black 2px solid; /*bordure de la capture d'écran*/
     border-radius: 20px; /*bords arrondis de la capture d'écran*/
-    margin: 10px;
+    margin-top: 10px; 
+    margin-bottom: 10px;
 }
 
 /*PROJET 2 : TO DO LIST */
