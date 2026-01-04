@@ -88,8 +88,8 @@ button.addEventListener('click', function() {
         '- Design plus moderne.': '- More modern design.',
         
         // Compétences
-        'Dans différents projets.': 'In various projects.',
-        'Dans la ToDoList et dans des projets à venir.': 'In the ToDoList and in upcoming projects.',
+        'Dans différents projets (Portfolio, Pipounes Création, ToDoList, Refonte Site Caf).': 'In various projects (Portfolio, Pipounes Création, ToDoList, Refonte Site Caf).',
+        'Dans différents projets (Portfolio, ToDoList, Refonte Site Caf).': 'In various projects (Portfolio, ToDoList, Refonte Site Caf).',
         'Appris en autodidacte.': 'Self-taught.',
         'Appris en autodidacte.': 'Self-taught.',
         'Quelques bases apprises en BTS SIO puis en autodidacte.': 'Some basics learned in BTS SIO then self-taught.',

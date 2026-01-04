@@ -60,6 +60,8 @@ header { /*Propriétés de l'en-tête*/
 
 /***********************************BODY**************************************/
 
+
+
 .divPresentation { /*Présentation générale*/
     background-color: #fff3f3; /*couleur de fond de la présentation*/
     margin: 0 20px 0 20px; /*marge autour de la présentation*/
@@ -67,6 +69,19 @@ header { /*Propriétés de l'en-tête*/
     border: 3px solid darkgrey; /*bordure de la présentation*/
     box-shadow: 10px 10px 20px grey; /*ombre portée de la présentation*/
     border-radius: 15px; /*bords arrondis*/
+    display: flex;
+    align-items: center;
+    gap : 30px;
+}
+
+.PhotoElisePortfolio {
+    width: 300px;
+    height: auto;
+    flex-shrink: 0;
+    margin-top: 20px;
+    border-radius: 60px;
+    border:black 3px solid;
+    
 }
 
 .presentation{ /*Texte de la présentation générale*/
@@ -105,8 +120,8 @@ header { /*Propriétés de l'en-tête*/
     align-self: center; /*alignement de la capture d'écran*/
     border: black 2px solid; /*bordure de la capture d'écran*/
     border-radius: 20px; /*bords arrondis de la capture d'écran*/
-    margin-top: 10px; 
-    margin-bottom: 10px;
+    margin-top: 20px; 
+    margin-bottom: 20px;
 }
 
 /*PROJET 2 : TO DO LIST */
