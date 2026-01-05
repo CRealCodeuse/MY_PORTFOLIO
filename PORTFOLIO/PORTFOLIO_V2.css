@@ -219,6 +219,10 @@ header { /*Propriétés de l'en-tête*/
 
 /*PROJET 1 : PIPOUNES CREATION VERSION */
 
+.ProjetDescription {
+    margin-top: 0;
+}
+
 .divPipCreation{ /*Projet 1*/
     display: grid; /*disposition en grille*/
     grid-template-columns: 50% 50%; /*taille des colonnes*/
@@ -233,7 +237,7 @@ header { /*Propriétés de l'en-tête*/
     padding: 0 10px 0 20px; /*espace entre l'image/le texte et le bord*/
     width: flex; /*largeur des éléments dans chaque cellule*/
     height: flex; /*hauteur des éléments dans chaque cellule*/
-    align-self: center;
+    
 }
 
 .Captures { /*capture d'écran de Pipounes Création*/
@@ -258,7 +262,7 @@ header { /*Propriétés de l'en-tête*/
     border-radius: 15px; /*bords arrondis*/
 }
 
-/*PROJET 4 : AMELIORATION SITE CAF - En construction*/
+/*PROJET 3 : AMELIORATION SITE CAF - En construction*/
 
 .divSiteCAF{ /*Projet 4*/
     display: grid; /*disposition en grille*/
