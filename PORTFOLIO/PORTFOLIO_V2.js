@@ -143,8 +143,6 @@ button.addEventListener('click', function() {
         'Appris en autodidacte.': 'Self-taught.',
         'Quelques bases apprises en BTS SIO puis en autodidacte.': 'Some basics learned in BTS SIO then self-taught.',
         
-        
-        
         // Outils
         'Coder mes projets.': 'To code my projects.',
         'Apprendre différents langages de programmation.': 'To learn different programming languages.',
