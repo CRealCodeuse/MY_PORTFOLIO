@@ -103,7 +103,7 @@ button.addEventListener('click', function() {
         
         // Projets
         'MES PROJETS :': 'MY PROJECTS:',
-        'CE QUE J'UTILISE':'WHAT I'M USING',
+        'CE QUE J\'UTILISE':'WHAT I\'M USING',
 
         //PIPOUNES CREATION VERSION BTS
         'PIPOUNES CREATION VERSION BTS': 'PIPOUNES CREATION BTS VERSION',
