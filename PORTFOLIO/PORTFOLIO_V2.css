@@ -5,10 +5,6 @@ a{ /*propriétés des liens*/
     color: black; /*couleur des liens*/
 }
 
-p{
-    padding: 0 20px 0 20px; /*espace autour des paragraphes*/
-}
-
 strong {
     font-weight:500; /*Epaisseur de police*/
 }
@@ -46,10 +42,17 @@ header { /*Propriétés de l'en-tête*/
     border-radius: 10px; /*bords arrondis*/
 }
 
-.NomPrénom { /*Nom et prénom dans l'en-tête*/
+.NomPrenom { /*Nom et prénom dans l'en-tête*/
     font-family: "Oswald", sans-serif; /*police et style d'écriture*/
     font-weight: 800; /*Epaisseur de police*/
     font-style: normal; /*Style de police*/
+}
+
+/*Responsive : Réduction de la taille sur petits écrans */
+@media (max-width: 768px) {
+    header {
+        
+    }
 }
 
 .HeadButtons {
@@ -201,7 +204,7 @@ header { /*Propriétés de l'en-tête*/
 
 .presentation{ /*Texte de la présentation générale*/
     text-align: left; /*alignement du texte*/
-    padding: 0; /*espace autour du texte*/
+    padding: 0 0; /*espace autour du texte*/
 }
 
 /*Grande grille*/
@@ -222,6 +225,8 @@ header { /*Propriétés de l'en-tête*/
 
 .ProjetDescription {
     margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 10px 0 20px;
 }
 
 .divPipCreation{ /*Projet 1*/
@@ -275,7 +280,7 @@ header { /*Propriétés de l'en-tête*/
     margin: 30px 0 10px 0 ; /*marge autour de la grille*/
     box-shadow: 10px 10px 10px rgb(192, 83, 83); /*ombre portée de la grille*/
     border-radius: 15px; /*bords arrondis*/
-    padding: 10px;
+    padding: 15px;
 }
 
 /***************COMPETENCES ET OUTILS UTILISES******************/
@@ -290,10 +295,11 @@ header { /*Propriétés de l'en-tête*/
     grid-template-rows: flex flex; /*la grille s'adapte à la taille du plus grand des items*/
     background-color: #fff3f3; /*couleur de fond de la grille*/
     margin: 10px 20px 30px 20px ; /*marge autour de la grille*/
-    padding: 0 0 0 30px;
+    padding: 0 15px 0 15px;
     border: 2px solid darkgrey;
     box-shadow: 10px 10px 20px grey;
     border-radius: 15px;
+    gap: 10px;
 }
 
 .TitreCompetences {

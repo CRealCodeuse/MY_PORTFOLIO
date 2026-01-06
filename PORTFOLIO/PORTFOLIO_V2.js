@@ -56,6 +56,7 @@ button.addEventListener('click', function() {
         'English': 'Français',
         
         // Sections
+        'Me contacter':'Contact me',
         'Bachelor Développeur Web': 'Developer Web Bachelor',
         'langages de programmation': 'programming languages',
         'BTS Services Informatiques aux Organisations': 'IT Services for Organizations BTS',
@@ -63,15 +64,18 @@ button.addEventListener('click', function() {
         'compétences': 'skills',
         'développement Fullstack': 'Fullstack development',
         'projets': ' projects ',
+        'Projet 1:':'1st project:',
+        'Projet 2:':'2nd project:',
+        'Projet 3:':'3rd project:',
         'développés': 'developed',
         'niveau de compétences': 'skill level',
         "D'autres projets": "Other projects",
         "apprentissage": "apprenticeship",
-        'Langages utilisés': 'Used languages',
-        'Points positifs': 'Positive points',
-        'Points négatifs': 'Negative points',
+        'Langages utilisés :': 'Used languages :',
+        'Points positifs :': 'Positive points :',
+        'Points négatifs :': 'Negative points :',
         'TO DO LIST': 'TO DO LIST',
-        'Fonctionnalités': 'Features',
+        'Fonctionnalités :': 'Features :',
         'TIC TAC TOE - En construction': 'TIC TAC TOE - Under construction',
         'COMPETENCES': 'SKILLS',
         'Maîtrise sur 5': 'Knowledge out of 5',
@@ -99,9 +103,11 @@ button.addEventListener('click', function() {
         
         // Projets
         'MES PROJETS :': 'MY PROJECTS:',
+        'CE QUE J'UTILISE':'WHAT I'M USING',
 
         //PIPOUNES CREATION VERSION BTS
         'PIPOUNES CREATION VERSION BTS': 'PIPOUNES CREATION BTS VERSION',
+        '- Laissé tel quel':'- Left as is',
         "C'est un site que j'ai créé au début du BTS SIO pour m'entraîner à coder un site de A à Z, avec seulement les bases apprises, mais pas complètes.": "This is a website that I created at the beginning of the BTS SIO to practice coding a website from A to Z, with only the basics learned, but not complete.",
         '- Tous les liens redirigent vers leur page correspondante.': '- Every links redirect to their corresponding page.',
         "- Il est possible de s'inscrire à la Newsletter du site via un formulaire d'inscription.": "- It is possible to subscribe to the site's Newsletter via a registration form.",
@@ -110,6 +116,7 @@ button.addEventListener('click', function() {
         
         // ToDoList
         'TO DO LIST': 'TO DO LIST',
+        '- Terminé':'- Finished',
         "Pour gérer tes tâches du quotidien avec facilité, encouragements et mignonnerie, quoi de mieux ?": "To manage your daily tasks easily, with encouragement and cuteness, what else?",
         "Que ce soit pour le travail, les courses, ou même les projets personnels, elle est faite pour toi !": "Whether it's for work, shopping or even personal projects, it's made for you!",
         'Langages utilisés': 'Used languages',
@@ -130,13 +137,15 @@ button.addEventListener('click', function() {
         "- Facile à coder et utiliser.": '- Easy to code and use.',
 
         //REFONTE SITE CAF
-        'REFONTE SITE CAF - En construction': 'CAF SITE REDESIGN - Under construction',
+        'REFONTE DU SITE DE LA CAF':'CAF SITE REDESIGN',
+        '- En construction':'Under construction',
         "Je ne trouve pas le site de la CAF très ergonomique, j'ai donc décidé de le refaire à ma façon.": "I don't find the CAF website very user-friendly, so I decided to redo it my way.",
         '- Site plus ergonomique.': '- More user-friendly site.',
         '- Navigation plus fluide.': '- Smoother navigation.',
         '- Design plus moderne.': '- More modern design.',
         
         // Compétences
+        'Compétences':'Skills',
         'Dans différents projets (Portfolio, Pipounes Création, ToDoList, Refonte Site Caf).': 'In various projects (Portfolio, Pipounes Création, ToDoList, Refonte Site Caf).',
         'Dans différents projets (Portfolio, ToDoList, Refonte Site Caf).': 'In various projects (Portfolio, ToDoList, Refonte Site Caf).',
         'Appris en autodidacte.': 'Self-taught.',
@@ -144,6 +153,7 @@ button.addEventListener('click', function() {
         'Quelques bases apprises en BTS SIO puis en autodidacte.': 'Some basics learned in BTS SIO then self-taught.',
         
         // Outils
+        'Outils informatiques':'Tech tools',
         'Coder mes projets.': 'To code my projects.',
         'Apprendre différents langages de programmation.': 'To learn different programming languages.',
         'Créer/modifier divers documents, bases de données futures.': 'To create/modify various documents, future databases.',
