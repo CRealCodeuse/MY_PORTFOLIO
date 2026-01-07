@@ -182,7 +182,6 @@ header { /*Propriétés de l'en-tête*/
 /***********************************BODY**************************************/
 
 
-
 .divPresentation { /*Présentation générale*/
     background-color: #fff3f3; /*couleur de fond de la présentation*/
     margin: 0 20px 0 20px; /*marge autour de la présentation*/
@@ -193,8 +192,17 @@ header { /*Propriétés de l'en-tête*/
     display: flex;
     align-items: center;
     gap : 30px;
-    display: flex; /*Utilisation de Flexbox*/
-    flex-direction: column; /* Empilement vertical */
+    
+}
+
+@media (max-width:480px) {
+    .divPresentation {
+        display: flex; /*Utilisation de Flexbox*/
+        flex-direction: column; /* Empilement vertical */
+        margin: 15px;
+        padding: 15px;
+        gap: 5px;
+    }
 }
 
 .PhotoElisePortfolio {
@@ -204,7 +212,7 @@ header { /*Propriétés de l'en-tête*/
     margin-top: 20px;
     border-radius: 60px;
     border:black 3px solid;
-    margin: 15px 0 15px 0;
+    margin: 10px 0 15px 0;
     
 }
 
@@ -235,43 +243,71 @@ header { /*Propriétés de l'en-tête*/
 .presentation{ /*Texte de la présentation générale*/
     text-align: left; /*alignement du texte*/
     padding: 0 0; /*espace autour du texte*/
+    margin: 15px 0;
 }
 
 /*Grande grille*/
 
-.grandeGrille{
-    padding: 0 20px 15px 20px; /*espace autour de la grande grille*/
+.TitreProjet {
+    padding:15px;
+    width: 80%;
+    text-align: center;
+    justify-content: center;
 }
 
-.TitrePipounes:hover, .TitreToDoList:hover, .TitreCaf:hover {
+.TitreProjet:hover {
     color:black; /* Rend le texte transparent pour voir le contour */
-    background-color:#fff3f3;
-    padding: 5px;
+    background-color:#e09095;
+    padding: 15px;
     border-radius: 10px;
-    
+}
+
+@media (max-width:480px) {
+    .TitreProjet {
+        padding:15px;
+        width: 90%;
+        text-align: center;
+        justify-content: center;
+    }
 }
 
 /*PROJET 1 : PIPOUNES CREATION VERSION */
 
 .ProjetDescription {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0 10px 0 20px;
+    padding: 0 15px 0 15px;
 }
 
-.divPipCreation{ /*Projet 1*/
+@media (max-width:480px) {
+    .projetDescription {
+        margin: 10px;
+        padding: 10px;
+
+    }
+}
+
+.divProjets{ /*Projet 1*/
     display: grid; /*disposition en grille*/
     grid-template-columns: 50% 50%; /*taille des colonnes*/
     grid-template-rows: flex flex; /*la grille s'adapte à la taille du plus grand des items*/
     background-color: #f6b1b1; /*couleur de fond de la grille*/
-    padding: 10px 0 10px 0 ; /*marge autour de la grille*/
+    padding: 10px 0; /*marge autour de la grille*/
     box-shadow: 10px 10px 10px rgb(192, 83, 83); /*ombre portée de la grille*/
     border-radius: 15px; /*bords arrondis*/
-    padding: 10px;
+    margin:25px;
+    
+}
+
+@media (max-width:480px) {
+    .divProjets {
+        display: flex; /*Utilisation de Flexbox*/
+        flex-direction: column; /* Empilement vertical */
+        margin: 15px;
+        padding: 15px;
+
+    }
 }
 
 .grid-item{ /*cellules de la grille*/
-    padding: 0 10px 0 20px; /*espace entre l'image/le texte et le bord*/
     width: flex; /*largeur des éléments dans chaque cellule*/
     height: flex; /*hauteur des éléments dans chaque cellule*/
     
@@ -287,36 +323,10 @@ header { /*Propriétés de l'en-tête*/
     margin-bottom: 20px;
 }
 
-/*PROJET 2 : TO DO LIST */
-
-.divToDoList{ /*Projet 2*/
-    display: grid; /*disposition en grille*/
-    grid-template-columns: 50% 50%; /*taille des colonnes*/
-    grid-template-rows: flex flex; /*la grille s'adapte à la taille du plus grand des items*/
-    background-color: #f6b1b1; /*couleur de fond de la grille*/
-    margin: 30px 0 10px 0 ; /*marge autour de la grille*/
-    box-shadow: 10px 10px 10px rgb(192, 83, 83); /*ombre portée de la grille*/
-    border-radius: 15px; /*bords arrondis*/
-    padding: 10px;
-}
-
-/*PROJET 3 : AMELIORATION SITE CAF - En construction*/
-
-.divSiteCAF{ /*Projet 4*/
-    display: grid; /*disposition en grille*/
-    grid-template-columns: 50% 50%; /*taille des colonnes*/
-    grid-template-rows: flex flex; /*la grille s'adapte à la taille du plus grand des items*/
-    background-color: #f6b1b1; /*couleur de fond de la grille*/
-    margin: 30px 0 10px 0 ; /*marge autour de la grille*/
-    box-shadow: 10px 10px 10px rgb(192, 83, 83); /*ombre portée de la grille*/
-    border-radius: 15px; /*bords arrondis*/
-    padding: 15px;
-}
-
 /***************COMPETENCES ET OUTILS UTILISES******************/
 
-.CompEtOutils{ /*Titre au dessus des compétences et outils utilisés*/
-    margin: 0 0 20px 20px ; /*marge autour du titre*/
+.Titresh2{ /*Titre au dessus des compétences et outils utilisés*/
+    margin: 15px 0 20px 20px ; /*marge autour du titre*/
 }
 
 .divCompetencesOutils{ /*Compétences et outils utilisés*/
@@ -324,13 +334,27 @@ header { /*Propriétés de l'en-tête*/
     grid-template-columns: 50% 50%; /*taille des colonnes*/
     grid-template-rows: flex flex; /*la grille s'adapte à la taille du plus grand des items*/
     background-color: #fff3f3; /*couleur de fond de la grille*/
-    margin: 10px 20px 30px 20px ; /*marge autour de la grille*/
+    margin: 25px ; /*marge autour de la grille*/
     padding: 0 15px 0 15px;
     border: 2px solid darkgrey;
     box-shadow: 10px 10px 20px grey;
     border-radius: 15px;
     gap: 10px;
 }
+
+@media (max-width:480px) {
+    .divCompetencesOutils {
+        display: flex; /*Utilisation de Flexbox*/
+        flex-direction: column; /* Empilement vertical */
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .divCompetencesOutils .ProjetDescription{
+        padding-top: 0px;
+    }
+}
+
 
 .TitreCompetences {
     background-color: #f1aaaf;
