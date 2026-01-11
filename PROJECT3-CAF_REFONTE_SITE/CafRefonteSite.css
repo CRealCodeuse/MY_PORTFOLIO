@@ -199,7 +199,7 @@ header {
 .divDescription {
     padding: 5px 15px 5px 15px; /* Espace autour de la div */
     background-color: #e3e3f1; /* Couleur de fond de la div */
-    margin: 25px 60px 20px 60px; /* Marge autour de la div */
+    margin: 30px 335px 0 335px; /* Marge autour de la div */
     max-width: calc(100% - 40px); /* S'adapte à la largeur de l'écran */
     border: none; /* Pas de bordure */
     box-shadow: 10px 10px 20px grey; /* Ombre portée de la div */
@@ -226,7 +226,6 @@ header {
 
 @media (max-width:480px) {
     .TitreDescription {
-        font-size: 23px;
         text-align: left;
         padding: 15px;
         width:90%;
@@ -259,7 +258,7 @@ header {
 
 .divInformations { 
     background-color: #e3e3f1; /* Couleur de fond des informations */
-    margin: 30px 60px 20px 60px; /* Marge autour des informations */
+    margin: 30px 335px 0 335px; /* Marge autour de la div */
     max-width: calc(100% - 40px); /* S'adapte à la largeur de l'écran */
     border: none; /* Pas de bordure */
     box-shadow: 10px 10px 20px grey; /* Ombre portée des informations */
@@ -276,13 +275,21 @@ header {
         max-width: 400px;
         margin: 10px 5px;
         flex-direction: column; /* Empile verticalement sur mobile */
-        padding: 15px;
+        padding: 10px 10px; /* Padding réduit */
+        display: flex;
     }
 }
 
 .divH1Image {
     text-align: center;
     padding: 5px;
+}
+
+@media (max-width:480px) {
+    .divH1Image {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 
 .InfoTitre {
@@ -296,10 +303,11 @@ header {
 
 @media (max-width:480px) {
     .InfoTitre {
+        margin-top: 0;
+        margin-bottom: 0;
         text-align: center;
         padding: 15px;
-        width:100%;
-        margin-left: -15px;
+        width:90%;
     }
 }
 
@@ -314,10 +322,10 @@ header {
 
 @media (max-width: 480px) {
     .imageInformation {
-        padding-left: 10px; /* Padding réduit pour mobiles */
         text-align: center; /* Centre l'image */
         max-width: 100%; /* L'image ne dépasse pas son conteneur */
         height: auto; /* Garde les proportions */
+        margin-bottom: -35;
     }
 
     .InformationsGrid {
@@ -337,9 +345,19 @@ header {
     box-sizing: border-box; /* Inclut padding et border dans la width */   
 }
 
+@media (max-width:480px) {
+    .Information {
+        width: 95%; /* 95% de la largeur sur mobiles */
+        color: white;
+        background-color: #141455;
+    }
+}
+
 .Information:hover {
-    background-color: #141455; /* Couleur de fond au survol */
-    color: white; /* Couleur du texte au survol */
+    background-color: #e3e3f1; /* Couleur de fond au survol */
+    color: #141455; /* Couleur du texte au survol */
+    border: 2px solid #141455;
+    
 }
 
 .Information p {
@@ -352,19 +370,14 @@ header {
 }
 
 @media (max-width: 480px) {
-    .Information {
-        width: 95%; /* 95% de la largeur sur mobiles */
-        margin: 10px auto; /* Centre l'élément */
-        color: white;
-        background-color: #141455;
-    }
+    
 
     .Information h2 {
-        font-size: 21px;
+        font-size: 20px;
     }
 
     .Information p {
-        font-size: 20px;
+        font-size: 18px;
         padding: 0 10px 10px 10px;
     }
 }
@@ -377,7 +390,7 @@ header {
 
 .divServices {
     padding: 15px;
-    margin: 30px 60px 20 60px; /* Marge autour de la div */
+    margin: 30px 180px 0 180px; /* Marge autour de la div */ /* Marge autour de la div */
     max-width: calc(100% - 40px); /* S'adapte à la largeur de l'écran */
     padding: 0px 20px 10px 20px; /* Espace interne */
     border: none; /* Pas de bordure */
@@ -388,6 +401,17 @@ header {
     text-align: center;
 }
 
+@media (max-width: 480px) {
+    .divServices {
+        width:360px;
+        max-width: 400px;
+        margin: 10px 5px;
+        flex-direction: column; /* Empile verticalement sur mobile */
+        padding: 10px 10px; /* Padding réduit */
+        display: flex;
+    }
+}
+
 .Servicesh1 {
     padding: 15px;
     margin-bottom: 0;
@@ -396,19 +420,11 @@ header {
 
 @media (max-width:480px) {
     .Servicesh1 {
-        font-size: 28px;
-        margin: 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .divServices {
-        margin: 10px 5px; /* Marges réduites pour mobiles */
-        padding: 10px 10px; /* Padding réduit */
-        display: flex;
-        flex-direction: column; /* Empile verticalement sur mobile */
-        width:360px;
-        max-width: 400px;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+        padding: 15px;
+        width:90%;
     }
 }
 
@@ -529,7 +545,7 @@ header {
 ===================================*/
 
 .divActions {
-    margin: 30px 60px 60px; /* Marge autour de la div */
+    margin: 30px 335px 0 335px; /* Marge autour de la div */
     max-width: calc(100% - 40px); /* S'adapte à la largeur de l'écran */
     padding: 15px; /* Espace interne */
     border: none; /* Pas de bordure */
@@ -551,12 +567,17 @@ header {
 .divActions h1 {
     margin-top: 0;
     text-align: center;
+    padding: 15px;
+    width:90%;
 }
 
 @media (max-width:480px) {
     .divActions h1 {
-        font-size: 28px;
-        margin-top: 10px;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+        padding: 15px;
+        width:90%;
     }
 }
 
@@ -599,7 +620,8 @@ header {
 /* Responsive : Boutons prennent toute la largeur sur mobile */
 @media (max-width: 480px) {
     .ButtonsActions {
-        width: 80%; /* Prend toute la largeur disponible */
+        width: 90%; /* Prend toute la largeur disponible */
+        padding:10px;
     }
 }
 
@@ -608,7 +630,7 @@ header {
 ===================================*/
 
 .divMagasine {
-    margin: 0px 60px 0 60px; /* Marge autour de la div */
+     margin: 30px 335px 0 335px; /* Marge autour de la div */
     max-width: calc(100% - 40px); /* S'adapte à la largeur de l'écran */
     padding: 15px; /* Espace interne */
     border: none; /* Pas de bordure */
@@ -633,7 +655,11 @@ header {
 
 @media (max-width:480px) {
     .divMagasine h1 {
-        font-size: 28px;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+        padding: 15px;
+        width:90%;
     }
 }
 
@@ -722,7 +748,6 @@ header {
 @media (max-width: 480px) {
     .TitreArticle {
         padding: 8px; /* Padding réduit pour mobiles */
-        font-size: 18px; /* Taille de police réduite */
         width:95%;
     }
 }
@@ -762,27 +787,19 @@ header {
     box-sizing: border-box; /* Inclut padding et border dans la width */
 }
 
-
-/* Responsive : Adaptation sur différents écrans */
-@media (max-width: 768px) {
-    .DecouvrirMag, .BoutonQuestions {
-        font-size: 22px; /* Taille réduite pour tablettes */
-        max-width: 250px; /* Largeur max réduite */
-    }
-}
-
 @media (max-width: 480px) {
-    .DecouvrirMag, .BoutonQuestions {
-        font-size: 25px; /* Taille réduite pour mobiles */
+    .DecouvrirMag {
+        font-size: 20px; /* Taille réduite pour mobiles */
         padding: 10px; /* Padding réduit */
         max-width: 100%; /* Prend toute la largeur disponible */
         margin: 15px auto;
     }
 }
 
-.DecouvrirMag:hover, .BoutonQuestions:hover {
+.DecouvrirMag:hover {
     background-color: #e3e3f1; /* Couleur de fond au survol */
     color: #141455; /* Couleur du texte au survol */
+    border: 2px solid #141455;
 }
 
 /*===================================
@@ -790,7 +807,7 @@ header {
 ===================================*/
 
 .divQuestions {
-    margin: 30px 60px 0 60px; /* Marge autour de la div */
+    margin: 30px 335px 0 335px; /* Marge autour de la div */
     padding: 5px 20px 20px 20px; /* Espace interne */
     border: none; /* Pas de bordure */
     background-color: #e3e3f1; /* Couleur de fond */
@@ -798,8 +815,10 @@ header {
     border-radius: 15px; /* Bords arrondis */
 }    
 
-@media (max-width:480px) {
+@media (max-width: 480px) {
     .divQuestions {
+        margin: 15px 10px 0 5px; /* Marges réduites pour mobiles */
+        padding: 8px 17px; /* Padding réduit */
         width: 90%;
     }
 }
@@ -810,11 +829,13 @@ header {
     text-align: center;
 }
 
-@media (max-width: 480px) {
-    .divQuestions {
-        margin: 15px 10px 0; /* Marges réduites pour mobiles */
-        padding: 8px 15px 10px; /* Padding réduit */
-        font-size: 14px;
+@media (max-width:480px) {
+    .divQuestions h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+        padding: 15px;
+        width:90%;
     }
 }
 
@@ -833,6 +854,11 @@ header {
     font-size: 20px;
 }
 
+.FaqQuestion:hover {
+    background-color:#141455; /* Couleur de fond au survol */
+    color: white; /* Couleur du texte au survol */
+}
+
 /* Responsive : Réduction du padding sur petits écrans */
 @media (max-width: 480px) {
     .FaqQuestion {
@@ -842,24 +868,20 @@ header {
     }
 }
 
-.FaqQuestion:hover {
-    background-color:#141455; /* Couleur de fond au survol */
-    color: white; /* Couleur du texte au survol */
-}
-
 .FaqReponse {
     display: none; /* Cachée par défaut */
     background-color: #e3e3f1; /* Couleur de fond */
     padding: 10px; /* Espace interne */
     border-radius: 5px; /* Bords arrondis */
     margin-top: 5px; /* Marge en haut */
+    font-size: 20px;
 }
 
 /* Responsive : Réduction du padding sur petits écrans */
 @media (max-width: 480px) {
     .FaqReponse {
         padding: 8px; /* Padding réduit pour mobiles */
-        font-size: 14px; /* Taille de police réduite */
+        font-size: 18px; /* Taille de police réduite */
     }
 }
 
@@ -879,12 +901,27 @@ header {
     box-sizing: border-box; /* Inclut padding et border dans la width */
 }
 
+.BoutonQuestions:hover {
+    background-color: #e3e3f1; /* Couleur de fond au survol */
+    color: #141455; /* Couleur du texte au survol */
+    border: 2px solid #141455;
+}
+
+@media (max-width: 480px) {
+    .BoutonQuestions {
+        font-size: 20px; /* Taille réduite pour mobiles */
+        padding: 10px; /* Padding réduit */
+        max-width: 100%; /* Prend toute la largeur disponible */
+        margin: 15px auto;
+    }
+}
+
 /*===================================
   AIDANTS ET ACCOMPAGNANTS
 ===================================*/
 
 .divAidantsNumeriques {
-    margin: 30px 60px 0 60px; /* Marge autour de la div */
+    margin: 30px 335px 0 335px; /* Marge autour de la div */
     padding: 5px 20px 20px 20px; /* Espace interne */
     border: none; /* Pas de bordure */
     background-color: #e3e3f1; /* Couleur de fond */
@@ -935,13 +972,21 @@ header {
     border-radius: 10px;
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
+    display: block;
+    margin: 0 auto;
+}
+
+.BoutonAccesEspace:hover {
+    background-color: #e3e3f1; /* Couleur de fond au survol */
+    color: #141455; /* Couleur du texte au survol */
+    border: 2px solid #141455;
 }
 
 @media (max-width:480px){
     .BoutonAccesEspace {
         display: block;
         margin: 0 auto;
-        font-size: 25px;
+        font-size: 20px;
         padding: 15px;
     }
 }
@@ -950,7 +995,8 @@ header {
     background-color: whitesmoke;
     border-radius: 10px;
     padding: 15px;
-    margin: 15px;
+    margin-top: 15px;
+    margin-left: 15px;
     text-align: center;
     width: 40%;
 }
@@ -983,11 +1029,22 @@ header {
     color: white;
     padding: 15px;
     border-radius: 10px;
-    width:fit-content
+    width: fit-content;
+    display: block;
+    margin: 0 auto;
+}
+
+.LienRubriqueAccompagnants:hover {
+    background-color: #e3e3f1; /* Couleur de fond au survol */
+    color: #141455; /* Couleur du texte au survol */
+    border: 2px solid #141455;
 }
 
 @media (max-width:480px) {
-    .LienRubriqueAccompagnants strong {
-        font-size: 18px;
+    .LienRubriqueAccompagnants {
+        font-size: 20px;
+        display: block;
+        margin: 0 auto;
+    
     }
 }
