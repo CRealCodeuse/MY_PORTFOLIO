@@ -35,64 +35,378 @@ a {
 ===================================*/
 
 header { 
-    font-family: 'Oswald', sans-serif; /* Police et style d'écriture */
-    background-color: #141455; /* Couleur de fond */
-    position: sticky; /* Position fixe lors du scroll */
-    top: 0; /* Position en haut de la page */
-    vertical-align: middle; /* Alignement vertical */
-    border: white 2px solid; /* Bordure blanche */
-    border-radius: 10px; /* Bords arrondis */
-    z-index: 1000; /* S'assure que le header reste au-dessus */
-    height: 65px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: 'Oswald', sans-serif;
+    background-color: #141455;
+    border: white 2px solid;
+    border-radius: 10px;
+    height: fit-content;
 }
 
 @media (max-width:480px) {
     header {
-        width: 360px;
+        width: 100%;
+        max-width: 480px;
     }
 }
 
-.Accueil { 
-    color: white; /* Couleur du texte */
-    font-family: 'Oswald', sans-serif; /* Police */
-    text-decoration: none; /* Supprime le soulignement */
-    font-size: 30px; /* Taille de la police */
-    margin-left: 15px; /* Espace autour du texte */
+header > div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.Accueil:hover {
-    border:2px solid black;
-    padding: 5px 10px 10px 10px;
+@media (max-width: 768px) {
+    header > div:first-child {
+        padding: 8px 10px;
+    }
 }
 
 @media (max-width: 480px) {
-    .Accueil {
-        font-size: 25px; /* Taille réduite pour mobiles */
+    header > div:first-child {
+        padding: 5px;
     }
 }
 
-.Malvoyant { 
-    background-color: #141455; /* Couleur de fond */
-    border: none; /* Pas de bordure */
-    margin-left: 30px; /* Espace autour du texte */
+/*===================================
+  LOGO CAF
+===================================*/
+
+.Accueil1 {
+    padding: 10px 0 10px 10px; 
+    height: 60px;
+    width: 60px;
+}
+@media (max-width:768px) {
+    .Accueil1 {
+        height: 50px;
+        width: 50px;
+        padding: 10px 5px;
+    }
 }
 
-.Connexion { 
-    background-color: #141455; /* Couleur de fond */
-    border: none; /* Pas de bordure */
-    padding: 10px; /* Espace autour du texte */
-    float: right; /* Position à droite */
-    margin-left: 10px; /* Espace à gauche */
+@media (max-width:480px) {
+    .Accueil1 {
+        height: 35px;
+        width: 35px;
+        padding: 5px;
+    }
+}
+
+/*===================================
+  CAF.FR
+===================================*/
+
+.Accueil2 { 
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    font-size: 32px;
+    margin-left: 0; /* Collé au logo */
+    padding-left: 8px; /* Juste un petit espace */
+}
+@media (max-width:768px) {
+    .Accueil2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width:480px) {
+    .Accueil2 {
+        font-size: 24px;
+    }
+}
+
+/*===================================
+  BOUTON MALVOYANT
+===================================*/
+
+.BoutonMalvoyant { 
+    background-color: #141455;
+    border: none;
+    padding: 8px; /* Réduit le padding */
+    cursor: pointer;
+    display: inline-flex; /* Important ! */
+    align-items: center;
+    justify-content: center;
+}
+
+.BoutonMalvoyant:hover {
+    border: 2px solid white;
+}
+
+@media (max-width:768px) {
+    .BoutonMalvoyant {
+        padding: 6px;
+    }
+}
+
+@media (max-width:480px) {
+    .BoutonMalvoyant {
+        padding: 5px;
+    }
+}
+
+/*===================================
+  IMAGE MALVOYANT
+===================================*/
+
+.ImgMalvoyant {
+    height: 40px;
+    width: 40px;
+}
+
+@media (max-width:768px) {
+    .ImgMalvoyant {
+        height: 35px;
+        width: 35px;
+    }
+}
+
+@media (max-width:480px) {
+    .ImgMalvoyant {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+/*===================================
+  BOUTON CONNEXION
+===================================*/
+
+.BoutonConnexion { 
+    background-color: #141455;
+    border: none;
+    padding: 8px; /* Réduit le padding */
+    cursor: pointer;
+    display: inline-flex; /* Important ! */
+    align-items: center;
+    justify-content: center;
+}
+
+.BoutonConnexion:hover {
+    border:2px solid white; 
+}
+
+@media (max-width:768px) {
+    .BoutonConnexion {
+        padding: 6px;
+    }
+}
+
+@media (max-width:480px) {
+    .BoutonConnexion {
+        padding: 5px;
+    }
+}
+
+.ImgConnexion {
+    height: 40px;
+    width: 40px;
+}
+
+@media (max-width:768px) {
+    .ImgConnexion {
+        height: 35px;
+        width: 35px;
+    }
+}
+
+@media (max-width:480px) {
+    .ImgConnexion {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+/*===================================
+  BOUTON RECHERCHE
+===================================*/
+
+.BoutonRecherche { 
+    background-color: #141455;
+    border: none;
+    padding: 8px; /* Réduit le padding */
+    cursor: pointer;
+    display: inline-flex; /* Important ! */
+    align-items: center;
+    justify-content: center;
+}
+
+.BoutonRecherche:hover {
+    border:2px solid white;
+}
+
+@media (max-width:768px) {
+    .BoutonRecherche {
+        padding: 6px;
+    }
+}
+
+@media (max-width:480px) {
+    .BoutonRecherche {
+        padding: 5px;
+    }
+}
+
+/*===================================
+  IMAGE RECHERCHE
+===================================*/
+
+.ImgRecherche {
+    height: 40px;
+    width: 40px;
+}
+
+@media (max-width:768px) {
+    .ImgRecherche {
+        height: 35px;
+        width: 35px;
+    }
+}
+
+@media (max-width:480px) {
+    .ImgRecherche {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+/*===================================
+  NAV BAR
+===================================*/
+
+.BarreNavigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3e3f1;
+    padding: 0.5em 1em;
+    color: #141455;
+    position: relative; /* Important pour position absolute des menus */
+}
+
+.SectionAllocataires, .SectionProfessionnels {
+    padding: 15px;
+    margin: 0 10px;
+    border: none;
+    background-color: #141455;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
     cursor: pointer;
 }
 
-.Recherche {
-    margin-top: 10px;
+.SectionAllocataires:hover, .SectionProfessionnels:hover {
+    border: 2px solid #141455;
+    background-color: #e3e3f1;
+    color: #141455;
 }
 
-.Connexion:hover {
-    border:2px solid black; 
+/* NAVIGATION CACHÉE PAR DÉFAUT */
+.LiensNavigation {
+    list-style: none;
+    display: none; /* Caché par défaut */
+    flex-direction: column;
+    gap: 0.5em;
+    margin: 0;
+    padding: 15px;
+    background-color: #e3e3f1;
+    position: absolute;
+    top: 100%; /* Juste en dessous de la barre */
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 100;
 }
+
+/* NAVIGATION ACTIVE = VISIBLE */
+.LiensNavigation.active {
+    display: flex; /* Affiche en flex quand active */
+}
+
+/* LIENS VISIBLES */
+.LiensNavigation a {
+    display: block; /* ✅ Toujours visible, pas display:none */
+    text-decoration: none;
+    color: #141455;
+    padding: 10px;
+    transition: color 0.3s;
+    font-size: 18px;
+}
+
+.LiensNavigation a:hover {
+    color: #000;
+    background-color: rgba(20, 20, 85, 0.1);
+}
+
+.LiensNavigation img {
+    height: 30px;
+    width: 30px;
+}
+
+.Hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.Hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #141455;
+}
+
+/* RESPONSIVE TABLETTE */
+@media (max-width: 768px) {
+    .BarreNavigation {
+        justify-content: center;
+    }
+
+    .SectionAllocataires, .SectionProfessionnels {
+        padding: 10px;
+        font-size: 18px;
+    }
+    
+    .LiensNavigation {
+        top: 60px;
+    }
+
+    .LiensNavigation a {
+        font-size: 18px;
+    }
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 480px) {
+    .SectionAllocataires, .SectionProfessionnels {
+        padding: 8px;
+        margin: 0 5px;
+        font-size: 14px;
+    }
+
+    .LiensNavigation {
+        top: 50px;
+        padding: 10px;
+    }
+
+    .LiensNavigation a {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+}
+
+/*===================================
+  POP UP CONNEXION
+===================================*/
+
+    /*===================================
+    POP UP CONNEXION
+    ===================================*/
 
 .PopUp {
     display: none;
@@ -100,20 +414,25 @@ header {
     z-index: 1000;
     left: 0;
     top: 0;
+    bottom: 0;
     width: 100%;
-    height: 100%;
-    background-color:#141455;
+    height: fit-content;
+    background-color: #141455;
 }
 
 @media (max-width:480px) {
     .PopUp {
-        background:none;
+        background:scroll ;
         top: -35;
         width: 330px;
         margin: 10px;
         justify-content: center;
     }
 }
+
+    /*===================================
+    CONTENU POP UP
+    ===================================*/
 
 .ContenuPopUp {
     background-color:#e3e3f1;
@@ -140,6 +459,10 @@ header {
     }
 }
 
+    /*===================================
+    TITRE POP UP
+    ===================================*/
+
 .TitrePopUp {
     background-color: #141455;
     color: white;
@@ -155,6 +478,10 @@ header {
         font-size: 22px;
     }
 }
+
+    /*===================================
+    ICONE FERMER POP UP
+    ===================================*/
 
 .Fermer {
     position: absolute;
@@ -178,13 +505,24 @@ header {
     color:#000;
 }
 
+    /*===================================================
+    POP UP TITRE CONNEXION ALLOCATAIRE + IDENTIFIANTS CAF
+    ====================================================*/
+
 .FormulaireTitre2 {
     color: #141455;
 }
+    /*===================================
+    POP UP MOT CHAMPS REQUIS
+    ===================================*/
 
 .FormulaireAttention {
     color: red;
 }
+
+    /*===================================
+    POP UP FORMULAIRE CONNEXION
+    ===================================*/
 
 .FormulaireConnexion label {
     font-family: "Oswald";
@@ -225,6 +563,10 @@ header {
     cursor: pointer;
 }
 
+    /*===================================
+    POP UP CONNEXION BOUTON FRANCE CONNECT
+    ===================================*/
+
 .BoutonFC {
     display: flex;
     margin-left: auto;
@@ -237,14 +579,6 @@ header {
     border: 2px solid #141455;
     border-radius: 10px;
     cursor: pointer;
-}
-
-.Recherche { 
-    background-color: #141455; /* Couleur de fond */
-    border: none; /* Pas de bordure */
-    padding: 0 10px; /* Espace autour du texte */
-    float: inline-end; /* Position à droite */
-    margin-left: auto; /* Espace automatique à gauche */
 }
 
 /*===================================
