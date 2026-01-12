@@ -308,16 +308,18 @@ header > div:first-child {
 /* NAVIGATION CACHÉE PAR DÉFAUT */
 .LiensNavigation {
     list-style: none;
-    display: none; /* Caché par défaut */
-    flex-direction: column;
-    gap: 0.5em;
+    display: none;
+    flex-direction: row; /* ✅ En ligne sur desktop */
+    gap: 1em;
     margin: 0;
     padding: 15px;
     background-color: #e3e3f1;
     position: absolute;
-    top: 100%; /* Juste en dessous de la barre */
-    left: 0;
-    width: 100%;
+    top: 100%;
+    left: 50%; /* Centre à partir de 50% */
+    transform: translateX(-50%); /* Décale de -50% de sa propre largeur */
+    width: fit-content;
+    justify-content: center; /* Centre les liens */
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     z-index: 100;
 }
@@ -329,12 +331,12 @@ header > div:first-child {
 
 /* LIENS VISIBLES */
 .LiensNavigation a {
-    display: block; /* ✅ Toujours visible, pas display:none */
+    display: block;
     text-decoration: none;
     color: #141455;
-    padding: 10px;
-    transition: color 0.3s;
-    font-size: 18px;
+    padding: 10px 15px;
+    transition: all 0.3s;
+    white-space: nowrap; /* Empêche le retour à la ligne */
 }
 
 .LiensNavigation a:hover {
@@ -372,12 +374,15 @@ header > div:first-child {
     }
     
     .LiensNavigation {
-        top: 60px;
+        flex-direction: column; /* ✅ En colonne sur tablette */
+        align-items: stretch;
+        gap: 0.5em;
     }
 
     .LiensNavigation a {
         font-size: 18px;
     }
+    
 }
 
 /* RESPONSIVE MOBILE */
@@ -389,8 +394,9 @@ header > div:first-child {
     }
 
     .LiensNavigation {
-        top: 50px;
+        flex-direction: column; /* ✅ En colonne sur mobile */
         padding: 10px;
+        gap: 0.3em;
     }
 
     .LiensNavigation a {
