@@ -218,7 +218,6 @@ header {
 .TitreDescription {
     background-color: #141455; /* Couleur de fond */
     color: white; /* Couleur du texte */
-    border-radius: 10px; /* Bords arrondis */
     text-align: center; /* Centre le texte */
     padding: 10px; /*Espace autour du titre*/
     font-size: 25;
@@ -235,7 +234,6 @@ header {
 .TexteDescription {
     background-color: whitesmoke; /* Couleur de fond */
     border: none; /* Pas de bordure */
-    border-radius: 10px; /* Bords arrondis */
     padding: 15px;
     max-width: 50%;
     margin-left: 25%;
@@ -338,18 +336,17 @@ header {
     font-size: 15px; /* Taille de la police */
     margin: 10px 0 10px 0; /* Marges autour de l'information */
     width: 95%; /* Prend toute la largeur disponible */
-    max-width: 900px; /* Largeur maximale */
+    max-width: 600px; /* Largeur maximale */
     border: none; /* Pas de bordure */
-    border-radius: 5px; /* Bords arrondis */
-    background-color: white; /* Couleur de fond */
-    box-sizing: border-box; /* Inclut padding et border dans la width */   
+    background-color: #141455; /* Couleur de fond */
+    color: white;
+    box-sizing: border-box; /* Inclut padding et border dans la width */
+    transition: background-color 0.3s ease; /* Transition douce */   
 }
 
 @media (max-width:480px) {
     .Information {
         width: 95%; /* 95% de la largeur sur mobiles */
-        color: white;
-        background-color: #141455;
     }
 }
 
@@ -361,7 +358,7 @@ header {
 }
 
 .Information p {
-    margin: 0px;
+    margin-top: 0;
     font-size: 20px;
 }
 
@@ -371,14 +368,13 @@ header {
 
 @media (max-width: 480px) {
     
-
     .Information h2 {
         font-size: 20px;
     }
 
     .Information p {
         font-size: 18px;
-        padding: 0 10px 10px 10px;
+        padding: 0 10px 10px 0;
     }
 }
 
@@ -493,6 +489,7 @@ header {
 .ImageViePersonnelle {
     background-color: lightpink; /* Couleur de fond */
     border: #141455 3px solid;
+    transition: background-color 0.3s ease; /* Transition douce */
 }
 
 .ImageViePersonnelle:hover {
@@ -503,6 +500,7 @@ header {
 .ImageVieProfessionnelle {
     background-color: lightskyblue; /* Couleur de fond */
     border: #141455 3px solid;
+    transition: background-color 0.3s ease; /* Transition douce */
 }
 
 .ImageVieProfessionnelle:hover {
@@ -513,6 +511,7 @@ header {
 .ImageLogement {
     background-color: #EFE3D3; /* Couleur de fond */
     border: #141455 3px solid;
+    transition: background-color 0.3s ease; /* Transition douce */
 }
 
 .ImageLogement:hover {
@@ -523,6 +522,7 @@ header {
 .ImageHandicap {
     background-color: #e9e78a; /* Couleur de fond */
     border: #141455 3px solid;
+    transition: background-color 0.3s ease; /* Transition douce */
 }
 
 .ImageHandicap:hover {
@@ -533,6 +533,7 @@ header {
 .ImageAccident {
     background-color: #6fdfc3; /* Couleur de fond */
     border: #141455 3px solid;
+    transition: background-color 0.3s ease; /* Transition douce */
 }
 
 .ImageAccident:hover {
@@ -545,7 +546,7 @@ header {
 ===================================*/
 
 .divActions {
-    margin: 30px 335px 0 335px; /* Marge autour de la div */
+    margin: 30px 290px 0 290px; /* Marge autour de la div */
     max-width: calc(100% - 40px); /* S'adapte à la largeur de l'écran */
     padding: 15px; /* Espace interne */
     border: none; /* Pas de bordure */
@@ -601,18 +602,18 @@ header {
 
 .ButtonsActions {
     padding: 15px 10px; /* Espace interne du bouton */
-    width: 250px; /* Largeur du bouton */
+    width: 280px; /* Largeur du bouton */
     max-width: 100%; /* S'adapte à la largeur disponible */
     background-color: #141455; /* Couleur de fond */
     border: none; /* Pas de bordure */
-    border-radius: 50px; /* Bords très arrondis */
     color: white; /* Couleur du texte */
     box-sizing: border-box; /* Inclut padding et border dans la width */
     cursor: pointer; /* Change le curseur au survol */
+    transition: background-color 0.3s ease; /* Transition douce */
 }
 
 .ButtonsActions:hover {
-    background-color: white; /* Couleur de fond au survol */
+    background-color: #e3e3f1; /* Couleur de fond au survol */
     color: #141455; /* Couleur du texte au survol */
     border: #141455 3px solid;
 }
@@ -622,6 +623,7 @@ header {
     .ButtonsActions {
         width: 90%; /* Prend toute la largeur disponible */
         padding:10px;
+        margin:5px;
     }
 }
 
@@ -665,7 +667,6 @@ header {
 
 .PresentationMagasine {
     background-color: white; /* Couleur de fond */
-    border-radius: 10px; /* Bords arrondis */
     padding: 20px; /* Espace interne */
     margin:15px;
 }
@@ -681,7 +682,6 @@ header {
     background-color: #141455; /* Couleur de fond */
     color: white; /* Couleur du texte */
     border: none; /* Pas de bordure */
-    border-radius: 10px; /* Bords arrondis */
     padding: 5px; /* Espace interne */
     width: 200px; /* Largeur du bouton */
     max-width: 100%; /* S'adapte à la largeur disponible */
@@ -701,7 +701,6 @@ header {
 .ImageMagasine {
     margin: 0 auto; /* Centre l'image */
     display: block; /* Affichage en bloc */
-    border-radius: 5px; /* Bords arrondis */
     max-width: 100%; /* L'image ne dépasse pas son conteneur */
     height: auto; /* Garde les proportions */
 }
@@ -737,7 +736,6 @@ header {
     background-color: #141455; /* Couleur de fond */
     color: white; /* Couleur du texte */
     border: none; /* Pas de bordure */
-    border-radius: 5px; /* Bords arrondis */
     padding: 10px; /* Espace interne */
     width:65%;
     text-align: center;
@@ -755,7 +753,6 @@ header {
 .TexteArticle {
     background-color: #e3e3f1; /* Couleur de fond */
     border: none; /* Pas de bordure */
-    border-radius: 5px; /* Bords arrondis */
     padding: 10px;
     width:65%;
     text-align: center;
@@ -785,6 +782,7 @@ header {
     width: 250px; /* Largeur maximale */
     cursor: pointer; /* Change le curseur au survol */
     box-sizing: border-box; /* Inclut padding et border dans la width */
+    transition: background-color 0.3s ease; /* Transition douce */
 }
 
 @media (max-width: 480px) {
@@ -840,10 +838,9 @@ header {
 }
 
 .FaqQuestion {
-    background-color: whitesmoke; /* Couleur de fond */
-    color:#141455; /* Couleur du texte */
+    background-color: #141455; /* Couleur de fond */
+    color:white; /* Couleur du texte */
     border: 2px solid #141455;
-    border-radius: 10px; /* Bords arrondis */
     padding: 10px; /* Espace interne */
     cursor: pointer; /* Change le curseur au survol */
     transition: background-color 0.3s ease; /* Transition douce */
@@ -855,8 +852,8 @@ header {
 }
 
 .FaqQuestion:hover {
-    background-color:#141455; /* Couleur de fond au survol */
-    color: white; /* Couleur du texte au survol */
+    background-color:#e3e3f1; /* Couleur de fond au survol */
+    color: #141455; /* Couleur du texte au survol */
 }
 
 /* Responsive : Réduction du padding sur petits écrans */
@@ -872,7 +869,6 @@ header {
     display: none; /* Cachée par défaut */
     background-color: #e3e3f1; /* Couleur de fond */
     padding: 10px; /* Espace interne */
-    border-radius: 5px; /* Bords arrondis */
     margin-top: 5px; /* Marge en haut */
     font-size: 20px;
 }
@@ -899,6 +895,7 @@ header {
     width: 270px; /* Largeur maximale */
     cursor: pointer; /* Change le curseur au survol */
     box-sizing: border-box; /* Inclut padding et border dans la width */
+    transition: background-color 0.3s ease; /* Transition douce */
 }
 
 .BoutonQuestions:hover {
@@ -947,7 +944,6 @@ header {
     border: 3px solid #141455;
     padding: 15px;
     margin-top: 15px;
-    border-radius: 10px;
 }
 
 @media (max-width:480px) {
@@ -974,6 +970,7 @@ header {
     font-size: 18px;
     display: block;
     margin: 0 auto;
+    transition: background-color 0.3s ease; /* Transition douce */
 }
 
 .BoutonAccesEspace:hover {
@@ -993,7 +990,6 @@ header {
 
 .divDroite {
     background-color: whitesmoke;
-    border-radius: 10px;
     padding: 15px;
     margin-top: 15px;
     margin-left: 15px;
@@ -1032,6 +1028,7 @@ header {
     width: fit-content;
     display: block;
     margin: 0 auto;
+    transition: background-color 0.3s ease; /* Transition douce */
 }
 
 .LienRubriqueAccompagnants:hover {
