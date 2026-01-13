@@ -1003,6 +1003,7 @@ header > div:first-child {
 }
 
 .ButtonsActions {
+    font-family: 'Oswald', sans-serif;
     padding: 15px 10px; /* Espace interne du bouton */
     width: 280px; /* Largeur du bouton */
     max-width: 100%; /* S'adapte à la largeur disponible */
@@ -1015,7 +1016,7 @@ header > div:first-child {
 }
 
 .TitresActions {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 @media (max-width:480px) {
@@ -1170,7 +1171,7 @@ header > div:first-child {
     width:65%;
     text-align: center;
     margin: 10 auto;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 @media (max-width:480px) {
@@ -1260,7 +1261,7 @@ header > div:first-child {
     text-align: center;
     width:50%;
     margin: 10 auto;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .FaqQuestion:hover {
@@ -1281,6 +1282,8 @@ header > div:first-child {
 .FaqReponse {
     display: none; /* Cachée par défaut */
     background-color: #e3e3f1; /* Couleur de fond */
+    border: 3px solid #141455;
+    color: #141455;
     padding: 10px; /* Espace interne */
     margin-top: 5px; /* Marge en haut */
     font-size: 20px;
@@ -1459,3 +1462,136 @@ header > div:first-child {
     
     }
 }
+
+/*===================================
+  FOOTER
+===================================*/
+
+    /*===================================
+    DIV FOOTER
+    ===================================*/
+
+.divFooter {
+    background-color: #141455;
+    color: white;
+    padding: 5px 15px 15px 15px;
+    margin: 20px;
+    justify-content: space-around;
+    display: flex;
+}
+
+@media (max-width:768px) {
+    .divFooter {
+        display: inline-block;
+        margin: 10px;
+    }
+}
+
+@media (max-width:480px) {
+    .divFooter {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+}
+
+    /*===================================
+    CONTACT - RESEAUX SOCIAUX
+    ===================================*/
+
+.ReseauxSociaux {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.Facebook {
+    background-color: white;
+    padding: 8px; /* Réduit le padding */
+    cursor: pointer;
+    display: inline-flex; /* Important ! */
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    transition: background-color 0.3s ease; /* Transition douce */
+}
+
+.Facebook:hover {
+    border: 3px solid black;
+    background-color: #b9b9dd;
+}
+
+.X {
+    background-color: whitesmoke;
+    padding: 8px; /* Réduit le padding */
+    cursor: pointer;
+    display: inline-flex; /* Important ! */
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; /* Transition douce */
+}
+
+.X:hover {
+    border: 3px solid black;
+    background-color: #b9b9dd;
+}
+
+.NousContacter {
+    background-color: #e3e3f1;
+    color: black;
+    border: none;
+    padding: 20px 8px; /* Réduit le padding */
+    cursor: pointer;
+    display: inline-flex; /* Important ! */
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    transition: background-color 0.3s ease; /* Transition douce */
+    margin-left: 5px;
+}
+
+.NousContacter:hover {
+    border: 3px solid black;
+    background-color: #b9b9dd;
+    color: #141455;
+}
+
+    /*===================================
+    INFORMATIONS GENERALES
+    ===================================*/
+
+    .LienGeneral {
+        font-family: 'Oswald', sans-serif;
+        font-size: 18px;
+        border: none;
+        background-color: #141455;
+        color: white;
+    }
+
+    .LienGeneral:hover {
+        border: 2px solid white;
+        padding:5px;
+        background-color: #b9b9dd;
+        color: black;
+        width: fit-content;
+    }
+
+    /*===================================
+    AUTRES SITES
+    ===================================*/
+
+    .LiensAutresSites {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+    }
+
+    .LiensAutresSites:hover {
+        border: 2px solid white;
+        padding:5px;
+        background-color: #b9b9dd;
+        color: black;
+    }
