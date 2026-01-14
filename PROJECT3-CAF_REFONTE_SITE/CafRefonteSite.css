@@ -416,12 +416,12 @@ header > div:first-child {
     POP UP CONNEXION
     ===================================*/
 
-.PopUp {
+.PopUpConnexion {
     display: none;
     position: fixed;
     z-index: 1000;
     left: 0;
-    top: 0;
+    top: -90;
     bottom: 0;
     width: 100%;
     height: fit-content;
@@ -429,7 +429,7 @@ header > div:first-child {
 }
 
 @media (max-width:480px) {
-    .PopUp {
+    .PopUpConnexion {
         background:scroll ;
         top: -35;
         width: 330px;
@@ -442,7 +442,7 @@ header > div:first-child {
     CONTENU POP UP
     ===================================*/
 
-.ContenuPopUp {
+.ContenuPopUpConnexion {
     background-color:#e3e3f1;
     margin: 10% auto;
     padding: 30px;
@@ -451,10 +451,11 @@ header > div:first-child {
     max-width: 500px;
     position: relative;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    
 }
 
 @media (max-width:480px) {
-    .ContenuPopUp {
+    .ContenuPopUpConnexion {
         background-color:#e3e3f1;
         margin: 10% auto;
         padding: 20px;
@@ -471,7 +472,7 @@ header > div:first-child {
     TITRE POP UP
     ===================================*/
 
-.TitrePopUp {
+.TitrePopUpConnexion {
     background-color: #141455;
     color: white;
     padding: 15px;
@@ -480,7 +481,7 @@ header > div:first-child {
 }
 
 @media (max-width:480px) {
-    .TitrePopUp {
+    .TitrePopUpConnexion {
         margin: 30px 5px 5px 5px;
         padding: 15px;
         font-size: 22px;
@@ -491,7 +492,7 @@ header > div:first-child {
     ICONE FERMER POP UP
     ===================================*/
 
-.Fermer {
+.FermerConnexion {
     position: absolute;
     right: 35px;
     top: 15px;
@@ -502,14 +503,14 @@ header > div:first-child {
 }
 
 @media (max-width:480px) {
-    .Fermer {
+    .FermerConnexion {
         position: absolute;
         right: 20px;
         top: 5px;
     }
 }
 
-.Fermer:hover {
+.FermerConnexion:hover {
     color:#000;
 }
 
@@ -517,14 +518,14 @@ header > div:first-child {
     POP UP TITRE CONNEXION ALLOCATAIRE + IDENTIFIANTS CAF
     ====================================================*/
 
-.FormulaireTitre2 {
+.FormulaireTitre2Connexion {
     color: #141455;
 }
     /*===================================
     POP UP MOT CHAMPS REQUIS
     ===================================*/
 
-.FormulaireAttention {
+.FormulaireAttentionConnexion {
     color: red;
 }
 
@@ -551,7 +552,7 @@ header > div:first-child {
     text-align: center;
 }
 
-.BoutonSC {
+.BoutonSCConnexion {
     margin-top: 25px;
     display: flex;
     margin-left: auto;
@@ -564,7 +565,7 @@ header > div:first-child {
     transition: background-color 0.3s ease; /* Transition douce */
 }
 
-.BoutonSC:hover {
+.BoutonSCConnexion:hover {
     background-color: #e3e3f1;
     border: 2px solid #141455;
     color: #141455;
@@ -575,7 +576,7 @@ header > div:first-child {
     POP UP CONNEXION BOUTON FRANCE CONNECT
     ===================================*/
 
-.BoutonFC {
+.BoutonFCConnexion {
     display: flex;
     margin-left: auto;
     border:none;
@@ -583,7 +584,7 @@ header > div:first-child {
     transition: background-color 0.3s ease; /* Transition douce */
 }
 
-.BoutonFC:hover {
+.BoutonFCConnexion:hover {
     border: 2px solid #141455;
     border-radius: 10px;
     cursor: pointer;
@@ -727,7 +728,7 @@ header > div:first-child {
     }
 }
 
-.Information {
+.Information1, .Information2, .Information3, .Information4 {
     font-family: 'Oswald', sans-serif; /* Police */
     font-size: 15px; /* Taille de la police */
     margin: 10px 5px 10px 5px; /* Marges autour de l'information */
@@ -740,13 +741,13 @@ header > div:first-child {
 }
 
 @media (max-width:480px) {
-    .Information {
+    .Information1, .Information2, .Information3, .Information4 {
         width: 95%; /* 95% de la largeur sur mobiles */
         margin: 5px;
     }
 }
 
-.Information:hover {
+.Information1:hover, .Information2:hover, .Information3:hover, .Information4:hover {
     color: #141455; /* Couleur du texte au survol */
     border: 3px solid #141455;
     background-color: #e3e3f1;
@@ -754,17 +755,17 @@ header > div:first-child {
     
 }
 
-.Information p {
+.Information1 p, .Information2 p, .Information3 p, .Information4 p {
     margin-top: 0;
     font-size: 20px;
     color: #000;
 }
 
-.Information p:hover {
+.Information1 p:hover, .Information2 p:hover, .Information3 p:hover, .Information4 p:hover {
     color: #141455;
 }
 
-.Information h2 {
+.Information1 h2, .Information2 h2, .Information3 h2, .Information4 h2 {
     margin: 10px;
     background-color: #141455;
     color: white;
@@ -772,17 +773,148 @@ header > div:first-child {
 
 @media (max-width: 480px) {
     
-    .Information h2 {
+    .Information1 h2, .Information2 h2, .Information3 h2, .Information4 h2 {
         font-size: 20px;
     }
 
-    .Information p {
+    .Information1 p, .Information2 p, .Information3 p, .Information4 p {
         font-size: 18px;
         padding: 0 10px 10px 0;
     }
 }
 
+/*===================================
+  POP UP CONGE NAISSANCE
+===================================*/
 
+    /*===================================
+    POP UP CONGE NAISSANCE
+    ===================================*/
+
+.PopUpCongeNaissance {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; /* Prend toute la hauteur */
+    overflow-y: auto; /* Permet le scroll sur tout l'écran */
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+}
+
+/* TABLETTE */
+@media (max-width: 768px) {
+    .ContenuPopUpCongeNaissance {
+        width: 95%;
+        padding: 30px;
+        margin: 20px auto;
+        font-size: 16px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    .ContenuPopUpCongeNaissance {
+        width: 100%; /* Prend toute la largeur disponible */
+        max-width: 100%; /* Enlève la limite */
+        padding: 15px;
+        margin: 10px auto;
+        font-size: 14px;
+        border: 2px solid #141455;
+        
+    }
+}
+
+    /*===================================
+    CONTENU POP UP
+    ===================================*/
+
+.ContenuPopUpCongeNaissance {
+    background-color:#e3e3f1;
+    margin: 30px auto;
+    padding: 50px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1600px;
+    position: relative;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    border: 3px solid #141455;
+    font-size: 18px;
+}
+
+@media (max-width:480px) {
+    .ContenuPopUpCongeNaissance {
+        background-color:#e3e3f1;
+        margin: 10% auto;
+        padding: 20px;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 95%;
+        max-width: 330px;
+        position: relative;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    }
+}
+
+    /*===================================
+    TITRE POP UP
+    ===================================*/
+
+.TitrePopUpCongeNaissance {
+    background-color: #141455;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+@media (max-width:480px) {
+    .TitrePopUpCongeNaissance {
+        margin: 30px 5px 5px 5px;
+        padding: 15px;
+        font-size: 22px;
+    }
+}
+
+    /*===================================
+    ICONE FERMER POP UP
+    ===================================*/
+
+.FermerCongeNaissance {
+    position: absolute;
+    right: 30px;
+    top: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+@media (max-width:480px) {
+    .FermerCongeNaissance {
+        position: absolute;
+        right: 15px;
+        top: 5px;
+    }
+}
+
+.FermerCongeNaissance:hover {
+    color:#000;
+}
+
+    /*===================================================
+    POP UP TITRE CONNEXION ALLOCATAIRE + IDENTIFIANTS CAF
+    ====================================================*/
+
+.QuestionCongeNaissance {
+    color: #141455;
+}
+
+.ReponseCongeNaissance {
+    color: black;
+}
 
 /*===================================
   SERVICES
