@@ -158,3 +158,43 @@ window.addEventListener('click', (e) => {
         PopUpCyberattaque.style.display = 'none';
     }
 });
+
+////////////////FAQ DETTE////////////////////////////////////
+
+const QuestionDette = document.querySelector('.FaqQuestionDette');
+const FaqReponseDette = document.querySelector('.FaqReponseDette');
+const QuestionAides = document.querySelector('.FaqQuestionAides');
+const FaqReponseAides = document.querySelector('.FaqReponseAides');
+const QuestionDocument = document.querySelector('.FaqQuestionDocument');
+const FaqReponseDocument = document.querySelector('.FaqReponseDocument');
+const QuestionDemarches = document.querySelector('.FaqQuestionDemarches');
+const FaqReponseDemarches = document.querySelector('.FaqReponseDemarches');
+
+//OUVRIR REPONSES
+QuestionDette.addEventListener('click', () => {
+    FaqReponseDette.style.display = 'block';
+    FaqReponseAides.style.display = 'none';
+    FaqReponseDocument.style.display = 'none';
+    FaqReponseDemarches.style.display = 'none';
+});
+
+QuestionAides.addEventListener('click', () => {
+    FaqReponseDette.style.display = 'none';
+    FaqReponseAides.style.display = 'block';
+    FaqReponseDocument.style.display = 'none';
+    FaqReponseDemarches.style.display = 'none';
+});
+
+QuestionDocument.addEventListener('click', () => {
+    FaqReponseDette.style.display = 'none';
+    FaqReponseAides.style.display = 'none';
+    FaqReponseDocument.style.display = 'block';
+    FaqReponseDemarches.style.display = 'none';
+});
+
+QuestionDemarches.addEventListener('click', () => {
+    FaqReponseDette.style.display = 'none';
+    FaqReponseAides.style.display = 'none';
+    FaqReponseDocument.style.display = 'none';
+    FaqReponseDemarches.style.display = 'block';
+});
