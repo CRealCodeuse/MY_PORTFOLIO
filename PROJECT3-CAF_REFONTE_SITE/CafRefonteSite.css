@@ -1750,7 +1750,7 @@ header > div:first-child {
     INFORMATIONS GENERALES
     ===================================*/
 
-    .LienGeneral {
+    .BoutonAccessibilite, .BoutonMentionsLegales, .BoutonDonneesPerso, .BoutonSecurite, .BoutonCSIRT, .BoutonFAQ {
         font-family: 'Oswald', sans-serif;
         font-size: 18px;
         border: none;
@@ -1758,7 +1758,7 @@ header > div:first-child {
         color: white;
     }
 
-    .LienGeneral:hover {
+    .BoutonAccessibilite:hover, .BoutonMentionsLegales:hover, .BoutonDonneesPerso:hover, .BoutonSecurite:hover, .BoutonCSIRT:hover, .BoutonFAQ:hover {
         border: 2px solid white;
         padding:5px;
         background-color: #b9b9dd;
@@ -1784,3 +1784,134 @@ header > div:first-child {
         color: black;
         cursor: pointer;
     }
+
+/*===================================
+  POP UP SECURITE ET PREVENTION
+===================================*/
+
+/**************POP UP SECURITE**********************/
+
+.PopUpSecurite {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; /* Prend toute la hauteur */
+    overflow-y: auto; /* Permet le scroll sur tout l'écran */
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+}
+
+/* TABLETTE */
+@media (max-width: 768px) {
+    .PopUpSecurite {
+        width: 95%;
+        padding: 30px;
+        margin: 20px auto;
+        font-size: 16px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    .PopUpSecurite {
+        width: 100%; /* Prend toute la largeur disponible */
+        max-width: 100%; /* Enlève la limite */
+        padding: 15px;
+        margin: 10px auto;
+        font-size: 14px;
+        border: 2px solid #141455;
+        
+    }
+}
+
+    /*===================CONTENU POP UP SECURITE======================*/
+
+.ContenuPopUpSecurite {
+    background-color:#e3e3f1;
+    margin: 30px auto;
+    padding: 50px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1600px;
+    position: relative;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    border: 3px solid #141455;
+    font-size: 18px;
+}
+
+@media (max-width:480px) {
+    .ContenuPopUpSecurite {
+        background-color:#e3e3f1;
+        margin: 10% auto;
+        padding: 20px;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 95%;
+        max-width: 330px;
+        position: relative;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    }
+}
+
+    /*=======================TITRE POP UP SECURITE==================*/
+
+.TitrePopUpSecurite {
+    background-color: #141455;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+@media (max-width:480px) {
+    .TitrePopUpSecurite {
+        margin: 30px 5px 5px 5px;
+        padding: 15px;
+        font-size: 22px;
+    }
+}
+
+    /*=========================== ICONE FERMER POP UP===================*/
+
+.FermerSecurite {
+    position: absolute;
+    right: 30px;
+    top: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+@media (max-width:480px) {
+    .FermerSecurite {
+        position: absolute;
+        right: 15px;
+        top: 5px;
+    }
+}
+
+.FFermerSecuritee:hover {
+    color:#000;
+}
+
+    /*==========================IMAGES =================================*/
+
+.divLogicielMalveillant {
+    display: inline-block;
+}
+
+.ImgLogicielMalveillant {
+    margin:15px;
+    border: 2px solid #141455;
+    display: block;
+}
+
+@media (max-width: 480px) {
+    .ImgLogicielMalveillant {
+        width: 90%;
+    }
+}

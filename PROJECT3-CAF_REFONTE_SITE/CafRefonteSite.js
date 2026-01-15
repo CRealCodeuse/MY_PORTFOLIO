@@ -198,3 +198,26 @@ QuestionDemarches.addEventListener('click', () => {
     FaqReponseDocument.style.display = 'none';
     FaqReponseDemarches.style.display = 'block';
 });
+
+////////////////////POP UP DONNEES PERSO//////////////////////
+
+const Securite = document.querySelector('.BoutonSecurite');
+const PopUpSecurite = document.querySelector('.PopUpSecurite');
+const FermerSecurite = document.querySelector('.FermerSecurite');
+
+//OUVRIR POP UP DE CONTACT
+Securite.addEventListener('click', () => {
+    PopUpSecurite.style.display = 'block';   
+});
+
+//FERMER POP UP DE CONTACT
+FermerSecurite.addEventListener('click', () => {
+   PopUpSecurite.style.display = 'none'; 
+});
+
+//FERMER POP UP EN CLIQUANT EN DEHORS DE CELLE-CI
+window.addEventListener('click', (e) => {
+    if (e.target === PopUpSecurite) {
+        PopUpSecurite.style.display = 'none';
+    }
+});
