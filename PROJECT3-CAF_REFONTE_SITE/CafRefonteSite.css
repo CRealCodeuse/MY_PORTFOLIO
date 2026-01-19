@@ -428,6 +428,11 @@ header > div:first-child {
     background-color: #141455;
 }
 
+@media (max-width:769px){
+ .PopUpConnection {
+        top: 0;
+    }
+}
 @media (max-width:480px) {
     .PopUpConnexion {
         background:scroll ;
