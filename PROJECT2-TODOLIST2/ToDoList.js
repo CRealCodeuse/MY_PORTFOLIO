@@ -14,14 +14,14 @@ cells.forEach(cell => { // Pour chaque cellule
         // Liste de toutes les valeurs par défaut (anglais + français)
         const defaultValues = [ // Valeurs par défaut
             '...', // Texte par défaut
-            'Buy tomatoes', // Texte par défaut
-            'Review the math lesson', // Texte par défaut
-            'Wash the dishes', // Texte par défaut
-            "Do the site's template", // Texte par défaut
             'Acheter des tomates', // Texte par défaut
             'Réviser la leçon de maths', // Texte par défaut
             'Faire la vaisselle', // Texte par défaut
-            'Faire le modèle du site' // Texte par défaut
+            "Faire un brouillon du projet", // Texte par défaut
+            'Buy tomatoes', // Texte par défaut
+            'Review math lesson', // Texte par défaut
+            'Wash the dishes', // Texte par défaut
+            "Do the project's template" // Texte par défaut
         ];
         
         // Normaliser le texte en remplaçant les apostrophes courbes par des droites
@@ -68,18 +68,18 @@ cell.addEventListener('click', function(e) { // Au clic dans la cellule
         
         
         // Définir les valeurs par défaut selon la langue
-        const defaultValues = isFrench ? [ // Si français
+        const defaultValues = isEnglish ? [ // Si français
             '...', // Texte par défaut
             'Acheter des tomates', // Texte par défaut
             'Réviser la leçon de maths', // Texte par défaut
             'Faire la vaisselle', // Texte par défaut
-            'Faire le modèle du site' // Texte par défaut
+            'Faire un brouillon du projet' // Texte par défaut
         ] : [
             '...', // Texte par défaut
             'Buy tomatoes', // Texte par défaut
             'Review the math lesson', // Texte par défaut
             'Wash the dishes', // Texte par défaut
-            'Do the site\'s template' // Texte par défaut
+            "Do the project's template" // Texte par défaut
         ];
         // Si jamais modifiée ET contient un texte par défaut
         if (!hasBeenModified && defaultValues.includes(textOnly)) {
@@ -235,14 +235,14 @@ cell.addEventListener('keydown', function(e) {  // Au keydown
 });
 
 // BOUTON VIDER LES TÂCHES
-const Empty = document.querySelector('button[class="Empty"]'); // Sélectionner le bouton "Empty"
+const Vider = document.querySelector('button[class="Vider"]'); // Sélectionner le bouton "Vider"
 
-Empty.addEventListener('click', function() { // Au clic sur le bouton
+Vider.addEventListener('click', function() { // Au clic sur le bouton
     // VÉRIFIER LA LANGUE EN PREMIER
-    const frenchButton = document.querySelector('.Francais'); // Sélectionner le bouton "Francais"
-    const isFrench = frenchButton && frenchButton.classList.contains('clicked'); // Vérifier si le bouton a la classe 'clicked'
+    const EnglishButton = document.querySelector('.Anglais'); // Sélectionner le bouton "Francais"
+    const isEnglish = EnglishButton && EnglishButton.classList.contains('clicked'); // Vérifier si le bouton a la classe 'clicked'
     // Définir les valeurs par défaut SELON LA LANGUE
-    const defaultValues = isFrench ? [ // Si français
+    const defaultValues = isEnglish ? [ // Si français
         'Acheter des tomates', // Texte par défaut
         'Réviser la leçon de maths', // Texte par défaut
         'Faire la vaisselle', // Texte par défaut
@@ -271,9 +271,9 @@ Empty.addEventListener('click', function() { // Au clic sur le bouton
     
     // Afficher le toast SELON LA LANGUE
     if (hasUnfinishedTasks) { // Si des tâches non terminées existent
-        const message = isFrench ? //  Vérifier la langue
-            "Tu n'as pas fini toutes tes tâches !" : // Message en français
-            "You haven't finished all your tasks!"; // Message en anglais
+        const message = isEnglish ? //  Vérifier la langue
+            "You haven't finished all your tasks!":// Message en français
+            "Tu n'as pas fini toutes tes tâches !"; // Message en anglais
         
         showToast(message, 'error'); // Afficher le message d'erreur
         return; // Sortir de la fonction sans réinitialiser
@@ -307,7 +307,7 @@ Empty.addEventListener('click', function() { // Au clic sur le bouton
     });
     
     // Afficher un Toast de succès
-    const successMessage = isFrench ? // Vérifier la langue
+    const successMessage = isEnglish ? // Vérifier la langue
         "Génial ! De nouvelles tâches arrivent !" : // Message en français
         "Good Job! New tasks incoming!"; // Message en anglais
     showToast(successMessage, 'success'); // Afficher le message
@@ -362,28 +362,30 @@ function showToast(message, type = 'info') { // Afficher un toast
 }
 
 //TRADUCTION Francais/ANGLAIS
-const Francais = document.querySelector('button[class="Francais"]'); // Sélectionner le bouton "Francais"
+const Anglais = document.querySelector('button[class="Anglais"]'); // Sélectionner le bouton "Anglais"
 
 let isTranslated = false; // Variable pour suivre l'état de traduction
 
-Francais.addEventListener('click', function() { // Au clic sur le bouton
+Anglais.addEventListener('click', function() { // Au clic sur le bouton
     const translations = { // Dictionnaire de traduction (anglais → Francais)
         '...': '...',
-        'What should I do today ?': 'Que dois-je faire aujourd\'hui ?',
-        'Buy tomatoes': 'Acheter des tomates',
-        'Review the math lesson': 'Réviser la leçon de maths',
-        'Wash the dishes': 'Faire la vaisselle',
-        'Do the site\'s template': 'Faire le modèle du site',
-        'Hey there !': 'Bienvenue !',
-        'Here is a simple to-do list where you can write down your tasks for today (or for the week).': 'Voici ta propre liste de tâches où tu peux écrire tout ce que tu as à faire pour aujourd\'hui (ou dans la semaine).',
-        'Just click on a cell to edit it and add your tasks. You also can edit the head cells if needed.': 'Tu peux cliquer sur une cellule et modifier son contenu. Tu peux aussi modifier les cellules d\'en-tête si nécessaire.',
-        'When you\'re done, you can click the button below to clear all the tasks and start fresh.': 'Lorsque tu as terminé toutes tes tâches, clique simplement sur le bouton \'Vider les tâches\' et tu pourras recommencer une nouvelle liste.',
-        'Groceries': 'Courses',
-        'School/Work': 'École/Travail',
-        'Home': 'Maison',
-        'Projects': 'Projets',
-        'Empty the tasks': 'Vider les tâches',
-        'Français': 'Anglais'
+        'Que dois-je faire aujourd\'hui ?':'What should I do today ?' ,
+        'Acheter des tomates':'Buy tomatoes' ,
+        'Réviser la leçon de maths':'Review the math lesson' ,
+        'Faire la vaisselle':'Wash the dishes' ,
+        'Faire le brouillon du projet':'Do the project\'s template' ,
+        'Bienvenue !':'Hey there !' ,
+        'Voici une To Do List où tu peux écrire toutes tes tâches à accomplir.':'Here is a To Do List where you can write down all your tasks to complete.',
+        "Clique sur une cellule pour l'éditer et ajouter la tâche à faire. Tu peux aussi modifier les cases en tête de colonne si besoin.":'Click on a cell to edit it and add your tasks to complete. You also can edit the head cells if needed.',
+        "Quand tu as finis, clique sur le bouton en dessous du tableau pour l'effacer afin d'en réécrire d'autres.":'When you\'re done, you can click the button below to clear all the tasks and start fresh.',
+        'Courses':'Groceries',
+        'École':'School',
+        'Maison':'Home' ,
+        'Projets':'Projects' ,
+        'Vider les tâches':'Vider the tasks',
+        'English':'Français',
+        'Thème sombre':'Dark theme',
+        'Vider les tâches':"Empty the tasks",
     };
     
     // Créer un objet inverse pour la traduction retour (Francais → anglais)
