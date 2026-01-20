@@ -11,15 +11,15 @@ cells.forEach(cell => { // Pour chaque cellule
         const checkbox = this.querySelector('.checkbox'); // Récupérer la checkbox
         const textOnly = this.textContent.trim(); // Récupérer uniquement le texte
         
-        // Liste de toutes les valeurs par défaut (anglais + français)
+        // Liste de toutes les valeurs par défaut (anglais + Français)
         const defaultValues = [ // Valeurs par défaut
             '...', // Texte par défaut
             'Acheter des tomates', // Texte par défaut
             'Réviser la leçon de maths', // Texte par défaut
             'Faire la vaisselle', // Texte par défaut
-            "Faire un brouillon du projet", // Texte par défaut
+            "Faire le brouillon du projet", // Texte par défaut
             'Buy tomatoes', // Texte par défaut
-            'Review math lesson', // Texte par défaut
+            'Review the math lesson', // Texte par défaut
             'Wash the dishes', // Texte par défaut
             "Do the project's template" // Texte par défaut
         ];
@@ -58,50 +58,53 @@ cells.forEach(cell => { // Pour chaque cellule
     });
 
 //FORCER LE CURSEUR APRÈS LA CHECKBOX AU CLIC
-cell.addEventListener('click', function(e) { // Au clic dans la cellule
-    const checkbox = this.querySelector('.checkbox'); // Récupérer la checkbox
+cell.addEventListener('click', function(e) {
+    const checkbox = this.querySelector('.checkbox');
     
-    if (checkbox && e.target !== checkbox) { // Si la checkbox existe et le clic n'est pas sur elle
-        const selection = window.getSelection(); // Récupérer la sélection
-        const range = document.createRange(); // Créer une nouvelle plage
-        const textOnly = this.textContent.trim(); // Récupérer le texte
+    if (checkbox && e.target !== checkbox) {
+        const selection = window.getSelection();
+        const range = document.createRange();
+        const textOnly = this.textContent.trim();
         
+        // ✅ Vérifier la langue
+        const AnglaisButton = document.querySelector('.Anglais');
+        const isEnglish = AnglaisButton && AnglaisButton.classList.contains('clicked');
         
-        // Définir les valeurs par défaut selon la langue
-        const defaultValues = isEnglish ? [ // Si français
-            '...', // Texte par défaut
-            'Acheter des tomates', // Texte par défaut
-            'Réviser la leçon de maths', // Texte par défaut
-            'Faire la vaisselle', // Texte par défaut
-            'Faire un brouillon du projet' // Texte par défaut
+        // ✅ CORRECTION : Inverser la logique
+        const defaultValues = isEnglish ? [
+            // Si ANGLAIS
+            '...',
+            'Buy tomatoes',
+            'Review the math lesson',
+            'Wash the dishes',
+            "Do the project's template"
         ] : [
-            '...', // Texte par défaut
-            'Buy tomatoes', // Texte par défaut
-            'Review the math lesson', // Texte par défaut
-            'Wash the dishes', // Texte par défaut
-            "Do the project's template" // Texte par défaut
+            // Si FRANÇAIS
+            '...',
+            'Acheter des tomates',
+            'Réviser la leçon de maths',
+            'Faire la vaisselle',
+            'Faire le brouillon du projet'
         ];
-        // Si jamais modifiée ET contient un texte par défaut
+        
         if (!hasBeenModified && defaultValues.includes(textOnly)) {
-            // Vider uniquement le texte, garder la checkbox
-            this.innerHTML = ''; // Vider la cellule
-            if (checkbox) { // Si la checkbox existe
-                this.appendChild(checkbox); // Ajouter la checkbox
+            this.innerHTML = '';
+            if (checkbox) {
+                this.appendChild(checkbox);
             }
         }
         
-        if (isModified) { 
-            // Cellule modifiée : placer le curseur à la fin du texte
-            range.selectNodeContents(this); // Sélectionner tout le contenu
-            range.collapse(false); // false = à la fin
+        // ✅ CORRECTION : hasBeenModified au lieu de isModified
+        if (hasBeenModified) {
+            range.selectNodeContents(this);
+            range.collapse(false);
         } else {
-            // Cellule non modifiée : placer le curseur après la checkbox
-            range.setStartAfter(checkbox); // Définir le début après la checkbox
-            range.collapse(true); // Collapser la plage
+            range.setStartAfter(checkbox);
+            range.collapse(true);
         }
         
-        selection.removeAllRanges(); // Supprimer les plages existantes
-        selection.addRange(range); // Ajouter la nouvelle plage
+        selection.removeAllRanges();
+        selection.addRange(range);
     }
 });
 
@@ -237,81 +240,81 @@ cell.addEventListener('keydown', function(e) {  // Au keydown
 // BOUTON VIDER LES TÂCHES
 const Vider = document.querySelector('button[class="Vider"]'); // Sélectionner le bouton "Vider"
 
-Vider.addEventListener('click', function() { // Au clic sur le bouton
-    // VÉRIFIER LA LANGUE EN PREMIER
-    const EnglishButton = document.querySelector('.Anglais'); // Sélectionner le bouton "Francais"
-    const isEnglish = EnglishButton && EnglishButton.classList.contains('clicked'); // Vérifier si le bouton a la classe 'clicked'
-    // Définir les valeurs par défaut SELON LA LANGUE
-    const defaultValues = isEnglish ? [ // Si français
-        'Acheter des tomates', // Texte par défaut
-        'Réviser la leçon de maths', // Texte par défaut
-        'Faire la vaisselle', // Texte par défaut
-        'Faire le modèle du site', // Texte par défaut
-        '...' // Texte par défaut
-    ] : [
-        'Buy tomatoes', // Texte par défaut
-        'Review the math lesson', // Texte par défaut
-        'Wash the dishes', // Texte par défaut
-        'Do the site\'s template', // Texte par défaut
-        '...' // Texte par défaut
-    ];
-    
-    // Vérifier si des tâches modifiées ne sont pas cochées
-    let hasUnfinishedTasks = false;
-    
-    cells.forEach(cell => { // Pour chaque cellule
-        const checkbox = cell.querySelector('.checkbox'); // Récupérer la checkbox
-        const textContent = cell.textContent.trim(); // Récupérer le texte
+if (Vider) { // ✅ Vérifier que le bouton existe
+    Vider.addEventListener('click', function() {
+        // VÉRIFIER LA LANGUE EN PREMIER
+        const AnglaisButton = document.querySelector('.Anglais');
+        const isEnglish = AnglaisButton && AnglaisButton.classList.contains('clicked');
         
-        // Si modifié ET non coché
-        if (textContent !== '' && !defaultValues.includes(textContent) && checkbox && !checkbox.checked) { // Si modifié et non coché
-            hasUnfinishedTasks = true; // Marquer comme ayant des tâches non terminées
-        }
-    });
-    
-    // Afficher le toast SELON LA LANGUE
-    if (hasUnfinishedTasks) { // Si des tâches non terminées existent
-        const message = isEnglish ? //  Vérifier la langue
-            "You haven't finished all your tasks!":// Message en français
-            "Tu n'as pas fini toutes tes tâches !"; // Message en anglais
+        // ✅ CORRECTION : Inverser la logique
+        const defaultValues = isEnglish ? [ 
+            // Si ANGLAIS (isEnglish = true)
+            'Buy tomatoes',
+            'Review the math lesson',
+            'Wash the dishes',
+            "Do the project's template",
+            '...'
+        ] : [
+            // Si FRANÇAIS (isEnglish = false)
+            'Acheter des tomates',
+            'Réviser la leçon de maths',
+            'Faire la vaisselle',
+            'Faire le brouillon du projet',
+            '...'
+        ];
         
-        showToast(message, 'error'); // Afficher le message d'erreur
-        return; // Sortir de la fonction sans réinitialiser
-    }
-    
-    // Sinon, réinitialiser toutes les cellules
-    cells.forEach((cell, index) => { // Pour chaque cellule
-        // Récupérer ou créer la checkbox
-        let checkbox = cell.querySelector('.checkbox'); // Chercher la checkbox existante
+        // Vérifier si des tâches modifiées ne sont pas cochées
+        let hasUnfinishedTasks = false;
         
-        if (!checkbox) { 
-            // Si pas de checkbox, en créer une
-            checkbox = document.createElement('input'); // Créer une nouvelle checkbox
-            checkbox.type = 'checkbox'; // Définir le type
-            checkbox.className = 'checkbox'; // Définir la classe
-            checkbox.title = 'checkbox'; // Définir le titre
-            checkbox.contentEditable = 'false'; // Rendre non éditable
-            checkbox.onclick = function(event) {  // Empêcher la propagation du clic
-                event.stopPropagation(); // Empêcher la propagation
-            };
+        cells.forEach(cell => {
+            const checkbox = cell.querySelector('.checkbox');
+            const textContent = cell.textContent.trim();
+            
+            if (textContent !== '' && !defaultValues.includes(textContent) && checkbox && !checkbox.checked) {
+                hasUnfinishedTasks = true;
+            }
+        });
+        
+        // ✅ CORRECTION : Inverser les messages
+        if (hasUnfinishedTasks) {
+            const message = isEnglish ?
+                "You haven't finished all your tasks!" : // Anglais
+                "Tu n'as pas fini toutes tes tâches !"; // Français
+            
+            showToast(message, 'error');
+            return;
         }
         
-        // Réinitialiser l'état de la checkbox (décochée)
-        checkbox.checked = false; // Décocher la checkbox
+        // Sinon, réinitialiser toutes les cellules
+        cells.forEach((cell, index) => {
+            let checkbox = cell.querySelector('.checkbox');
+            
+            if (!checkbox) {
+                checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.className = 'checkbox';
+                checkbox.title = 'checkbox';
+                checkbox.contentEditable = 'false';
+                checkbox.onclick = function(event) {
+                    event.stopPropagation();
+                };
+            }
+            
+            checkbox.checked = false;
+            
+            const defaultText = defaultValues[index] || '...';
+            cell.innerHTML = '';
+            cell.appendChild(checkbox);
+            cell.appendChild(document.createTextNode(defaultText));
+        });
         
-        // Réinitialiser le contenu de la cellule
-        const defaultText = defaultValues[index] || '...'; // Texte par défaut selon l'index
-        cell.innerHTML = ''; // Vider la cellule
-        cell.appendChild(checkbox); // Ajouter la checkbox
-        cell.appendChild(document.createTextNode(defaultText)); // Ajouter le texte par défaut
+        // ✅ CORRECTION : Inverser les messages de succès
+        const successMessage = isEnglish ?
+            "Good Job! New tasks incoming!" : // Anglais
+            "Génial ! De nouvelles tâches arrivent !"; // Français
+        showToast(successMessage, 'success');
     });
-    
-    // Afficher un Toast de succès
-    const successMessage = isEnglish ? // Vérifier la langue
-        "Génial ! De nouvelles tâches arrivent !" : // Message en français
-        "Good Job! New tasks incoming!"; // Message en anglais
-    showToast(successMessage, 'success'); // Afficher le message
-});
+}
 
 // Fonction pour afficher un Toast
 function showToast(message, type = 'info') { // Afficher un toast 
@@ -367,26 +370,25 @@ const Anglais = document.querySelector('button[class="Anglais"]'); // Sélection
 let isTranslated = false; // Variable pour suivre l'état de traduction
 
 Anglais.addEventListener('click', function() { // Au clic sur le bouton
-    const translations = { // Dictionnaire de traduction (anglais → Francais)
-        '...': '...',
-        'Que dois-je faire aujourd\'hui ?':'What should I do today ?' ,
-        'Acheter des tomates':'Buy tomatoes' ,
-        'Réviser la leçon de maths':'Review the math lesson' ,
-        'Faire la vaisselle':'Wash the dishes' ,
-        'Faire le brouillon du projet':'Do the project\'s template' ,
-        'Bienvenue !':'Hey there !' ,
-        'Voici une To Do List où tu peux écrire toutes tes tâches à accomplir.':'Here is a To Do List where you can write down all your tasks to complete.',
-        "Clique sur une cellule pour l'éditer et ajouter la tâche à faire. Tu peux aussi modifier les cases en tête de colonne si besoin.":'Click on a cell to edit it and add your tasks to complete. You also can edit the head cells if needed.',
-        "Quand tu as finis, clique sur le bouton en dessous du tableau pour l'effacer afin d'en réécrire d'autres.":'When you\'re done, you can click the button below to clear all the tasks and start fresh.',
-        'Courses':'Groceries',
-        'École':'School',
-        'Maison':'Home' ,
-        'Projets':'Projects' ,
-        'Vider les tâches':'Vider the tasks',
-        'English':'Français',
-        'Thème sombre':'Dark theme',
-        'Vider les tâches':"Empty the tasks",
-    };
+    const translations = {
+    '...': '...',
+    'Que dois-je faire aujourd\'hui ?': 'What should I do today?',
+    'Acheter des tomates': 'Buy tomatoes',
+    'Réviser la leçon de maths': 'Review the math lesson',
+    'Faire la vaisselle': 'Wash the dishes',
+    'Faire le brouillon du projet': "Do the project's template",
+    'Bienvenue !': 'Hey there!',
+    'Voici une To Do List où tu peux écrire toutes tes tâches à accomplir.': 'Here is a To Do List where you can write down all your tasks to complete.',
+    "Clique sur une cellule pour l'éditer et ajouter la tâche à faire. Tu peux aussi modifier les cases en tête de colonne si besoin.": 'Click on a cell to edit it and add your tasks to complete. You also can edit the head cells if needed.',
+    "Quand tu as finis, clique sur le bouton en dessous du tableau pour l'effacer afin d'en réécrire d'autres.": 'When you\'re done, you can click the button below to clear all the tasks and start fresh.',
+    'Courses': 'Groceries',
+    'École': 'School',
+    'Maison': 'Home',
+    'Projets': 'Projects',
+    'Vider les tâches': 'Empty the tasks', // ✅ Enlevez le doublon
+    'English': 'Français',
+    'Thème sombre': 'Dark theme',
+};
     
     // Créer un objet inverse pour la traduction retour (Francais → anglais)
     const reverseTranslations = {}; // Dictionnaire inverse
@@ -416,7 +418,7 @@ Anglais.addEventListener('click', function() { // Au clic sur le bouton
         // Retour à l'anglais
         this.classList.remove('clicked'); // Retirer la classe
     } else { 
-        // Passage au français
+        // Passage au anglais
         this.classList.add('clicked'); // Ajouter la classe
     }
     
