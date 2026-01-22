@@ -26,7 +26,7 @@ if (Professionnels && LiensProfessionnels) {
     });
 }
 
-////////////////////////////////////////////////////////////////
+/****************FORMULAIRE DE CONTACT****************/
 
 //VARIABLES DES BOUTONS DU FORMULAIRE DE CONTACT
 const Connexion = document.querySelector('.BoutonConnexion');
@@ -51,8 +51,6 @@ window.addEventListener('click', (e) => {
     }
 });
 
-/////////////////////VERIFIER SI MARCHE CORRECTEMENT/////////////////
-
 //AFFICHAGE DU BOUTON AUTOMATIQUE SELON SECTION SELECTIONNEE
 const nomFichier = window.location.pathname.split('/').pop();
 
@@ -65,8 +63,6 @@ if (Allocataires && nomFichier.toLowerCase().includes('allocataire')) {
 if (Professionnels && nomFichier.toLowerCase().includes('professionnel')) {
     Professionnels.classList.add('active-section');
 }
-
-///////////////POP UP CONGE NAISSANCE /////////////////
 
 //VARIABLES DES BOUTONS DU FORMULAIRE DE CONTACT
 const CongeNaissance = document.querySelector('.Information1');
@@ -90,7 +86,7 @@ window.addEventListener('click', (e) => {
     }
 });
 
-////////////POP AIDES 2026 /////////////////////////
+/********************POP UP AIDES 2026*********************/
 
 const Aides2026 = document.querySelector('.Information2');
 const PopUpAides2026 = document.querySelector('.PopUpAides2026');
@@ -113,7 +109,7 @@ window.addEventListener('click', (e) => {
     }
 });
 
-////////////POP UP PRIMES NOEL 2025////////////////////////
+/****************POP UP PRIMES NOEL 2025****************/
 
 const PrimeNoel2025 = document.querySelector('.Information3');
 const PopUpPrimeNoel2025 = document.querySelector('.PopUpPrimeNoel2025');
@@ -136,7 +132,7 @@ window.addEventListener('click', (e) => {
     }
 });
 
-////////////////POP UP CYBERATTAQUE////////////////////
+/****************POP UP CYBERATTAQUE****************/
 
 const Cyberattaque = document.querySelector('.Information4');
 const PopUpCyberattaque = document.querySelector('.PopUpCyberattaque');
@@ -159,7 +155,7 @@ window.addEventListener('click', (e) => {
     }
 });
 
-////////////////FAQ DETTE////////////////////////////////////
+/**************************FAQ DETTE****************************/
 
 const QuestionDette = document.querySelector('.FaqQuestionDette');
 const FaqReponseDette = document.querySelector('.FaqReponseDette');
@@ -199,25 +195,5 @@ QuestionDemarches.addEventListener('click', () => {
     FaqReponseDemarches.style.display = 'block';
 });
 
-////////////////////POP UP DONNEES PERSO//////////////////////
+/*****************************************/
 
-const Securite = document.querySelector('.BoutonSecurite');
-const PopUpSecurite = document.querySelector('.PopUpSecurite');
-const FermerSecurite = document.querySelector('.FermerSecurite');
-
-//OUVRIR POP UP DE CONTACT
-Securite.addEventListener('click', () => {
-    PopUpSecurite.style.display = 'block';   
-});
-
-//FERMER POP UP DE CONTACT
-FermerSecurite.addEventListener('click', () => {
-   PopUpSecurite.style.display = 'none'; 
-});
-
-//FERMER POP UP EN CLIQUANT EN DEHORS DE CELLE-CI
-window.addEventListener('click', (e) => {
-    if (e.target === PopUpSecurite) {
-        PopUpSecurite.style.display = 'none';
-    }
-});

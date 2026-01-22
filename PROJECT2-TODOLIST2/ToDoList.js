@@ -366,7 +366,7 @@ const English = document.querySelector('button[class="English"]'); // Sélection
 
 let isTranslated = false; // Variable pour suivre l'état de traduction
 
-Francais.addEventListener('click', function() { // Au clic sur le bouton
+English.addEventListener('click', function() { // Au clic sur le bouton
     const translations = { // Dictionnaire de traduction (anglais → Francais)
         '...': '...',
         'Que dois-je faire aujourd\'hui ?':'What should I do today ?',
@@ -376,14 +376,14 @@ Francais.addEventListener('click', function() { // Au clic sur le bouton
         'Faire le brouillon du projet':'Do the project\'s template',
         'Bienvenue !':'Welcome !',
         'Voici une To Do List où tu peux écrire toutes tes tâches à accomplir.':'Here is a simple to-do list where you can write down your tasks for today (or for the week).',
-        "Clique sur une cellule pour l'étiter et ajouter la tâche à faire. Tu peux aussi modifier les cases en tête de colonne si besoin.":"Click on a cell to edit it and add your task. You also can edit the head cells if needed.",
-        'When you\'re done, click on the button underneath the array to clear it and start fresh.': "Quand tu as fini, clique sur le bouton en dessous du tableau pour l'effacer afin d'en écrire d'autres.",
+        "Clique sur une cellule pour l'éditer et ajouter la tâche à faire. Tu peux aussi modifier les cases en tête de colonne si besoin.":"Click on a cell to edit it and add your task. You also can edit the head cells if needed.",
+        "Quand tu as fini, clique sur le bouton en dessous du tableau pour l'effacer afin d'en écrire d'autres.":'When you\'re done, click on the button underneath the array to clear it and start fresh.',
         'Courses':'Groceries',
         'École':'School',
         'Maison':'Home',
         'Projets':'Projects',
         'Vider les tâches':'Empty the tasks',
-        'English': 'Français'
+        'English': 'Français',
     };
     
     // Créer un objet inverse pour la traduction retour (Francais → anglais)
@@ -420,6 +420,12 @@ Francais.addEventListener('click', function() { // Au clic sur le bouton
     
     // Inverser l'état
     isTranslated = !isTranslated; // Changer l'état de traduction
+
+    if (isDarkMode) {
+    Theme.textContent = isTranslated ? 'Light mode':"Thème clair";
+    } else {
+    Theme.textContent = isTranslated ? 'Dark mode':'Thème sombre';
+}
 });
 
 //THEME SOMBRE/CLAIR
@@ -444,7 +450,7 @@ Theme.addEventListener('click', function() { // Au clic sur le bouton
             cell.style.backgroundColor = '#c5c5c5ff'; // Gris foncé
         });
         
-        Theme.textContent = 'Thème clair'; // Changer le texte du bouton
+        Theme.textContent = isTranslated ? 'Thème clair' : 'Light mode'; // Changer le texte du bouton selon la traduction
     } else { // Si le mode sombre est activé
         document.body.style.backgroundColor = ''; // Réinitialiser au CSS original
         document.body.style.color = ''; // Réinitialiser au CSS original
@@ -461,7 +467,9 @@ Theme.addEventListener('click', function() { // Au clic sur le bouton
             cell.style.backgroundColor = ''; // Réinitialiser au CSS original
         });
         
-        Theme.textContent = 'Thème sombre'; // Changer le texte du bouton
+        Theme.textContent = isTranslated ? 'Thème sombre' : 'Dark mode'; // Changer le texte du bouton selon la traduction
+        
     }
     isDarkMode = !isDarkMode; // Inverser l'état du thème
+
 });
