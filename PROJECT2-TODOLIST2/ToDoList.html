@@ -24,7 +24,7 @@
 <body> <!--CORPS DE LA PAGE-->
 
     <div> <!--Div pour les boutons en haut à droite-->
-        <button class="Anglais">English</button> <!--Bouton pour passer en français-->
+        <button class="English">English</button> <!--Bouton pour passer en français-->
         <button class="Theme">Thème sombre</button> <!--Bouton pour passer en thème sombre-->
     </div>
 
@@ -33,55 +33,54 @@
         Voici une To Do List où tu peux écrire toutes tes tâches à accomplir.
         <ul>
             <li>Clique sur une cellule pour l'éditer et ajouter la tâche à faire. Tu peux aussi modifier les cases en tête de colonne si besoin.</li>
-            <li>Quand tu as finis, clique sur le bouton en dessous du tableau pour l'effacer afin d'en réécrire d'autres.</li>
+            <li>Quand tu as fini, clique sur le bouton en dessous du tableau pour l'effacer afin d'en écrire d'autres.</li>
         </ul>
     </p>
 
-   <table>
-    <!-- Colonne 1 -->
-    <tr>
-        <th contenteditable="true">Courses</th>
-        <td class="case" contenteditable="true"><input class="checkbox" type="checkbox">Acheter des tomates</td>
-        <td class="case" contenteditable="true"><input class="checkbox" type="checkbox">...</td>
-        <td class="case" contenteditable="true"><input class="checkbox" type="checkbox">...</td>
-        <td class="case" contenteditable="true"><input class="checkbox" type="checkbox">...</td>
-        <td class="case" contenteditable="true"><input class="checkbox" type="checkbox">...</td>
-        <td class="case" contenteditable="true"><input class="checkbox" type="checkbox">...</td>
-    </tr>
-    
-    <!-- Colonne 2 -->
-    <tr>
-        <th contenteditable="true">École</th>
-        <td class="case" contenteditable="true"><input class="checkbox" type="checkbox">Réviser la leçon de maths</td>
-        <td class="case" contenteditable="true"><input class="checkbox" type="checkbox">...</td>
-        <td class="case" contenteditable="true"><input class="checkbox" type="checkbox">...</td>
-        <td class="case" contenteditable="true"><input class="checkbox" type="checkbox">...</td>
-        <td class="case" contenteditable="true"><input class="checkbox" type="checkbox">...</td>
-        <td class="case" contenteditable="true"><input class="checkbox" type="checkbox">...</td>
-    </tr>
-    
-    <!-- Colonne 3 -->
-    <tr>
-        <th contenteditable="true">Maison</th>
-        <td class="case" contenteditable="true"><input class="checkbox" type="checkbox">Faire la vaisselle</td>
-        <td class="case" contenteditable="true"><input class="checkbox" type="checkbox">...</td>
-        <td class="case" contenteditable="true"><input class="checkbox" type="checkbox">...</td>
-        <td class="case" contenteditable="true"><input class="checkbox" type="checkbox">...</td>
-        <td class="case" contenteditable="true"><input class="checkbox" type="checkbox">...</td>
-        <td class="case" contenteditable="true"><input class="checkbox" type="checkbox">...</td>
-    </tr>
-    
-    <!-- Colonne 4 -->
-    <tr>
-        <th contenteditable="true">Projets</th>
-        <td class="case" contenteditable="true"><input class="checkbox" type="checkbox">Faire le brouillon du projet</td>
-        <td class="case" contenteditable="true"><input class="checkbox" type="checkbox">...</td>
-        <td class="case" contenteditable="true"><input class="checkbox" type="checkbox">...</td>
-        <td class="case" contenteditable="true"><input class="checkbox" type="checkbox">...</td>
-        <td class="case" contenteditable="true"><input class="checkbox" type="checkbox">...</td>
-        <td class="case" contenteditable="true"><input class="checkbox" type="checkbox">...</td>
-    </tr>
-</table>
+    <table> <!-- Ensemble du tableau -->
+        <tr> <!--Ligne 1-->
+            <th contenteditable="true">Courses</th> <!-- Colonne 1-->
+            <th contenteditable="true">Ecole</th> <!-- Colonne 2-->
+            <th contenteditable="true">Maison</th> <!-- Colonne 3-->
+            <th contenteditable="true">Projets</th> <!-- Colonne 4-->
+        </tr>
+        <tr> <!-- Ligne 2 -->
+            <td class="case" contenteditable="true"><input class="checkbox" type="checkbox" title="checkbox" contenteditable="false" onclick="event.stopPropagation()">Acheter des tomates</td> <!-- Colonne 1-->
+            <td class="case" contenteditable="true"><input class="checkbox" type="checkbox" title="checkbox" contenteditable="false" onclick="event.stopPropagation()">Réviser la leçon de maths</td> <!-- Colonne 2-->
+            <td class="case" contenteditable="true"><input class="checkbox" type="checkbox" title="checkbox" contenteditable="false" onclick="event.stopPropagation()">Faire la vaisselle</td> <!-- Colonne 3-->
+            <td class="case" contenteditable="true"><input class="checkbox" type="checkbox" title="checkbox" contenteditable="false" onclick="event.stopPropagation()">Faire un brouillon du projet</td> <!-- Colonne 4-->
+        </tr>
+        <tr> <!-- Ligne 3 -->
+            <td class="case" contenteditable="true"><input class="checkbox" type="checkbox" title="checkbox" contenteditable="false" onclick="event.stopPropagation()">...</td> <!-- Colonne 1-->
+            <td class="case" contenteditable="true"><input class="checkbox" type="checkbox" title="checkbox" contenteditable="false" onclick="event.stopPropagation()">...</td> <!-- Colonne 2-->
+            <td class="case" contenteditable="true"><input class="checkbox" type="checkbox" title="checkbox" contenteditable="false" onclick="event.stopPropagation()">...</td> <!-- Colonne 3-->
+            <td class="case" contenteditable="true"><input class="checkbox" type="checkbox" title="checkbox" contenteditable="false" onclick="event.stopPropagation()">...</td> <!-- Colonne 4-->
+        </tr>
+        <tr> <!-- Ligne 3 -->
+            <td class="case" contenteditable="true"><input class="checkbox" type="checkbox" title="checkbox" contenteditable="false" onclick="event.stopPropagation()">...</td> <!-- Colonne 1-->
+            <td class="case" contenteditable="true"><input class="checkbox" type="checkbox" title="checkbox" contenteditable="false" onclick="event.stopPropagation()">...</td> <!-- Colonne 2-->
+            <td class="case" contenteditable="true"><input class="checkbox" type="checkbox" title="checkbox" contenteditable="false" onclick="event.stopPropagation()">...</td> <!-- Colonne 3-->
+            <td class="case" contenteditable="true"><input class="checkbox" type="checkbox" title="checkbox" contenteditable="false" onclick="event.stopPropagation()">...</td> <!-- Colonne 4-->
+        </tr>
+        <tr> <!-- Ligne 3 -->
+            <td class="case" contenteditable="true"><input class="checkbox" type="checkbox" title="checkbox" contenteditable="false" onclick="event.stopPropagation()">...</td> <!-- Colonne 1-->
+            <td class="case" contenteditable="true"><input class="checkbox" type="checkbox" title="checkbox" contenteditable="false" onclick="event.stopPropagation()">...</td> <!-- Colonne 2-->
+            <td class="case" contenteditable="true"><input class="checkbox" type="checkbox" title="checkbox" contenteditable="false" onclick="event.stopPropagation()">...</td> <!-- Colonne 3-->
+            <td class="case" contenteditable="true"><input class="checkbox" type="checkbox" title="checkbox" contenteditable="false" onclick="event.stopPropagation()">...</td> <!-- Colonne 4-->
+        </tr>
+        <tr> <!-- Ligne 6 -->
+            <td class="case" contenteditable="true"><input class="checkbox" type="checkbox" title="checkbox" contenteditable="false" onclick="event.stopPropagation()">...</td> <!-- Colonne 1-->
+            <td class="case" contenteditable="true"><input class="checkbox" type="checkbox" title="checkbox" contenteditable="false" onclick="event.stopPropagation()">...</td> <!-- Colonne 2-->
+            <td class="case" contenteditable="true"><input class="checkbox" type="checkbox" title="checkbox" contenteditable="false" onclick="event.stopPropagation()">...</td> <!-- Colonne 3-->
+            <td class="case" contenteditable="true"><input class="checkbox" type="checkbox" title="checkbox" contenteditable="false" onclick="event.stopPropagation()">...</td> <!-- Colonne 4-->
+        </tr>
+        <tr> <!-- Ligne 7 -->
+            <td class="case" contenteditable="true"><input class="checkbox" type="checkbox" title="checkbox" contenteditable="false" onclick="event.stopPropagation()">...</td> <!-- Colonne 1-->
+            <td class="case" contenteditable="true"><input class="checkbox" type="checkbox" title="checkbox" contenteditable="false" onclick="event.stopPropagation()">...</td> <!-- Colonne 2-->
+            <td class="case" contenteditable="true"><input class="checkbox" type="checkbox" title="checkbox" contenteditable="false" onclick="event.stopPropagation()">...</td> <!-- Colonne 3-->
+            <td class="case" contenteditable="true"><input class="checkbox" type="checkbox" title="checkbox" contenteditable="false" onclick="event.stopPropagation()">...</td> <!-- Colonne 4-->
+        </tr>
+    </table>
 
     <div> <!--Div pour le bouton en bas-->
         <button class="Vider">Vider les tâches</button> <!-- Bouton pour vider les tâches -->
