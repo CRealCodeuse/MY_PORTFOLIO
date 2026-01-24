@@ -645,7 +645,116 @@ header > div:first-child {
   BODY - DESCRIPTION
 ===================================*/
 
+/*DIV ACTUALITES NATIONALES*/
 
+.divActualitesNationales {
+    margin: 30px 180px 0 180px; /* Marge autour de la div */ /* Marge autour de la div */
+    max-width: calc(100% - 40px); /* S'adapte à la largeur de l'écran */
+    padding: 10px 20px 10px 20px; /* Espace interne */
+    border: none; /* Pas de bordure */
+    background-color: #e3e3f1; /* Couleur de fond */
+    box-shadow: 10px 10px 20px grey; /* Ombre portée */
+    border-radius: 15px; /* Bords arrondis */
+    box-sizing: border-box; /* Inclut padding et border dans la width */
+}
+
+@media (max-width: 480px) {
+    .divActualitesNationales {
+        width:360px;
+        max-width: 400px;
+        margin: 10px 5px;
+        padding: 10px 10px; /* Padding réduit */
+        display: flex;
+    }
+}
+
+/*TITRE PAGE*/
+
+@media (max-width:760px) {
+    .TitreActualitesNationales {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:480px) {
+    .TitreActualitesNationales {
+        font-size: 23px;
+    }
+}
+
+/*ACTUALITES NATIONALES*/
+
+.divLigne1Actualites {
+    display: flex;
+}
+
+.ActuCategorieDate {
+    text-align: center;
+}
+
+.ImageActu {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 5px;
+}
+
+
+.divGauche {
+    background: none;
+    width: 50%;
+    background-color: #e3e3f1;
+    border: 3px solid #141455;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+@media (max-width:480px) {
+    .divGauche {
+        width: fit-content;
+    }
+}
+
+.divDroite {
+    background-color: #e3e3f1;
+    padding: 15px;
+    margin-top: 15px;
+    margin-left: 15px;
+    text-align: center;
+    width: 50%;
+    border: 3px solid #141455;
+}
+
+@media (max-width:480px) {
+    .divDroite {
+        width: fit-content;
+        margin: 10px 0px;
+    }
+
+    .divDroite p {
+        font-size: 18px;
+    }
+}
+
+.LireLArticle {
+    border: none;
+    background-color: #141455;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s ease; /* Transition douce */
+}
+
+.LireLArticle:hover {
+    background-color: #e3e3f1; /* Couleur de fond au survol */
+    color: #141455; /* Couleur du texte au survol */
+    border: 2px solid #141455;
+    cursor: pointer;
+}
 
 /*===================================
   FOOTER
