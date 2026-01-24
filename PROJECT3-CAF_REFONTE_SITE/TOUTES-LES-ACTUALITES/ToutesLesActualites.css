@@ -757,7 +757,9 @@ header > div:first-child {
 .LireLArticle5,
 .LireLArticle6,
 .LireLArticle7,
-.LireLArticle8 {
+.LireLArticle8,
+.LireLArticle9,
+.LireLArticle10 {
     border: none;
     background-color: #141455;
     color: white;
