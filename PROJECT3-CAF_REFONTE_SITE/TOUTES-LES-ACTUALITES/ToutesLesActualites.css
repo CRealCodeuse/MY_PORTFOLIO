@@ -664,15 +664,20 @@ header > div:first-child {
         max-width: 400px;
         margin: 10px 5px;
         padding: 10px 10px; /* Padding réduit */
-        display: flex;
     }
 }
 
 /*TITRE PAGE*/
 
-@media (max-width:760px) {
+.TitreActualitesNationales {
+    display: block;
+}
+
+@media (max-width:768px) {
     .TitreActualitesNationales {
         font-size: 25px;
+        display: block;
+        width: 100%;
     }
 }
 
@@ -684,8 +689,16 @@ header > div:first-child {
 
 /*ACTUALITES NATIONALES*/
 
-.divLigne1Actualites {
-    display: flex;
+.divLigneActualites {
+    display:flex;
+    flex-direction: row;
+}
+
+@media (max-width:480px) {
+    .divLigneActualites {
+        display: block;
+        width: 100%;
+    }
 }
 
 .ActuCategorieDate {
@@ -695,48 +708,56 @@ header > div:first-child {
 .ImageActu {
     display: block;
     margin: 0 auto;
-    width: 70%;
+    width:300px;
     border-radius: 5px;
 }
 
-
-.divGauche {
-    background: none;
-    width: 50%;
-    background-color: #e3e3f1;
-    border: 3px solid #141455;
-    padding: 15px;
-    margin-top: 15px;
-}
-
 @media (max-width:480px) {
-    .divGauche {
-        width: fit-content;
+    .ImageActu {
+        width:95%
     }
 }
 
-.divDroite {
-    background-color: #e3e3f1;
-    padding: 15px;
-    margin-top: 15px;
-    margin-left: 15px;
-    text-align: center;
+.divGauche1,
+.divDroite1, 
+.divGauche2,
+.divDroite2, 
+.divGauche3, 
+.divDroite3,
+.divGauche4, 
+.divDroite4 {
     width: 50%;
+    background-color: #e3e3f1;
     border: 3px solid #141455;
+    padding: 15px;
+    margin: 10px;
 }
 
 @media (max-width:480px) {
-    .divDroite {
+    
+    .divGauche1,
+    .divDroite1, 
+    .divGauche2,
+    .divDroite2, 
+    .divGauche3, 
+    .divDroite3,
+    .divGauche4, 
+    .divDroite4 {
         width: fit-content;
         margin: 10px 0px;
-    }
-
-    .divDroite p {
         font-size: 18px;
     }
+
 }
 
-.LireLArticle {
+.LireLArticle1, 
+.LireLArticle2,
+.LireLArticle3,
+.LireLArticle4,
+.LireLArticle5,
+.LireLArticle6,
+.LireLArticle7,
+.LireLArticle8 {
     border: none;
     background-color: #141455;
     color: white;
@@ -749,7 +770,10 @@ header > div:first-child {
     transition: background-color 0.3s ease; /* Transition douce */
 }
 
-.LireLArticle:hover {
+.LireLArticle1:hover,
+.LireLArticle2:hover,
+.LireLArticle3:hover,
+.LireLArticle4:hover {
     background-color: #e3e3f1; /* Couleur de fond au survol */
     color: #141455; /* Couleur du texte au survol */
     border: 2px solid #141455;
