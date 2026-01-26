@@ -92,7 +92,7 @@ button.addEventListener('click', function() {
         "lors de mon début de formation en": "at the beginning of my training in",
         "Par la suite, j'ai appris": "Subsequently, I learned",
         "le": "the", 
-        "et bien d'autres afin d'apprendre toutes les compétences nécessaires au": "and many others to learn all the skills necessary for", 
+        "et bien d'autres afin d'acquérir toutes les compétences nécessaires au": "and many others to learn all the skills necessary for", 
         "nécessaires au": "necessary for", 
         "Ici, vous pourrez voir les": "Here, you will be able to see the", 
         "que j'ai": "I have", 
