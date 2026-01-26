@@ -577,7 +577,8 @@ header > div:first-child {
 
 @media (max-width:480px) {
     .ImageActu {
-        width:95%
+        width:100%;
+        margin-top: 15px;
     }
 }
 
@@ -724,6 +725,17 @@ header > div:first-child {
 
 .FermerPopUpGauche1:hover {
     color:#000;
+}
+
+.divLiensActu {
+    background-color: lightblue;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.LienActu {
+    color: #141455;
+    text-decoration: none;
 }
 
 /*===================================
