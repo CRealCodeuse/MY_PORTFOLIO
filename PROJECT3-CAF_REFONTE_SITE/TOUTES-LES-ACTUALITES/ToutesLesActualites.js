@@ -1,30 +1,3 @@
-//BARRE DE NAVIGATION
-const Hamburger = document.querySelector('.Hamburger');
-const LiensNavigation = document.querySelector('.LiensNavigation');
-
-Hamburger.addEventListener('click', () => {
-    LiensNavigation.classList.toggle('active');
-});
-
-//BOUTONS ALLOCATAIRES ET PROFESSIONNELS
-const Allocataires = document.querySelector('.SectionAllocataires');
-const Professionnels = document.querySelector('.SectionProfessionnels');
-const LiensAllocataires = document.querySelector('.LiensAllocataires');
-const LiensProfessionnels = document.querySelector('.LiensProfessionnels');
-
-if (Allocataires && LiensAllocataires) {
-    Allocataires.addEventListener('click', () => {
-        LiensAllocataires.classList.toggle('active');
-        LiensProfessionnels.classList.remove('active');
-    });
-}
-
-if (Professionnels && LiensProfessionnels) {
-    Professionnels.addEventListener('click', () => {
-        LiensProfessionnels.classList.toggle('active');
-        LiensAllocataires.classList.remove('active');
-    });
-}
 
 /****************FORMULAIRE DE CONTACT****************/
 
