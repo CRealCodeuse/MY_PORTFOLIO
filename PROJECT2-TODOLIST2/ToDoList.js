@@ -17,11 +17,11 @@ cells.forEach(cell => { // Pour chaque cellule
             'Buy tomatoes', // Texte par défaut
             'Review the math lesson', // Texte par défaut
             'Wash the dishes', // Texte par défaut
-            "Do the project's template", // Texte par défaut
+            "Do a project's template", // Texte par défaut
             'Acheter des tomates', // Texte par défaut
             'Réviser la leçon de maths', // Texte par défaut
             'Faire la vaisselle', // Texte par défaut
-            'Faire le brouillon du projet' // Texte par défaut
+            'Faire un brouillon du projet' // Texte par défaut
         ];
         
         // Normaliser le texte en remplaçant les apostrophes courbes par des droites
@@ -73,13 +73,13 @@ cell.addEventListener('click', function(e) { // Au clic dans la cellule
             'Acheter des tomates', // Texte par défaut
             'Réviser la leçon de maths', // Texte par défaut
             'Faire la vaisselle', // Texte par défaut
-            'Faire le brouillon du projet' // Texte par défaut
+            'Faire un brouillon du projet' // Texte par défaut
         ] : [
             '...', // Texte par défaut
             'Buy tomatoes', // Texte par défaut
             'Review the math lesson', // Texte par défaut
             'Wash the dishes', // Texte par défaut
-            'Do the project\'s template' // Texte par défaut
+            'Do a project\'s template' // Texte par défaut
         ];
         // Si jamais modifiée ET contient un texte par défaut
         if (!hasBeenModified && defaultValues.includes(textOnly)) {
@@ -246,13 +246,13 @@ Vider.addEventListener('click', function() { // Au clic sur le bouton
         'Acheter des tomates', // Texte par défaut
         'Réviser la leçon de maths', // Texte par défaut
         'Faire la vaisselle', // Texte par défaut
-        'Faire le modèle du site', // Texte par défaut
+        'Faire un brouillon du projet', // Texte par défaut
         '...' // Texte par défaut
     ] : [
         'Buy tomatoes', // Texte par défaut
         'Review the math lesson', // Texte par défaut
         'Wash the dishes', // Texte par défaut
-        'Do the site\'s template', // Texte par défaut
+        'Do a project\'s template', // Texte par défaut
         '...' // Texte par défaut
     ];
     
@@ -373,13 +373,13 @@ English.addEventListener('click', function() { // Au clic sur le bouton
         'Acheter des tomates':'Buy tomatoes',
         'Réviser la leçon de maths':'Review the math lesson',
         'Faire la vaisselle':'Wash the dishes',
-        'Faire le brouillon du projet':'Do the project\'s template',
+        'Faire un brouillon du projet':'Do the project\'s template',
         'Bienvenue !':'Welcome !',
         'Voici une To Do List où tu peux écrire toutes tes tâches à accomplir.':'Here is a To-Do List where you can write down your tasks.',
         "Clique sur une cellule pour l'éditer et ajouter la tâche à faire. Tu peux aussi modifier les cases en tête de colonne si besoin.":"Click on a cell to edit it and add your task. You also can edit the head cells if needed.",
         "Quand tu as fini, clique sur le bouton en dessous du tableau pour l'effacer.":'When you\'re done, click on the button underneath the array to clear it.',
         'Courses':'Groceries',
-        'École':'School',
+        'Ecole':'School',
         'Maison':'Home',
         'Projets':'Projects',
         'Vider les tâches':'Empty the tasks',
