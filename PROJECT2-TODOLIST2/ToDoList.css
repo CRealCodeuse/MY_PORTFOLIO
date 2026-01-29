@@ -37,6 +37,10 @@ h3 { /*Sous-titre de la page*/
     }
 }
 
+.TextePresentation {
+    margin: 15px;
+}
+
 table {
     flex-direction: row;
     flex-wrap: wrap;
@@ -134,6 +138,7 @@ button { /*bouton*/
     border-radius: 10px; /*arrondissement des coins du bouton*/
     font-size: 20px; /*taille de la police*/
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.9); /* Ombre */
+    cursor: pointer;
 }
 
 @media (max-width:769px) {
