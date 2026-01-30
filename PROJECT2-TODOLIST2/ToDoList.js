@@ -1,6 +1,8 @@
 // Sélectionner toutes les cellules éditables
 const cells = document.querySelectorAll('td[contenteditable="true"]');
 
+let isEnglish = false; // Variable globale pour suivre la langue
+
 // GÉRER L'ÉDITION DES CELLULES
 cells.forEach(cell => { // Pour chaque cellule
     // Marquer si la cellule a été modifiée
@@ -14,14 +16,15 @@ cells.forEach(cell => { // Pour chaque cellule
         // Liste de toutes les valeurs par défaut (anglais + français)
         const defaultValues = [ // Valeurs par défaut
             '...', // Texte par défaut
+            'Acheter des tomates', // Texte par défaut
+            'Réviser la leçon de maths', // Texte par défaut
+            'Faire la vaisselle', // Texte par défaut
+            'Faire un brouillon du projet', // Texte par défaut
             'Buy tomatoes', // Texte par défaut
             'Review the math lesson', // Texte par défaut
             'Wash the dishes', // Texte par défaut
             "Do a project's template", // Texte par défaut
-            'Acheter des tomates', // Texte par défaut
-            'Réviser la leçon de maths', // Texte par défaut
-            'Faire la vaisselle', // Texte par défaut
-            'Faire un brouillon du projet' // Texte par défaut
+            
         ];
         
         // Normaliser le texte en remplaçant les apostrophes courbes par des droites
@@ -68,18 +71,26 @@ cell.addEventListener('click', function(e) { // Au clic dans la cellule
         
         
         // Définir les valeurs par défaut selon la langue
-        const defaultValues = isFrench ? [ // Si français
-            '...', // Texte par défaut
-            'Acheter des tomates', // Texte par défaut
-            'Réviser la leçon de maths', // Texte par défaut
-            'Faire la vaisselle', // Texte par défaut
-            'Faire un brouillon du projet' // Texte par défaut
+        const defaultValues = isEnglish ? [
+        'Acheter des tomates',           // Cellule 0 (Exemples, col 1)
+        'Réviser la leçon de maths',     // Cellule 1 (Exemples, col 2)
+        'Faire la vaisselle',            // Cellule 2 (Exemples, col 3)
+        'Faire un brouillon du projet',  // Cellule 3 (Exemples, col 4)
+        '...', '...', '...', '...',      // Ligne 1 (cellules 4-7)
+        '...', '...', '...', '...',      // Ligne 2 (cellules 8-11)
+        '...', '...', '...', '...',      // Ligne 3 (cellules 12-15)
+        '...', '...', '...', '...',      // Ligne 4 (cellules 16-19)
+        '...', '...', '...', '...'       // Ligne 5 (cellules 20-23)
         ] : [
-            '...', // Texte par défaut
-            'Buy tomatoes', // Texte par défaut
-            'Review the math lesson', // Texte par défaut
-            'Wash the dishes', // Texte par défaut
-            'Do a project\'s template' // Texte par défaut
+        'Buy tomatoes',                  // Cellule 0
+        'Review the math lesson',        // Cellule 1
+        'Wash the dishes',               // Cellule 2
+        'Do a project\'s template',      // Cellule 3
+        '...', '...', '...', '...',      // Ligne 1
+        '...', '...', '...', '...',      // Ligne 2
+        '...', '...', '...', '...',      // Ligne 3
+        '...', '...', '...', '...',      // Ligne 4
+        '...', '...', '...', '...'       // Ligne 5
         ];
         // Si jamais modifiée ET contient un texte par défaut
         if (!hasBeenModified && defaultValues.includes(textOnly)) {
@@ -90,7 +101,7 @@ cell.addEventListener('click', function(e) { // Au clic dans la cellule
             }
         }
         
-        if (isModified) { 
+        if (hasBeenModified) { 
             // Cellule modifiée : placer le curseur à la fin du texte
             range.selectNodeContents(this); // Sélectionner tout le contenu
             range.collapse(false); // false = à la fin
@@ -200,7 +211,7 @@ cell.addEventListener('keydown', function(e) {  // Au keydown
             newSelection.addRange(range); // Ajouter la nouvelle plage
         }
     }
-}); // Accolade fermante ajoutée
+});
 
     // Marquer comme modifiée dès qu'on tape quelque chose
     cell.addEventListener('input', function() { // Au changement de contenu
@@ -239,21 +250,29 @@ const Vider = document.querySelector('button[class="Vider"]'); // Sélectionner 
 
 Vider.addEventListener('click', function() { // Au clic sur le bouton
     // VÉRIFIER LA LANGUE EN PREMIER
-    const frenchButton = document.querySelector('.Francais'); // Sélectionner le bouton "Francais"
-    const isFrench = frenchButton && frenchButton.classList.contains('clicked'); // Vérifier si le bouton a la classe 'clicked'
+    const EnglishButton = document.querySelector('.English'); // Sélectionner le bouton "Francais"
+    const isEnglish = EnglishButton && EnglishButton.classList.contains('clicked'); // Vérifier si le bouton a la classe 'clicked'
     // Définir les valeurs par défaut SELON LA LANGUE
-    const defaultValues = isFrench ? [ // Si français
-        'Acheter des tomates', // Texte par défaut
-        'Réviser la leçon de maths', // Texte par défaut
-        'Faire la vaisselle', // Texte par défaut
-        'Faire un brouillon du projet', // Texte par défaut
-        '...' // Texte par défaut
+    const defaultValues = isEnglish ? [
+    'Buy tomatoes',                  // Cellule 0
+    'Review the math lesson',        // Cellule 1
+    'Wash the dishes',               // Cellule 2
+    'Do a project\'s template',      // Cellule 3
+    '...', '...', '...', '...',      // Ligne 1
+    '...', '...', '...', '...',      // Ligne 2
+    '...', '...', '...', '...',      // Ligne 3
+    '...', '...', '...', '...',      // Ligne 4
+    '...', '...', '...', '...',      // Ligne 5
     ] : [
-        'Buy tomatoes', // Texte par défaut
-        'Review the math lesson', // Texte par défaut
-        'Wash the dishes', // Texte par défaut
-        'Do a project\'s template', // Texte par défaut
-        '...' // Texte par défaut
+    'Acheter des tomates',           // Cellule 0 (Exemples, col 1)
+    'Réviser la leçon de maths',     // Cellule 1 (Exemples, col 2)
+    'Faire la vaisselle',            // Cellule 2 (Exemples, col 3)
+    'Faire un brouillon du projet',  // Cellule 3 (Exemples, col 4)
+    '...', '...', '...', '...',      // Ligne 1 (cellules 4-7)
+    '...', '...', '...', '...',      // Ligne 2 (cellules 8-11)
+    '...', '...', '...', '...',      // Ligne 3 (cellules 12-15)
+    '...', '...', '...', '...',      // Ligne 4 (cellules 16-19)
+    '...', '...', '...', '...'       // Ligne 5 (cellules 20-23)
     ];
     
     // Vérifier si des tâches modifiées ne sont pas cochées
@@ -271,9 +290,10 @@ Vider.addEventListener('click', function() { // Au clic sur le bouton
     
     // Afficher le toast SELON LA LANGUE
     if (hasUnfinishedTasks) { // Si des tâches non terminées existent
-        const message = isFrench ? //  Vérifier la langue
-            "Tu n'as pas fini toutes tes tâches !" : // Message en français
-            "You haven't finished all your tasks!"; // Message en anglais
+        const message = isEnglish ? //  Vérifier la langue
+        "You haven't finished all your tasks !": // Message en anglais
+            "Tu n'as pas fini toutes tes tâches !" ; // Message en français
+            
         
         showToast(message, 'error'); // Afficher le message d'erreur
         return; // Sortir de la fonction sans réinitialiser
@@ -307,7 +327,7 @@ Vider.addEventListener('click', function() { // Au clic sur le bouton
     });
     
     // Afficher un Toast de succès
-    const successMessage = isFrench ? // Vérifier la langue
+    const successMessage = !isEnglish ? // Vérifier la langue
         "Génial ! De nouvelles tâches arrivent !" : // Message en français
         "Good Job! New tasks incoming!"; // Message en anglais
     showToast(successMessage, 'success'); // Afficher le message
@@ -373,7 +393,7 @@ English.addEventListener('click', function() { // Au clic sur le bouton
         'Acheter des tomates':'Buy tomatoes',
         'Réviser la leçon de maths':'Review the math lesson',
         'Faire la vaisselle':'Wash the dishes',
-        'Faire un brouillon du projet':'Do the project\'s template',
+        'Faire un brouillon du projet':'Do a project\'s template',
         'Bienvenue !':'Welcome !',
         'Voici une To Do List où tu peux écrire toutes tes tâches à accomplir.':'Here is a To-Do List where you can write down your tasks.',
         "Clique sur une cellule pour l'éditer et ajouter la tâche à faire. Tu peux aussi modifier les cases en tête de colonne si besoin.":"Click on a cell to edit it and add your task. You also can edit the head cells if needed.",
@@ -420,6 +440,7 @@ English.addEventListener('click', function() { // Au clic sur le bouton
     
     // Inverser l'état
     isTranslated = !isTranslated; // Changer l'état de traduction
+    isEnglish = isTranslated;
 
     if (isDarkMode) {
     Theme.textContent = isTranslated ? 'Light mode':"Thème clair";
