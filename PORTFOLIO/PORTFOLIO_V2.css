@@ -63,7 +63,8 @@ header { /*Propriétés de l'en-tête*/
 
 @media(max-width:480px) {
     .Banniere {
-        width:100%;
+        width:95%;
+        margin-left: -15px;
     }
 }
 
