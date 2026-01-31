@@ -100,6 +100,8 @@ button.addEventListener('click', function() {
         "viendront s'ajouter au fur et à mesure de mon": "will be added as I progress in my",
         "Les photos et les titres des projets vous mèneront directement à leurs pages.":"Captures and titles will lead you directly to their pages.",
         'Bonne visite !': 'Enjoy your visit!',
+        'Vous pouvez aussi me suivre sur :': 'You can also follow me on :',
+        'et': 'and',
         
         // Projets
         'MES PROJETS :': 'MY PROJECTS:',
@@ -149,9 +151,6 @@ button.addEventListener('click', function() {
         'Créer/modifier divers documents, bases de données futures.': 'To create/modify various documents, future databases.',
         'Suivre des développeurs et partager mes projets.': 'To follow developers and share my projects.',
 
-        //Footer
-        'Rejoins-moi sur': 'Join me on',
-        'et': 'and',
     };
 
     // Créer l'objet inverse

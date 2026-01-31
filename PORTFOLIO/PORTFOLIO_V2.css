@@ -2,7 +2,7 @@
 
 a{ /*propriétés des liens*/
     text-decoration: none; /*décoration du texte des liens*/
-    color: black; /*couleur des liens*/
+    color: white; /*couleur des liens*/
 }
 
 strong {
@@ -21,7 +21,7 @@ h3 {
 }
 
 body{  /*Propriétés du corps de page*/
-    background-color: #f5e6e6; /*couleur de fond du corps de page*/
+    background-color: black; /*couleur de fond du corps de page*/
     font-family: "Oswald", sans-serif; /*police et style d'écriture*/
     font-weight: 300; /*Epaisseur de police*/
     font-style: normal; /*Style de police*/
@@ -31,13 +31,10 @@ body{  /*Propriétés du corps de page*/
 /**********************************HEADER**************************************/
 
 header { /*Propriétés de l'en-tête*/
-    background-color: #f1aaaf; /*couleur de fond de l'en-tête*/
     margin: 0 0 30px 0; /*espace en dessous de l'en-tête*/
-    box-shadow: 5px 10px 15px grey; /*ombre portée de l'en-tête*/
     display: flex; /*Utilisation de Flexbox*/
     flex-direction: column; /* Empilement vertical */
     align-items: center; /* Centre tout horizontalement */
-    position: sticky; /*position fixe*/
     top: 0; /*position en haut de la page*/
     border-radius: 10px; /*bords arrondis*/
 }
@@ -53,20 +50,26 @@ header { /*Propriétés de l'en-tête*/
 /*Responsive : Réduction de la taille sur petits écrans */
 @media (max-width: 480px) {
     header {
-        margin: 10px 10x;
-        padding: 2px; 
+        width:100%;
+        margin-left: 0;
+        margin-right: 0; 
     }
 }
 
-.NomPrenom { /*Nom et prénom dans l'en-tête*/
-    font-family: "Oswald", sans-serif; /*police et style d'écriture*/
-    font-weight: 800; /*Epaisseur de police*/
-    font-style: normal; /*Style de police*/
+.Banniere { /*Nom et prénom dans l'en-tête*/
+    width: 95%;
+    border-radius: 15px;
+}
+
+@media(max-width:480px) {
+    .Banniere {
+        width:100%;
+    }
 }
 
 .HeadButtons {
     display:flex;
-    justify-content: space-between; /* Un à gauche, un à droite */
+    justify-content: space-around; /* Un à gauche, un à droite */
     align-items: center; /* Centre verticalement */
     margin-bottom: 15px;
     padding: 0 20px; /* Espacement sur les côtés */
@@ -82,9 +85,11 @@ header { /*Propriétés de l'en-tête*/
     border: 2px solid black;
     font-family: "Oswald", sans-serif;
     font-size: 20px;
-    background-color: #f1aaaf;
+    background: linear-gradient(to right, rgb(98, 41, 48), rgb(71, 28, 35), rgb(52, 21, 26)); /*couleur de fond de la présentation*/
     cursor: pointer;
     border-radius: 5px;
+    padding:8px;
+    color: white;
 }
 
 .BoutonContact:hover {
@@ -163,10 +168,12 @@ header { /*Propriétés de l'en-tête*/
 .English { /*Bouton pour passer en anglais*/
     font-size: 20px; /*taille de la police*/
     border: black 2px solid; /*bordure du bouton*/
-    background-color: #f1aaaf; /*couleur de fond du bouton*/
+    background: linear-gradient(to right, rgb(98, 41, 48), rgb(71, 28, 35), rgb(52, 21, 26)); /*couleur de fond de la présentation*/
     font-family: "Oswald", sans-serif; /*police et style d'écriture*/
     cursor:pointer;
     border-radius: 5px;
+    padding:8px;
+    color: white;
 }
 
 .English:hover {
@@ -182,7 +189,9 @@ header { /*Propriétés de l'en-tête*/
 @media (max-width:480px){
     .BoutonContact, .English {
         text-decoration: none;
-        color:black;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
     }
 }
 
@@ -190,11 +199,10 @@ header { /*Propriétés de l'en-tête*/
 
 
 .divPresentation { /*Présentation générale*/
-    background-color:#f1aaaf; /*couleur de fond de la présentation*/
-    margin: 0 20px 0 20px; /*marge autour de la présentation*/
+    background: linear-gradient(to right, rgb(98, 41, 48), rgb(71, 28, 35), rgb(52, 21, 26)); /*couleur de fond de la présentation*/
+    margin: 25px 100px; /*marge autour de la présentation*/
     padding: 0 20px 0 20px ; /*espace autour du texte*/
-    border: 3px solid darkgrey; /*bordure de la présentation*/
-    box-shadow: 10px 10px 20px grey; /*ombre portée de la présentation*/
+    box-shadow: 10px 10px 10px #5b1717b9; /*ombre portée de la présentation*/
     border-radius: 15px; /*bords arrondis*/
     display: grid;
     grid-template-columns: 2;
@@ -218,7 +226,7 @@ header { /*Propriétés de l'en-tête*/
     height: auto;
     flex-shrink: 0;
     margin-top: 20px;
-    border:black 3px solid;
+    border-radius: 5px;
     margin: 10px 0 15px 0;
     column-span: 1;
     
@@ -235,9 +243,8 @@ header { /*Propriétés de l'en-tête*/
 /* Responsive : Réduction des marges sur petits écrans */
 @media (max-width: 480px) {
     .photoElisePortfolio {
-        border: none;
         margin: 0;
-        width:300px
+        width:300px;
     }
 }
 
@@ -252,29 +259,43 @@ header { /*Propriétés de l'en-tête*/
     background-color: whitesmoke;
     padding: 15px;
     width: fit-content;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .TexteBienvenue {
-    background-color: whitesmoke;
+    color: white;
     padding: 15px;
+}
+
+.LinkedIn, .GitHub {
+    color: black;
+    background-color: whitesmoke;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.LinkedIn:hover, .GitHub:hover {
+    color: #5b1717;
 }
 
 /**********TITRES MES PROJETS ET CE QUE J'UTILISE***********/
 
 .GrandsTitresh2{ 
-    margin: 15px 0 20px 50px ; /*marge autour du titre*/
+    margin: 15px 0 15px 0 ; /*marge autour du titre*/
+    color: white;
+    text-align: center;
 }
 
 /***********************TOUS LES PROJETS*********************/
 
 .divProjets{
-    background-color: #f6b1b1; /*couleur de fond de la grille*/
-    padding: 10px 0; /*marge autour de la grille*/
-    box-shadow: 10px 10px 10px rgb(192, 83, 83); /*ombre portée de la grille*/
+    background: linear-gradient(to right, rgb(98, 41, 48), rgb(71, 28, 35), rgb(52, 21, 26)); /*couleur de fond de la présentation*/; /*couleur de fond de la grille*/
+    box-shadow: 10px 10px 10px #5b1717b9; /*ombre portée de la grille*/
     border-radius: 15px; /*bords arrondis*/
-    margin:25px;
+    margin:25px 100px;
     padding: 20px;
+
 }
 
 .TitreProjet {
@@ -283,6 +304,7 @@ header { /*Propriétés de l'en-tête*/
     text-align: center;
     width: 50%;
     margin: 15px auto 30px auto;
+    color: black;
 }
 
 @media (max-width:480px) {
@@ -313,7 +335,7 @@ header { /*Propriétés de l'en-tête*/
 }
 
 .ProjetDroite {
-    background-color: whitesmoke;
+    color: white;
 }
 
 @media (max-width:480px) {
@@ -322,13 +344,12 @@ header { /*Propriétés de l'en-tête*/
     }
 }
 
-
-
 .TitreProjet:hover {
-    color:black; /* Rend le texte transparent pour voir le contour */
-    background-color:#e09095;
+    color:white; /* Rend le texte transparent pour voir le contour */
+    background: linear-gradient(to right, rgb(98, 41, 48), rgb(71, 28, 35), rgb(52, 21, 26)); /*couleur de fond de la présentation*/
     padding: 15px;
     border-radius: 10px;
+    border: 2px solid white;
 }
 
 @media (max-width:480px) {
@@ -351,7 +372,7 @@ header { /*Propriétés de l'en-tête*/
     height: auto; /*hauteur max*/
     display:block;
     margin: 0 auto 20px; /* Centre l'image */
-    border: black 2px solid; /*bordure de la capture d'écran*/
+    border-radius: 5px;
 }
 
 @media (max-width:480px) {
@@ -380,11 +401,10 @@ header { /*Propriétés de l'en-tête*/
     display: flex; /*disposition en grille*/
     gap: 20px;
     flex-wrap: wrap;
-    background-color:#f1aaaf; /*couleur de fond de la grille*/
-    margin: 25px ; /*marge autour de la grille*/
+    background: linear-gradient(to right, rgb(98, 41, 48), rgb(71, 28, 35), rgb(52, 21, 26)); /*couleur de fond de la présentation*/
+    margin: 25px 100px; /*marge autour de la grille*/
     padding: 0 15px 0 15px;
-    border: 2px solid darkgrey;
-    box-shadow: 10px 10px 20px grey;
+    box-shadow: 10px 10px 10px #5b1717b9;
     border-radius: 15px;    
 }
 
@@ -413,7 +433,7 @@ header { /*Propriétés de l'en-tête*/
     
 }
 
-.TitreCompetences, TitreOutils {
+.TitreCompetences, .TitreOutils {
     background-color: white;
     padding: 10px;
     width: fit-content;
@@ -422,26 +442,10 @@ header { /*Propriétés de l'en-tête*/
 }
 
 .CompetencesOutils {
-    background-color: whitesmoke ;
+    color: white;
     border: none;
     padding: 15px;
 }
 
 /***********************************FOOTER**************************************/
 
-footer{ /*Propriétés du bas de page*/
-    background-color: #f1aaaf; /*couleur de fond*/
-    position: bottom; /*position fixe*/
-    width: 100%; /*largeur du bas de page*/
-    text-align: center; /*alignement du texte*/
-    font-size: 20px ; /*taille de la police*/
-    font-family: "Oswald", sans-serif; /*police et style d'écriture*/
-    font-weight: 300; /*Epaisseur de police*/
-    font-style: normal; /*Style de police*/
-    border-radius: 10px; /*bords arrondis*/
-    box-shadow: 5px 10px 10px grey; /*ombre portée du bas de page*/
-}
-
-.LinkedIn:hover, .GitHub:hover {
-    color: white;
-}
