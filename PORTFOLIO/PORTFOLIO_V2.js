@@ -32,7 +32,7 @@ FormulaireContact.addEventListener('submit', (e) => {
     const message = document.querySelector('.Message').value;
     
     // Créer le lien mailto
-    const mailtoLink = `mailto:elise.degardin.mtd@gmail.com?body=${encodeURIComponent(
+    const mailtoLink = `mailto:elise.degardin.mtd@proton.me?body=${encodeURIComponent(
         `Nom: ${nom}\nPrénom: ${prenom}\nEmail: ${email}\n\nMessage:\n${message}`
     )}`;
     

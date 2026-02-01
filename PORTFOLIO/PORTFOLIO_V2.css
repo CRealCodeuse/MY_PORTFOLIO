@@ -105,11 +105,13 @@ header { /*Propriétés de l'en-tête*/
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #fff3f3;
+    background-color: black;
+    overflow-y: auto; /* Permet le scroll sur tout l'écran */
 }
 
 .ContenuPopUp {
-    background-color: white;
+    background: linear-gradient(to right, rgb(98, 41, 48), rgb(71, 28, 35), rgb(52, 21, 26)); /*couleur de fond de la présentation*/
+    color: white;
     margin: 10% auto;
     padding: 30px;
     border-radius: 10px;
@@ -117,6 +119,7 @@ header { /*Propriétés de l'en-tête*/
     max-width: 500px;
     position: relative;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    top:0;
 }
 
 .Fermer {
@@ -130,7 +133,7 @@ header { /*Propriétés de l'en-tête*/
 }
 
 .Fermer:hover {
-    color:#000;
+    color:white;
 }
 
 .FormulaireContact label {
@@ -148,7 +151,7 @@ header { /*Propriétés de l'en-tête*/
     box-sizing: border-box;
 }
 
-.FormulaireContact button {
+.envoyer {
     margin-top: 20px;
     padding: 10px 15px;
     background-color:#e09095;
@@ -160,16 +163,17 @@ header { /*Propriétés de l'en-tête*/
     font-size: 20px;
 }
 
-.FormulaireContact button:hover {
-    background-color:#f6b1b1;
-    color: black;
+.envoyer:hover {
+    background-color:#471c23;
+    color: white;
+    border: 2px solid white;
 }
 
 /*BOUTON TRADUCTION*/
 .English { /*Bouton pour passer en anglais*/
     font-size: 20px; /*taille de la police*/
     border: black 2px solid; /*bordure du bouton*/
-    background: linear-gradient(to right, rgb(98, 41, 48), #471c23, rgb(52, 21, 26)); /*couleur de fond de la présentation*/
+    background: linear-gradient(to right, #622930, #471c23, rgb(52, 21, 26)); /*couleur de fond de la présentation*/
     font-family: "Oswald", sans-serif; /*police et style d'écriture*/
     cursor:pointer;
     border-radius: 5px;
@@ -264,7 +268,7 @@ header { /*Propriétés de l'en-tête*/
 
 .TexteBienvenue {
     color: white;
-    padding: 15px;
+    padding: 0 15px;
 }
 
 .LinkedIn, .GitHub {
