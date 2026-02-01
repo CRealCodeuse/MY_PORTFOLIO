@@ -169,7 +169,7 @@ header { /*Propriétés de l'en-tête*/
 .English { /*Bouton pour passer en anglais*/
     font-size: 20px; /*taille de la police*/
     border: black 2px solid; /*bordure du bouton*/
-    background: linear-gradient(to right, rgb(98, 41, 48), rgb(71, 28, 35), rgb(52, 21, 26)); /*couleur de fond de la présentation*/
+    background: linear-gradient(to right, rgb(98, 41, 48), #471c23, rgb(52, 21, 26)); /*couleur de fond de la présentation*/
     font-family: "Oswald", sans-serif; /*police et style d'écriture*/
     cursor:pointer;
     border-radius: 5px;
@@ -203,7 +203,6 @@ header { /*Propriétés de l'en-tête*/
     background: linear-gradient(to right, rgb(98, 41, 48), rgb(71, 28, 35), rgb(52, 21, 26)); /*couleur de fond de la présentation*/
     margin: 25px 100px; /*marge autour de la présentation*/
     padding: 0 20px 0 20px ; /*espace autour du texte*/
-    box-shadow: 10px 10px 10px #5b1717b9; /*ombre portée de la présentation*/
     border-radius: 15px; /*bords arrondis*/
     display: grid;
     grid-template-columns: 2;
@@ -292,7 +291,6 @@ header { /*Propriétés de l'en-tête*/
 
 .divProjets{
     background: linear-gradient(to right, rgb(98, 41, 48), rgb(71, 28, 35), rgb(52, 21, 26)); /*couleur de fond de la présentation*/; /*couleur de fond de la grille*/
-    box-shadow: 10px 10px 10px #5b1717b9; /*ombre portée de la grille*/
     border-radius: 15px; /*bords arrondis*/
     margin:25px 100px;
     padding: 20px;
@@ -405,7 +403,6 @@ header { /*Propriétés de l'en-tête*/
     background: linear-gradient(to right, rgb(98, 41, 48), rgb(71, 28, 35), rgb(52, 21, 26)); /*couleur de fond de la présentation*/
     margin: 25px 100px; /*marge autour de la grille*/
     padding: 0 15px 0 15px;
-    box-shadow: 10px 10px 10px #5b1717b9;
     border-radius: 15px;    
 }
 

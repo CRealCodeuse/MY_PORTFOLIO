@@ -83,7 +83,7 @@ button.addEventListener('click', function() {
         'A VENIR': 'COMING SOON',
 
         // Présentation
-        'Bienvenue sur mon portfolio !': 'Welcome on my portfolio!',
+        'Bienvenue sur mon portfolio !': 'Welcome on my portfolio !',
         "Je m'appelle Elise, j'ai 29 ans et je suis actuellement en": "My name is Elise, I am 29 years old and I am currently in a",
         "en alternance.": "in work-study.",
         "Concernant les": "Regarding",
@@ -99,25 +99,17 @@ button.addEventListener('click', function() {
         ", qui vous permettront de comprendre mon": ", which will allow you to understand my", 
         "viendront s'ajouter au fur et à mesure de mon": "will be added as I progress in my",
         "Les photos et les titres des projets vous mèneront directement à leurs pages.":"Captures and titles will lead you directly to their pages.",
-        'Bonne visite !': 'Enjoy your visit!',
+        'Bonne visite !': 'Enjoy your visit !',
         'Vous pouvez aussi me suivre sur :': 'You can also follow me on :',
         'et': 'and',
         
         // Projets
-        'MES PROJETS :': 'MY PROJECTS:',
+        'MES PROJETS :': 'MY PROJECTS :',
         'CE QUE J\'UTILISE :':'WHAT I\'M USING :',
-
-        //PIPOUNES CREATION VERSION BTS
-        'PIPOUNES CREATION VERSION BTS - Laissé tel quel': 'PIPOUNES CREATION BTS VERSION - Left as is',
-        "C'est un site que j'ai créé au début du BTS SIO pour m'entraîner à coder un site de A à Z, avec seulement les bases apprises, mais pas complètes.": "This is a website that I created at the beginning of the BTS SIO to practice coding a website from A to Z, with only the basics learned, but not complete.",
-        '- Tous les liens redirigent vers leur page correspondante.': '- Every links redirect to their corresponding page.',
-        "- Il est possible de s'inscrire à la Newsletter du site via un formulaire d'inscription.": "- It is possible to subscribe to the site's Newsletter via a registration form.",
-        '- Un endroit pour se connecter ou créer un compte client.': '- A place to log in or create a customer account.',
-        '- Code basique, manque de structure et de lisibilité.': '- Basic code, lack of structure and readability.',
         
         // ToDoList
         'TO DO LIST - Terminé': 'TO DO LIST - Complete',
-        "Pour gérer tes tâches du quotidien avec facilité, encouragements et mignonnerie, quoi de mieux ?": "To manage your daily tasks easily, with encouragement and cuteness, what else?",
+        "Pour gérer tes tâches du quotidien avec facilité, encouragements et mignonnerie, quoi de mieux ?": "To manage your daily tasks easily, with encouragement and cuteness, what could be better ?",
         "Que ce soit pour le travail, les courses, ou même les projets personnels, elle est faite pour toi !": "Whether it's for work, shopping or even personal projects, it's made for you!",
         'Langages utilisés': 'Used languages',
         'Fonctionnalités': 'Features',
