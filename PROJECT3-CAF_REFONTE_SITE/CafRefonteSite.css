@@ -623,7 +623,7 @@ header > div:first-child {
     color: white; /* Couleur du texte */
     text-align: center; /* Centre le texte */
     padding: 10px; /*Espace autour du titre*/
-    font-size: 25;
+    font-size: 23px;
 }
 
 @media (max-width:480px) {
@@ -700,6 +700,7 @@ header > div:first-child {
     padding:15px;
     margin-top: 0;
     margin-bottom: 0;
+    font-size: 25px;
 }
 
 @media (max-width:480px) {
