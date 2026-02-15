@@ -707,16 +707,15 @@ header > div:first-child {
     padding:15px;
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 25px;
+    
 }
 
 .InfoPetitTitre { 
     margin: 10px;
     background-color: #141455;
     color: white;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 18px;   
+    padding: 5px;
+    font-size: 20px;   
 }
 
 .TexteInformation {
@@ -725,7 +724,7 @@ header > div:first-child {
 }
 
 @media (max-width:480px) {
-    .InfoTitre {
+    .InfoPetitTitre {
         margin-top: 0;
         margin-bottom: 0;
         text-align: center;
