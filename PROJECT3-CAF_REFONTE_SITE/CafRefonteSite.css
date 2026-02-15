@@ -1035,6 +1035,12 @@ header > div:first-child {
     width: 250px;
 }
 
+.divViePersonnelle:hover, .divVieProfessionnelle:hover, .divLogement:hover, .divHandicap:hover, .divAccident:hover {
+    color: #141455;
+    background-color: #e3e3f1;
+    border:1px solid #141455;
+}
+
 @media (max-width:480px) {
     .divViePersonnelle, .divVieProfessionnelle, .divLogement, .divHandicap, .divAccident {
         text-align: center; /* Centre le texte */
@@ -1102,7 +1108,7 @@ header > div:first-child {
 }
 
 .ImageVieProfessionnelle {
-    background-color: lightskyblue; /* Couleur de fond */
+    background-color: rgb(98, 160, 199); /* Couleur de fond */
     border: #141455 3px solid;
     transition: background-color 0.3s ease; /* Transition douce */
 }
@@ -1135,7 +1141,7 @@ header > div:first-child {
 }
 
 .ImageAccident {
-    background-color: #6fdfc3; /* Couleur de fond */
+    background-color: #2fc96f; /* Couleur de fond */
     border: #141455 3px solid;
     transition: background-color 0.3s ease; /* Transition douce */
 }
