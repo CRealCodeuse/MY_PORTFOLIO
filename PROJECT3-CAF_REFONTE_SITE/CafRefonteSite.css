@@ -547,6 +547,7 @@ header > div:first-child {
     margin-top: 15px;
     font-size: 18px;
     color: #141455;
+    text-align: center;
 }
 
 .FormulaireConnexion input {
@@ -558,6 +559,8 @@ header > div:first-child {
     font-size: 18px;
     padding: 15px;
     text-align: center;
+    display: block;
+    margin: 0 auto;
 }
 
 .BoutonSCConnexion {
