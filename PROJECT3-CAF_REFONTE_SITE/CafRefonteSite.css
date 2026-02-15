@@ -1195,7 +1195,7 @@ header > div:first-child {
 
 .Actions {
     display: flex; /* Utilise Flexbox */
-    gap: 20px; /* Espace entre les boutons */
+    gap: 35px; /* Espace entre les boutons */
     justify-content: center; /* Centre les boutons horizontalement */
     align-items: center; /* Aligne verticalement les boutons */
     flex-wrap: wrap; /* Permet le passage à la ligne sur petits écrans */
