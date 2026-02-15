@@ -422,11 +422,12 @@ header > div:first-child {
     position: fixed;
     z-index: 1000;
     left: 0;
-    top: -90;
+    top: 0;
     bottom: 0;
     width: 100%;
-    height: fit-content;
+    height: 100%;
     background-color: #141455;
+    overflow-y: auto; /* Permet le scroll sur tout l'écran */
 }
 
 @media (max-width:769px){
@@ -457,6 +458,7 @@ header > div:first-child {
     max-width: 500px;
     position: relative;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    overflow-y: auto; /* Permet le scroll sur tout l'écran */
     
 }
 
@@ -693,7 +695,7 @@ header > div:first-child {
     }
 }
 
-.InfoTitre {
+.InfoGrandTitre {
     text-align: center; /* Centre le texte */
     width: 95%; /* Prend toute la largeur */
     border-radius: 20px; /* Bords arrondis */
@@ -701,6 +703,20 @@ header > div:first-child {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 25px;
+}
+
+.InfoPetitTitre { 
+    margin: 10px;
+    background-color: #141455;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;   
+}
+
+.TexteInformation {
+    font-size: 18px;
+    color: #000;
 }
 
 @media (max-width:480px) {
