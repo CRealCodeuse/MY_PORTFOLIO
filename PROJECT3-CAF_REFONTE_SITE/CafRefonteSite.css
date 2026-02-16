@@ -1467,7 +1467,7 @@ header > div:first-child {
     transition: background-color 0.3s ease; /* Transition douce */
     margin:15px;
     text-align: center;
-    width:50%;
+    width:70%;
     margin: 10 auto;
     font-size: 18px;
 }
