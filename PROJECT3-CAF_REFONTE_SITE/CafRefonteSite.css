@@ -1489,7 +1489,7 @@ header > div:first-child {
 
 .FaqReponseDette, .FaqReponseAides, .FaqReponseDocument, .FaqReponseDemarches {
     display: none; /* Cachée par défaut */
-    background-color: #e3e3f1; /* Couleur de fond */
+    background-color: whitesmoke; /* Couleur de fond */
     border: 3px solid #141455;
     color: black;
     padding: 15px; /* Espace interne */
