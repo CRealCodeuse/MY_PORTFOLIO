@@ -642,7 +642,7 @@ header > div:first-child {
 }
 
 .TexteDescription {
-    background-color: #e3e3f1; /* Couleur de fond */
+    background-color: whitesmoke; /* Couleur de fond */
     border: 3px solid #141455; /* Pas de bordure */
     padding: 15px;
     max-width: 50%;
