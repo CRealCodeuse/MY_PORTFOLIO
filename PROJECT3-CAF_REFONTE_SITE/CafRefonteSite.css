@@ -1593,7 +1593,7 @@ header > div:first-child {
     font-size: 20px;
     display: flex;
     justify-content: center;
-    margin: 100px auto 0; /* Centre le bouton avec marge en haut */
+    margin: 60px auto 0; /* Centre le bouton avec marge en haut */
     transition: background-color 0.3s ease; /* Transition douce */
 }
 
