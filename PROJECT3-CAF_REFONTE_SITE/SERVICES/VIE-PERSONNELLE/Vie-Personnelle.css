@@ -607,6 +607,21 @@ header > div:first-child {
   BODY - DESCRIPTION
 ===================================*/
 
+.BodyViePersonnelle {
+    padding: 5px 15px 5px 15px; /* Espace autour de la div */
+    background-color: lightpink; /* Couleur de fond de la div */
+    margin: 30px 180px 0 180px; /* Marge autour de la div */
+    max-width: calc(100% - 40px); /* S'adapte à la largeur de l'écran */
+    border: none; /* Pas de bordure */
+    box-shadow: 10px 10px 20px grey; /* Ombre portée de la div */
+    border-radius: 15px; /* Bords arrondis */
+    box-sizing: border-box; /* Inclut padding et border dans la width */
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    align-items: center;
+    background-color: ;
+}
 
 /*===================================
   FOOTER
