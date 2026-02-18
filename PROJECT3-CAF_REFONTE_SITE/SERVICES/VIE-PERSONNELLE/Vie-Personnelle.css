@@ -618,9 +618,207 @@ header > div:first-child {
     box-sizing: border-box; /* Inclut padding et border dans la width */
     display: flex;
     justify-content: space-around;
-    height: 200px;
+    height: 150px;
     align-items: center;
-    background-color: ;
+}
+
+.InfosViePersonnelle {
+    margin: 30px 180px 0 180px; /* Marge autour de la div */ /* Marge autour de la div */
+    max-width: calc(100% - 40px); /* S'adapte à la largeur de l'écran */
+    padding: 10px 20px 10px 20px; /* Espace interne */
+    border: none; /* Pas de bordure */
+    background-color: lightpink; /* Couleur de fond */
+    box-shadow: 10px 10px 20px grey; /* Ombre portée */
+    border-radius: 15px; /* Bords arrondis */
+    box-sizing: border-box; /* Inclut padding et border dans la width */
+}
+
+.LigneInfosViePerso {
+    display:flex;
+    flex-direction: row;
+}
+
+.divGauche, .divDroite {
+    width: 50%;
+    background-color:#e3e3f1;
+    border: 3px solid #141455;
+    padding: 15px;
+    margin: 10px;
+}
+
+.divFinale {
+    width: 100%;
+    background-color:#e3e3f1;
+    border: 3px solid #141455;
+    padding: 15px;
+    margin: 10px;
+}
+
+.TitreInfo {
+    background-color: #141455;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.TexteInfo {
+    padding: 10px;
+    font-size: 18px;;
+}
+
+.AccesInfo {
+    border: 2px solid #141455;
+    background-color: #141455;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s ease; /* Transition douce */
+    width: fit-content;
+}
+
+.AccesInfo:hover {
+    background-color: #e3e3f1;
+    color: #141455;
+    border: 2px solid #141455;
+    cursor: pointer;
+}
+
+/*===================================
+  MAGASINE
+===================================*/
+
+.divMagasine {
+    margin: 15px; /* Marge autour de la div */
+    max-width: calc(100% - 40px); /* S'adapte à la largeur de l'écran */
+    padding: 15px; /* Espace interne */
+    border: none; /* Pas de bordure */
+    background-color: #e3e3f1; /* Couleur de fond */
+    box-shadow: 10px 10px 20px grey; /* Ombre portée */
+    border-radius: 15px; /* Bords arrondis */
+}
+
+@media (max-width: 480px) {
+    .divMagasine {
+        margin: 15px 10px 0 5px; /* Marges réduites pour mobiles */
+        padding: 8px 5px; /* Padding réduit */
+        width: 350px;
+        max-width: 400px;
+    }
+}
+
+.divLigneMagasine {
+    display: flex;
+}
+
+.divMagasine h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+@media (max-width:480px) {
+    .divMagasine h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+        padding: 15px;
+        width:90%;
+    }
+}
+
+.divG, .divM, .divD {
+    width: 33%;
+    background-color:#e3e3f1;
+    border: 3px solid #141455;
+    padding: 15px;
+    margin: 10px;
+}
+
+.ImageMagasine {
+    margin: 0 auto; /* Centre l'image */
+    display: block; /* Affichage en bloc */
+    max-width: 100%; /* L'image ne dépasse pas son conteneur */
+    height: auto; /* Garde les proportions */
+}
+
+.LogoArticle {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    max-width: 100%;
+    height: 40px;
+    gap: 10px;
+    padding: 10px;
+    margin: 10 auto; /* Centre horizontalement */
+}
+
+/* Responsive : Ajustement sur petits écrans */
+@media (max-width: 480px) {
+    .LogoArticle {
+        width: 120px; /* Largeur réduite pour mobiles */
+        height: 40px; /* Hauteur réduite */
+    }
+}
+
+/* Responsive : Réduction de la taille de l'image sur mobile */
+@media (max-width: 480px) {
+    .ImageLogoArticle {
+        width: 30px; /* Largeur réduite pour mobiles */
+        height: 30px; /* Hauteur réduite */
+    }
+}
+
+.TitreArticle {
+    background-color: #141455; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    padding: 10px; /* Espace interne */
+    width:65%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Responsive : Réduction du padding sur petits écrans */
+@media (max-width: 480px) {
+    .TitreArticle {
+        padding: 8px; /* Padding réduit pour mobiles */
+        width:95%;
+    }
+}
+
+.DecouvrirMag {
+    font-family: "Oswald", sans-serif; /* Police */
+    font-weight: 500; /* Poids de la police */
+    font-size: 20px; /* Taille de la police */
+    padding: 15px; /* Espace interne */
+    border: none; /* Pas de bordure */
+    background-color: #141455; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border-radius: 15px; /* Bords arrondis */
+    display: block; /* Affichage en bloc */
+    margin: 15px auto 0; /* Centre le bouton avec marge en haut */
+    width: 250px; /* Largeur maximale */
+    cursor: pointer; /* Change le curseur au survol */
+    box-sizing: border-box; /* Inclut padding et border dans la width */
+    transition: background-color 0.3s ease; /* Transition douce */
+}
+
+@media (max-width: 480px) {
+    .DecouvrirMag {
+        font-size: 18px; /* Taille réduite pour mobiles */
+        padding: 10px; /* Padding réduit */
+        max-width: 100%; /* Prend toute la largeur disponible */
+        margin: 15px auto;
+    }
+}
+
+.DecouvrirMag:hover {
+    background-color: #e3e3f1; /* Couleur de fond au survol */
+    color: #141455; /* Couleur du texte au survol */
+    border: 2px solid #141455;
 }
 
 /*===================================
