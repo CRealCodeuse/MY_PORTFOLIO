@@ -1,0 +1,225 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAF - Les Allocations Familiales</title>
+
+    <link rel="icon" href="/PROJECT3-CAF_REFONTE_SITE/Images/Logo - CAF.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="LesAllocationsFamiliales.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<header>
+
+        <div>
+    
+        <a href="/PROJECT3-CAF_REFONTE_SITE/CafRefonteSite.html">
+            <img class="Accueil1" src="/PROJECT3-CAF_REFONTE_SITE/Images/Logo - CAF.jpg" alt="Logo Caf">
+        </a>
+            
+        <a class="Accueil2" href="/PROJECT3-CAF_REFONTE_SITE/CafRefonteSite.html">
+            caf.fr
+        </a>
+
+        <button class="BoutonMalvoyant">
+            <img class="ImgMalvoyant" src="/PROJECT3-CAF_REFONTE_SITE/Images/Image - Malvoyant.png" alt="closed-eye"/>
+        </button>
+
+        <button class="BoutonRecherche">
+            <img class="ImgRecherche" src="https://img.icons8.com/stickers/100/search.png" alt="search"/>
+        </button>
+
+        <button class="BoutonConnexion">
+            <img class="ImgConnexion" src="/PROJECT3-CAF_REFONTE_SITE/Images/Image - SeConnecter.png" alt="circled-user"/>
+        </button>
+
+    </div>
+
+    <div>
+
+        <nav class="BarreNavigation">
+
+            <button class="SectionAllocataires">ALLOCATAIRES</button>
+            <ul class="LiensNavigation LiensAllocataires">
+
+                <li>
+                    <a href="CafRefonteSite.html">
+                        <img src="Images/AllocataireHome.png" alt="">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../PROJECT3-CAF_REFONTE_SITE/TOUTES-LES-ACTUALITES/ToutesLesActualites.html">Actualités</a>
+                </li>
+
+                <li>
+                    <a href="AllocatairesAideDemarches.html">Aides et démarches</a>
+                </li>
+
+                <li>
+                    <a href="AllocatairesMaCaf.html">Ma Caf</a>
+                </li>
+
+                <li>
+                    <a href="AllocataireMagasine.html">Le magasine Vie de Famille</a>
+                </li>
+
+            </ul>
+
+            <button class="SectionProfessionnels">PROFESSIONNELS</button>
+            <ul class="LiensNavigation LiensProfessionnels">
+
+                <li class="OngletNavigation">
+                    <a href="CafRefonteSitePro.html">
+                        <img src="Images/AllocataireHome.png" alt="">
+                    </a>
+                </li>
+
+                <li class="OngletNavigation">
+                    <a href="ProfessionnelsActualités.html">Actualités</a>
+                </li>
+
+                <li class="OngletNavigation">
+                    <a href="ProfessionnelsOffresServices.html">Offres et services</a>
+                </li>
+
+                <li class="OngletNavigation">
+                    <a href="ProfessionnelsEtudesInternational.html">Etudes et International</a>
+                </li>
+
+                <li class="OngletNavigation">
+                    <a href="ProfessionnelsPresse.html">Presse</a>
+                </li>
+
+                <li class="OngletNavigation">
+                    <a href="ProfessionnelsNousConnaitre.html">Nous connaître</a>
+                </li>
+
+                <li class="OngletNavigation">
+                    <a href="ProfessionnelsEmploiCarrieres.html">Emplois et carrières</a>
+                </li>
+
+                <li class="OngletNavigation">
+                    <a href="ProfessionnelsInnovation.html">Innovation</a>
+                </li>
+                
+            </ul>
+
+            <div class="Hamburger">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+    <div class="PopUpConnexion">
+
+        <div class="ContenuPopUpConnexion">
+
+            <span class="FermerConnexion">&times;</span>
+
+            
+                                    
+            <form class="FormulaireConnexion">
+
+                <h1 class="TitrePopUpConnexion">BIENVENUE SUR LE PORTAIL DES ALLOCATIONS FAMILIALES</h1>
+
+                <h2 class="FormulaireTitre2Connexion">CONNEXION ALLOCATAIRE</h2>
+
+                <h3 class="FormulaireTitre2Connexion">Avec vos identifiants Caf</h3>
+
+                <p class="FormulaireAttentionConnexion">*Tous les champs sont obligatoires, sauf mention du contraire.</p>
+
+                <label for="NumSecuSociale">Numéro de sécurité sociale :</label>
+                <input type="text" class="NumSecuSociale" name="NumSecuSociale" pattern="[0-9]*" maxlength="13" placeholder="Ex : 1 23 45 67 890 123 45" inputmode="numeric" required>
+            
+
+                <label for="MotDePasse">Mot de passe :</label>
+                <input type="password" class="MotDePasse" name="MotDePasse" minlength="8" maxlength="64" placeholder="***********" required>
+                <br>
+
+                <button class="BoutonSCConnexion">Se connecter</button>
+    
+            </form>
+
+            <h3 class="FormulaireTitre2Connexion">OU avec FranceConnect</h3>
+
+                <button class="BoutonFCConnexion">
+                    <img src="Images/Logo - FranceConnect.png" alt="Image Bouton France Connect" width="200px">
+                </button>
+                <br>
+                
+        </div>
+
+    </div>
+
+</header>
+
+<body>
+
+    <div class="BodyViePersonnelle">
+        
+        <h1 class="TitreViePersonnelle">Informations Aides Allocations Familiales</h1>
+        <img src="/PROJECT3-CAF_REFONTE_SITE/Images/Image - Famille.png" alt="">
+    </div>
+
+    <div class="divAllocationsFamiliales">
+
+        <div class="TitreAllocationsFamiliales">
+            <h2>Tout comprendre sur les allocations familiales </h2>
+            <p>Vous avez automatiquement droit aux allocations familiales dès votre deuxième enfant. Elles sont versées le mois suivant la naissance ou l’accueil de votre enfant. </p>
+        </div>
+
+        <div class="Resume">
+            <div class="PourQui">
+                <h2>Pour qui ?</h2>
+                <p>Tous les parents qui ont au moins 2 enfants de moins de 20 ans.</p>
+            </div>
+            <div class="QuelMontant">
+                <h2>Quel montant ?</h2>
+                <p>Il dépend du nombre d’enfants et des ressources du foyer.</p>
+            </div>
+            <div class="QuellesConditions">
+                <h2>Quelles conditions ?</h2>
+                <p>Les allocations familiales sont cumulables avec toutes les autres prestations.</p>
+            </div>
+        </div>
+
+        <div class="IntegrationVideo">
+            <iframe width="930" height="523" src="https://www.youtube.com/embed/TApgoCbsx4Y" title="Vous avez plusieurs enfants à charge ?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="Conditions">
+            <h2>Quelles sont les conditions pour en bénéficier?</h2>
+            <ul class="ListeConditions">
+                <li>Vous remplissez les <button class="ConditionsGenerales"><strong>conditions générales</strong></button> pour bénéficier des prestations familiales.</li>
+                <li>Vous avez au moins deux enfants de moins de 20 ans <button class="EnfantsACharge"><strong>à charge</strong></button>.</li>
+            </ul>
+        </div>
+
+        <div class="MontantAPercevoir">
+            <h2>Quel montant pouvez-vous percevoir ?</h2>
+            <p class="TexteMontant">Le montant mensuel des allocations familiales varie selon le nombre d’enfants à charge au foyer et selon le niveau de <button class="Ressources"><strong>vos ressources</strong></button>. Le montant de vos allocations est majoré quand vos enfants grandissent.</p>
+
+            <img class="Capture1AF" src="/PROJECT3-CAF_REFONTE_SITE/SERVICES/VIE-PERSONNELLE/1-ALLOCATIONS-FAMILIALES/Capture1AF.png" alt="Montant 1 AF">
+
+            <img class="Capture2AF" src="/PROJECT3-CAF_REFONTE_SITE/SERVICES/VIE-PERSONNELLE/1-ALLOCATIONS-FAMILIALES/Capture2AF.png" alt="Montant 2 AF">
+        </div>
+
+        <div class="BonA">
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
