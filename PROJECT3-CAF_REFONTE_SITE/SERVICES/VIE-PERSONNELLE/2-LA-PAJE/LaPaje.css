@@ -647,9 +647,14 @@ header > div:first-child {
     }
 }
 
-
-
-
+.Resume {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: whitesmoke;
+    padding: 0 15px;
+    border: 2px solid black;
+}
 
 .Texte {
     background-color: whitesmoke;
@@ -661,7 +666,7 @@ header > div:first-child {
     border: none;
     color: #141455;
     font-family: "Oswald", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     margin: 0;
     padding: 0;
 }
@@ -686,7 +691,7 @@ header > div:first-child {
   QUESTIONS
 ===================================*/
 
-.FaqQuestionEnfantTravaille, .FaqQuestion3Enfants, .FaqQuestionSeparation, .FaqQuestionFoyer, .FaqQuestionTemps {
+.FaqQuestionAdoption, .FaqQuestionNaissance, .FaqQuestionGrossesse, .FaqQuestionPrepare, .FaqQuestionActivite {
     background-color: #141455; /* Couleur de fond */
     color:white; /* Couleur du texte */
     padding: 15px; /* Espace interne */
@@ -699,7 +704,7 @@ header > div:first-child {
     font-size: 18px;
 }
 
-.FaqQuestionEnfantTravaille:hover, .FaqQuestion3Enfants:hover, .FaqQuestionSeparation:hover, .FaqQuestionFoyer:hover, .FaqQuestionTemps:hover {
+.FaqQuestionAdoption:hover, .FaqQuestionNaissance:hover, .FaqQuestionGrossesse:hover, .FaqQuestionPrepare:hover, .FaqQuestionActivite:hover {
     background-color:#e3e3f1; /* Couleur de fond au survol */
     color: #141455; /* Couleur du texte au survol */
     border: 2px solid #141455;
@@ -707,14 +712,14 @@ header > div:first-child {
 
 /* Responsive : Réduction du padding sur petits écrans */
 @media (max-width: 480px) {
-    .FaqQuestionEnfantTravaille, .FaqQuestion3Enfants, .FaqQuestionSeparation, .FaqQuestionFoyer, .FaqQuestionTemps {
+    .FaqQuestionAdoption, .FaqQuestionNaissance, .FaqQuestionGrossesse, .FaqQuestionPrepare, .FaqQuestionActivite {
         padding: 10px; /* Padding réduit pour mobiles */
         font-size: 18px; /* Taille de police réduite */
         width: fit-content;
     }
 }
 
-.FaqReponseEnfantTravaille, .FaqReponse3Enfants, .FaqReponseSeparation, .FaqReponseFoyer, .FaqReponseTemps {
+.FaqReponseAdoption, .FaqReponseNaissance, .FaqReponseGrossesse, .FaqReponsePrepare, .FaqReponseActivite {
     display: none; /* Cachée par défaut */
     background-color: whitesmoke; /* Couleur de fond */
     border: 3px solid #141455;
@@ -726,7 +731,7 @@ header > div:first-child {
 
 /* Responsive : Réduction du padding sur petits écrans */
 @media (max-width: 480px) {
-    .FaqReponseEnfantTravaille, .FaqReponse3Enfants, .FaqReponseSeparation, .FaqReponseFoyer, .FaqReponseTemps {
+    .FaqReponseAdoption, .FaqReponseNaissance, .FaqReponseGrossesse, .FaqReponsePrepare, .FaqReponseActivite {
         padding: 10px; /* Padding réduit pour mobiles */
         font-size: 18px; /* Taille de police réduite */
     }

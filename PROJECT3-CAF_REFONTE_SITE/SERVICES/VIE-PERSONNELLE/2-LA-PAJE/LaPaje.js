@@ -1,55 +1,55 @@
 /**************************FAQ DETTE****************************/
 
-const FaqQuestionEnfantTravaille = document.querySelector('.FaqQuestionEnfantTravaille');
-const FaqReponseEnfantTravaille = document.querySelector('.FaqReponseEnfantTravaille');
-const FaqQuestion3Enfants = document.querySelector('.FaqQuestion3Enfants');
-const FaqReponse3Enfants = document.querySelector('.FaqReponse3Enfants');
-const FaqQuestionSeparation = document.querySelector('.FaqQuestionSeparation');
-const FaqReponseSeparation = document.querySelector('.FaqReponseSeparation');
-const FaqQuestionFoyer = document.querySelector('.FaqQuestionFoyer');
-const FaqReponseFoyer = document.querySelector('.FaqReponseFoyer');
-const FaqQuestionTemps = document.querySelector('.FaqQuestionTemps');
-const FaqReponseTemps = document.querySelector('.FaqReponseTemps');
+const FaqQuestionAdoption = document.querySelector('.FaqQuestionAdoption');
+const FaqReponseAdoption = document.querySelector('.FaqReponseAdoption');
+const FaqQuestionNaissance = document.querySelector('.FaqQuestionNaissance');
+const FaqReponseNaissance = document.querySelector('.FaqReponseNaissance');
+const FaqQuestionGrossesse = document.querySelector('.FaqQuestionGrossesse');
+const FaqReponseGrossesse = document.querySelector('.FaqReponseGrossesse');
+const FaqQuestionPrepare = document.querySelector('.FaqQuestionPrepare');
+const FaqReponsePrepare = document.querySelector('.FaqReponsePrepare');
+const FaqQuestionActivite = document.querySelector('.FaqQuestionActivite');
+const FaqReponseActivite = document.querySelector('.FaqReponseActivite');
 
 //OUVRIR REPONSES
-FaqQuestionEnfantTravaille.addEventListener('click', () => {
-    FaqReponseEnfantTravaille.style.display = 'block';
-    FaqReponse3Enfants.style.display = 'none';
-    FaqReponseSeparation.style.display = 'none';
-    FaqReponseFoyer.style.display = 'none';
-    FaqReponseTemps .style.display = 'none';
+FaqQuestionAdoption.addEventListener('click', () => {
+    FaqReponseAdoption.style.display = 'block';
+    FaqReponseNaissance.style.display = 'none';
+    FaqReponseGrossesse.style.display = 'none';
+    FaqReponsePrepare.style.display = 'none';
+    FaqReponseActivite.style.display = 'none';
 });
 
-FaqQuestion3Enfants.addEventListener('click', () => {
-    FaqReponseEnfantTravaille.style.display = 'none';
-    FaqReponse3Enfants.style.display = 'block';
-    FaqReponseSeparation.style.display = 'none';
-    FaqReponseFoyer.style.display = 'none';
-    FaqReponseTemps.style.display = 'none';
+FaqQuestionNaissance.addEventListener('click', () => {
+    FaqReponseAdoption.style.display = 'none';
+    FaqReponseNaissance.style.display = 'block';
+    FaqReponseGrossesse.style.display = 'none';
+    FaqReponsePrepare.style.display = 'none';
+    FaqReponseActivite.style.display = 'none';
 });
 
-FaqQuestionSeparation.addEventListener('click', () => {
-    FaqReponseEnfantTravaille.style.display = 'none';
-    FaqReponse3Enfants.style.display = 'none';
-    FaqReponseSeparation.style.display = 'block';
-    FaqReponseFoyer.style.display = 'none';
-    FaqReponseTemps.style.display = 'none';
+FaqQuestionGrossesse.addEventListener('click', () => {
+    FaqReponseAdoption.style.display = 'none';
+    FaqReponseNaissance.style.display = 'none';
+    FaqReponseGrossesse.style.display = 'block';
+    FaqReponsePrepare.style.display = 'none';
+    FaqReponseActivite.style.display = 'none';
 });
 
-FaqQuestionFoyer.addEventListener('click', () => {
-    FaqReponseEnfantTravaille.style.display = 'none';
-    FaqReponse3Enfants.style.display = 'none';
-    FaqReponseSeparation.style.display = 'none';
-    FaqReponseFoyer.style.display = 'block';
-    FaqReponseTemps.style.display = 'none';
+FaqQuestionPrepare.addEventListener('click', () => {
+    FaqReponseAdoption.style.display = 'none';
+    FaqReponseNaissance.style.display = 'none';
+    FaqReponseGrossesse.style.display = 'none';
+    FaqReponsePrepare.style.display = 'block';
+    FaqReponseActivite.style.display = 'none';
 });
 
-FaqQuestionTemps.addEventListener('click', () => {
-    FaqReponseEnfantTravaille.style.display = 'none';
-    FaqReponse3Enfants.style.display = 'none';
-    FaqReponseSeparation.style.display = 'none';
-    FaqReponseFoyer.style.display = 'none';
-    FaqReponseTemps.style.display = 'block';
+FaqQuestionActivite.addEventListener('click', () => {
+    FaqReponseAdoption.style.display = 'none';
+    FaqReponseNaissance.style.display = 'none';
+    FaqReponseGrossesse.style.display = 'none';
+    FaqReponsePrepare.style.display = 'none';
+    FaqReponseActivite.style.display = 'block';
 });
 
 /*****************************************/
