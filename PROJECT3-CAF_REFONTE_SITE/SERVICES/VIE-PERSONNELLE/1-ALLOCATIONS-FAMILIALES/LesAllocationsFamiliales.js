@@ -2,13 +2,13 @@
 
 const FaqQuestionEnfantTravaille = document.querySelector('.FaqQuestionEnfantTravaille');
 const FaqReponseEnfantTravaille = document.querySelector('.FaqReponseEnfantTravaille');
-const Question3Enfants = document.querySelector('.FaqQuestion3Enfants');
+const FaqQuestion3Enfants = document.querySelector('.FaqQuestion3Enfants');
 const FaqReponse3Enfants = document.querySelector('.FaqReponse3Enfants');
-const QuestionSeparation = document.querySelector('.FaqQuestionSeparation');
+const FaqQuestionSeparation = document.querySelector('.FaqQuestionSeparation');
 const FaqReponseSeparation = document.querySelector('.FaqReponseSeparation');
-const QuestionFoyer = document.querySelector('.FaqQuestionFoyer');
+const FaqQuestionFoyer = document.querySelector('.FaqQuestionFoyer');
 const FaqReponseFoyer = document.querySelector('.FaqReponseFoyer');
-const QuestionTemps = document.querySelector('.FaqQuestionTemps');
+const FaqQuestionTemps = document.querySelector('.FaqQuestionTemps');
 const FaqReponseTemps = document.querySelector('.FaqReponseTemps');
 
 //OUVRIR REPONSES
@@ -20,7 +20,7 @@ FaqQuestionEnfantTravaille.addEventListener('click', () => {
     FaqReponseTemps .style.display = 'none';
 });
 
-Question3Enfants.addEventListener('click', () => {
+FaqQuestion3Enfants.addEventListener('click', () => {
     FaqReponseEnfantTravaille.style.display = 'none';
     FaqReponse3Enfants.style.display = 'block';
     FaqReponseSeparation.style.display = 'none';
@@ -28,7 +28,7 @@ Question3Enfants.addEventListener('click', () => {
     FaqReponseTemps.style.display = 'none';
 });
 
-QuestionSeparation.addEventListener('click', () => {
+FaqQuestionSeparation.addEventListener('click', () => {
     FaqReponseEnfantTravaille.style.display = 'none';
     FaqReponse3Enfants.style.display = 'none';
     FaqReponseSeparation.style.display = 'block';
@@ -36,7 +36,7 @@ QuestionSeparation.addEventListener('click', () => {
     FaqReponseTemps.style.display = 'none';
 });
 
-QuestionFoyer.addEventListener('click', () => {
+FaqQuestionFoyer.addEventListener('click', () => {
     FaqReponseEnfantTravaille.style.display = 'none';
     FaqReponse3Enfants.style.display = 'none';
     FaqReponseSeparation.style.display = 'none';
@@ -44,7 +44,7 @@ QuestionFoyer.addEventListener('click', () => {
     FaqReponseTemps.style.display = 'none';
 });
 
-QuestionTemps.addEventListener('click', () => {
+FaqQuestionTemps.addEventListener('click', () => {
     FaqReponseEnfantTravaille.style.display = 'none';
     FaqReponse3Enfants.style.display = 'none';
     FaqReponseSeparation.style.display = 'none';
