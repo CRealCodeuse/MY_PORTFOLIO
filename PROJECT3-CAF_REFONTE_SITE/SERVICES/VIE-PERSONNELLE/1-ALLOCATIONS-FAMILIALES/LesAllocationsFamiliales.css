@@ -660,12 +660,12 @@ header > div:first-child {
     margin:15px;
 }
 
-.ListeConditions {
+.Texte {
     background-color: whitesmoke;
     padding: 15px;
 }
 
-.ConditionsGenerales, .EnfantsACharge, .Ressources {
+.ConditionsGenerales, .EnfantsACharge, .Ressources, .TelechargerDemande, .Lien {
     background:none;
     border: none;
     color: #141455;
@@ -675,15 +675,10 @@ header > div:first-child {
     padding: 0;
 }
 
-.ConditionsGenerales:hover, .EnfantsACharge:hover, .Ressources:hover {
+.ConditionsGenerales:hover, .EnfantsACharge:hover, .Ressources:hover, .TelechargerDemande:hover, .Lien:hover {
     color: #000;
     cursor: pointer;
     background-color:#e3e3f1;
-}
-
-.TexteMontant {
-    background-color: whitesmoke;
-    padding: 15px;
 }
 
 .Capture1AF, .Capture2AF {
@@ -694,4 +689,215 @@ header > div:first-child {
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
+}
+
+/*===================================
+  QUESTIONS
+===================================*/
+
+.FaqQuestionEnfantTravaille, .FaqQuestion3Enfants, .FaqQuestionSeparation, .FaqQuestionFoyer, .FaqQuestionTemps {
+    background-color: #141455; /* Couleur de fond */
+    color:white; /* Couleur du texte */
+    padding: 15px; /* Espace interne */
+    cursor: pointer; /* Change le curseur au survol */
+    transition: background-color 0.3s ease; /* Transition douce */
+    margin:15px;
+    text-align: center;
+    width:70%;
+    margin: 10 auto;
+    font-size: 18px;
+}
+
+.FaqQuestionEnfantTravaille:hover, .FaqQuestion3Enfants:hover, .FaqQuestionSeparation:hover, .FaqQuestionFoyer:hover, .FaqQuestionTemps:hover {
+    background-color:#e3e3f1; /* Couleur de fond au survol */
+    color: #141455; /* Couleur du texte au survol */
+    border: 2px solid #141455;
+}
+
+/* Responsive : Réduction du padding sur petits écrans */
+@media (max-width: 480px) {
+    .FaqQuestionEnfantTravaille, .FaqQuestion3Enfants, .FaqQuestionSeparation, .FaqQuestionFoyer, .FaqQuestionTemps {
+        padding: 10px; /* Padding réduit pour mobiles */
+        font-size: 18px; /* Taille de police réduite */
+        width: fit-content;
+    }
+}
+
+.FaqReponseEnfantTravaille, .FaqReponse3Enfants, .FaqReponseSeparation, .FaqReponseFoyer, .FaqReponseTemps {
+    display: none; /* Cachée par défaut */
+    background-color: whitesmoke; /* Couleur de fond */
+    border: 3px solid #141455;
+    color: black;
+    padding: 15px; /* Espace interne */
+    margin-top: 5px; /* Marge en haut */
+    font-size: 18px;
+}
+
+/* Responsive : Réduction du padding sur petits écrans */
+@media (max-width: 480px) {
+    .FaqReponseEnfantTravaille, .FaqReponse3Enfants, .FaqReponseSeparation, .FaqReponseFoyer, .FaqReponseTemps {
+        padding: 10px; /* Padding réduit pour mobiles */
+        font-size: 18px; /* Taille de police réduite */
+    }
+}
+
+/*===================================
+  FOOTER
+===================================*/
+
+    /*===================================
+    DIV FOOTER
+    ===================================*/
+
+.divFooter {
+    background-color: #141455;
+    color: white;
+    padding: 5px 15px 15px 15px;
+    margin: 20px;
+    justify-content: space-around;
+    display: flex;
+}
+
+@media (max-width:768px) {
+    .divFooter {
+        display: inline-block;
+        margin: 10px;
+    }
+}
+
+@media (max-width:480px) {
+    .divFooter {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+}
+
+    /*===================================
+    CONTACT - RESEAUX SOCIAUX
+    ===================================*/
+
+.ReseauxSociaux {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.Facebook {
+    background-color: white;
+    padding: 8px; /* Réduit le padding */
+    cursor: pointer;
+    display: inline-flex; /* Important ! */
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    transition: background-color 0.3s ease; /* Transition douce */
+}
+
+.Facebook:hover {
+    border: 3px solid black;
+    background-color: #b9b9dd;
+}
+
+.X {
+    background-color: white;
+    padding: 8px; /* Réduit le padding */
+    cursor: pointer;
+    display: inline-flex; /* Important ! */
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; /* Transition douce */
+}
+
+.X:hover {
+    border: 3px solid black;
+    background-color: #b9b9dd;
+}
+
+.NousContacter {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 20px 8px; /* Réduit le padding */
+    cursor: pointer;
+    display: inline-flex; /* Important ! */
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    transition: background-color 0.3s ease; /* Transition douce */
+    margin-left: 5px;
+}
+
+.NousContacter:hover {
+    border: 3px solid black;
+    background-color: #b9b9dd;
+    color: #141455;
+}
+
+    /*===================================
+    INFORMATIONS GENERALES
+    ===================================*/
+
+.BoutonAccessibilite, 
+.BoutonMentionsLegales, 
+.BoutonDonneesPerso, 
+.BoutonSecurite, 
+.BoutonCSIRT, 
+.BoutonFAQ {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    border: none;
+    background-color: #141455;
+    color: white;
+}
+
+.BoutonAccessibilite:hover, 
+.BoutonMentionsLegales:hover, 
+.BoutonDonneesPerso:hover, 
+.BoutonSecurite:hover, 
+.BoutonCSIRT:hover, 
+.BoutonFAQ:hover {
+    border: 2px solid white;
+    padding:5px;
+    background-color: #b9b9dd;
+    color: black;
+    width: fit-content;
+    cursor: pointer;
+}
+
+/*=====================AUTRES SITES===============*/
+
+.LiensAutresSites {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.LiensAutresSites:hover {
+    border: 2px solid white;
+    padding:5px;
+    background-color: #b9b9dd;
+    color: black;
+    cursor: pointer;
+}
+
+    /*===================IMAGES =======================*/
+
+.divLogicielMalveillant {
+    display: inline-block;
+}
+
+.ImgLogicielMalveillant {
+    margin:15px;
+    border: 2px solid #141455;
+    display: block;
+}
+
+@media (max-width: 480px) {
+    .ImgLogicielMalveillant {
+        width: 90%;
+    }
 }
