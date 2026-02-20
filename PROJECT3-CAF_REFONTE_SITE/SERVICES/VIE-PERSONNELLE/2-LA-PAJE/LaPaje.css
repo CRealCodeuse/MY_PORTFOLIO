@@ -1,0 +1,876 @@
+/*===================================
+  GENERAL
+===================================*/
+
+body { 
+    font-family: 'Oswald', sans-serif; /* Police et style d'écriture */
+    background-color: rgb(213, 220, 226); /* Couleur de fond de la page */
+}
+
+a {
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: black; /* Couleur des liens */
+}
+
+@media (max-width:480px) {
+
+    a {
+        text-decoration: none;
+        color:black
+    }
+
+    .InformationsGrid .Information {
+        text-decoration: none;
+        color:black;
+    }
+
+    .Services .TitresServices {
+        text-decoration: none;
+        color:white;
+    }
+
+}
+
+/*===================================
+  HEADER
+===================================*/
+
+header { 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: 'Oswald', sans-serif;
+    background-color: #141455;
+    border: white 2px solid;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+@media (max-width:480px) {
+    header {
+        width: 100%;
+        max-width: 480px;
+    }
+}
+
+header > div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    header > div:first-child {
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header > div:first-child {
+        padding: 5px;
+    }
+}
+
+/*===================================
+  LOGO CAF
+===================================*/
+
+.Accueil1 {
+    padding: 10px 0 10px 10px; 
+    height: 60px;
+    width: 60px;
+}
+@media (max-width:768px) {
+    .Accueil1 {
+        height: 50px;
+        width: 50px;
+        padding: 10px 5px;
+    }
+}
+
+@media (max-width:480px) {
+    .Accueil1 {
+        height: 35px;
+        width: 35px;
+        padding: 5px;
+    }
+}
+
+/*===================================
+  CAF.FR
+===================================*/
+
+.Accueil2 { 
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    font-size: 32px;
+    margin-left: 0; /* Collé au logo */
+    padding-left: 8px; /* Juste un petit espace */
+}
+@media (max-width:768px) {
+    .Accueil2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width:480px) {
+    .Accueil2 {
+        font-size: 24px;
+    }
+}
+
+/*===================================
+  BOUTON MALVOYANT
+===================================*/
+
+.BoutonMalvoyant { 
+    background-color: #141455;
+    border: none;
+    padding: 8px; /* Réduit le padding */
+    cursor: pointer;
+    display: inline-flex; /* Important ! */
+    align-items: center;
+    justify-content: center;
+}
+
+.BoutonMalvoyant:hover {
+    border: 2px solid white;
+}
+
+@media (max-width:768px) {
+    .BoutonMalvoyant {
+        padding: 6px;
+    }
+}
+
+@media (max-width:480px) {
+    .BoutonMalvoyant {
+        padding: 5px;
+    }
+}
+
+/*===================================
+  IMAGE MALVOYANT
+===================================*/
+
+.ImgMalvoyant {
+    height: 40px;
+    width: 40px;
+}
+
+@media (max-width:768px) {
+    .ImgMalvoyant {
+        height: 35px;
+        width: 35px;
+    }
+}
+
+@media (max-width:480px) {
+    .ImgMalvoyant {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+/*===================================
+  BOUTON CONNEXION
+===================================*/
+
+.BoutonConnexion { 
+    background-color: #141455;
+    border: none;
+    padding: 8px; /* Réduit le padding */
+    cursor: pointer;
+    display: inline-flex; /* Important ! */
+    align-items: center;
+    justify-content: center;
+}
+
+.BoutonConnexion:hover {
+    border:2px solid white; 
+}
+
+@media (max-width:768px) {
+    .BoutonConnexion {
+        padding: 6px;
+    }
+}
+
+@media (max-width:480px) {
+    .BoutonConnexion {
+        padding: 5px;
+    }
+}
+
+.ImgConnexion {
+    height: 40px;
+    width: 40px;
+}
+
+@media (max-width:768px) {
+    .ImgConnexion {
+        height: 35px;
+        width: 35px;
+    }
+}
+
+@media (max-width:480px) {
+    .ImgConnexion {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+/*===================================
+  BOUTON RECHERCHE
+===================================*/
+
+.BoutonRecherche { 
+    background-color: #141455;
+    border: none;
+    padding: 8px; /* Réduit le padding */
+    cursor: pointer;
+    display: inline-flex; /* Important ! */
+    align-items: center;
+    justify-content: center;
+}
+
+.BoutonRecherche:hover {
+    border:2px solid white;
+}
+
+@media (max-width:768px) {
+    .BoutonRecherche {
+        padding: 6px;
+    }
+}
+
+@media (max-width:480px) {
+    .BoutonRecherche {
+        padding: 5px;
+    }
+}
+
+/*===================================
+  IMAGE RECHERCHE
+===================================*/
+
+.ImgRecherche {
+    height: 40px;
+    width: 40px;
+}
+
+@media (max-width:768px) {
+    .ImgRecherche {
+        height: 35px;
+        width: 35px;
+    }
+}
+
+@media (max-width:480px) {
+    .ImgRecherche {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+/*===================================
+  NAV BAR
+===================================*/
+
+.BarreNavigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3e3f1;
+    padding: 0.5em 1em;
+    color: #141455;
+    position: relative; /* Important pour position absolute des menus */
+}
+
+.SectionAllocataires, .SectionProfessionnels {
+    padding: 15px;
+    margin: 0 10px;
+    border: none;
+    background-color: #141455;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.SectionAllocataires:hover, .SectionProfessionnels:hover {
+    border: 2px solid #141455;
+    background-color: #e3e3f1;
+    color: #141455;
+}
+
+/* NAVIGATION CACHÉE PAR DÉFAUT */
+.LiensNavigation {
+    list-style: none;
+    display: none;
+    flex-direction: row; /* ✅ En ligne sur desktop */
+    gap: 1em;
+    margin: 0;
+    padding: 15px;
+    background-color: #e3e3f1;
+    position: absolute;
+    top: 100%;
+    left: 50%; /* Centre à partir de 50% */
+    transform: translateX(-50%); /* Décale de -50% de sa propre largeur */
+    width: fit-content;
+    justify-content: center; /* Centre les liens */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 100;
+    border: 3px solid #141455;
+}
+
+/* NAVIGATION ACTIVE = VISIBLE */
+.LiensNavigation.active {
+    display: flex; /* Affiche en flex quand active */
+}
+
+/* LIENS VISIBLES */
+.LiensNavigation a {
+    display: block;
+    text-decoration: none;
+    color: #141455;
+    padding: 10px 15px;
+    transition: all 0.3s;
+    white-space: nowrap; /* Empêche le retour à la ligne */
+    font-size: 18px;
+}
+
+.LiensNavigation a:hover {
+    color: #000;
+    background-color: rgba(20, 20, 85, 0.1);
+}
+
+.LiensNavigation img {
+    height: 30px;
+    width: 30px;
+}
+
+.Hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.Hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #141455;
+}
+
+/* RESPONSIVE TABLETTE */
+@media (max-width: 768px) {
+    .BarreNavigation {
+        justify-content: center;
+    }
+
+    .SectionAllocataires, .SectionProfessionnels {
+        padding: 10px;
+        font-size: 18px;
+    }
+    
+    .LiensNavigation {
+        flex-direction: column; /* ✅ En colonne sur tablette */
+        align-items: stretch;
+        gap: 0.5em;
+    }
+
+    .LiensNavigation a {
+        font-size: 18px;
+    }
+    
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 480px) {
+    .SectionAllocataires, .SectionProfessionnels {
+        padding: 8px;
+        margin: 0 5px;
+        font-size: 18px;
+    }
+
+    .LiensNavigation {
+        flex-direction: column; /* ✅ En colonne sur mobile */
+        padding: 10px;
+        gap: 0.3em;
+    }
+
+    .LiensNavigation a {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+}
+
+/*===================================
+  POP UP CONNEXION
+===================================*/
+
+    /*===================================
+    POP UP CONNEXION
+    ===================================*/
+
+.PopUpConnexion {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #141455;
+    overflow-y: auto; /* Permet le scroll sur tout l'écran */
+}
+
+@media (max-width:769px){
+ .PopUpConnection {
+        top: 0;
+    }
+}
+@media (max-width:480px) {
+    .PopUpConnexion {
+        background:scroll ;
+        top: -35;
+        width: 330px;
+        margin: 10px;
+        justify-content: center;
+    }
+}
+
+    /*===================================
+    CONTENU POP UP
+    ===================================*/
+
+.ContenuPopUpConnexion {
+    background-color:#e3e3f1;
+    margin: 1% auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    overflow-y: auto; /* Permet le scroll sur tout l'écran */
+    
+}
+
+@media (max-width:480px) {
+    .ContenuPopUpConnexion {
+        background-color:#e3e3f1;
+        margin: 10% auto;
+        padding: 20px;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 95%;
+        max-width: 330px;
+        position: relative;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    }
+}
+
+    /*===================================
+    TITRE POP UP
+    ===================================*/
+
+.TitrePopUpConnexion {
+    background-color: #141455;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+@media (max-width:480px) {
+    .TitrePopUpConnexion {
+        margin: 30px 5px 5px 5px;
+        padding: 15px;
+        font-size: 22px;
+    }
+}
+
+    /*===================================
+    ICONE FERMER POP UP
+    ===================================*/
+
+.FermerConnexion {
+    position: absolute;
+    right: 25px;
+    top: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+@media (max-width:480px) {
+    .FermerConnexion {
+        position: absolute;
+        right: 20px;
+        top: 5px;
+    }
+}
+
+.FermerConnexion:hover {
+    color:#000;
+}
+
+    /*===================================================
+    POP UP TITRE CONNEXION ALLOCATAIRE + IDENTIFIANTS CAF
+    ====================================================*/
+
+.FormulaireTitre2Connexion {
+    color: #141455;
+}
+    /*===================================
+    POP UP MOT CHAMPS REQUIS
+    ===================================*/
+
+.FormulaireAttentionConnexion {
+    color: red;
+    text-align: center;
+}
+
+    /*===================================
+    POP UP FORMULAIRE CONNEXION
+    ===================================*/
+
+.FormulaireConnexion label {
+    font-family: "Oswald";
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #141455;
+    text-align: center;
+}
+
+.FormulaireConnexion input {
+    height: 30px;
+    width: 200px;
+    background-color: whitesmoke;
+    border: 2px solid #141455;
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    padding: 15px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.BoutonSCConnexion {
+    margin-top: 25px;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    color: #e3e3f1;
+    background-color: #141455;
+    border-radius: 10px;
+    transition: background-color 0.3s ease; /* Transition douce */
+}
+
+.BoutonSCConnexion:hover {
+    background-color: #e3e3f1;
+    border: 2px solid #141455;
+    color: #141455;
+    cursor: pointer;
+}
+
+    /*===================================
+    POP UP CONNEXION BOUTON FRANCE CONNECT
+    ===================================*/
+
+.BoutonFCConnexion {
+    display: flex;
+    margin: auto;
+    border:none;
+    background-color: #e3e3f1;
+    transition: background-color 0.3s ease; /* Transition douce */
+}
+
+.BoutonFCConnexion:hover {
+    border: 2px solid #141455;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*===================================
+  BODY - DESCRIPTION
+===================================*/
+
+.BodyViePersonnelle {
+    padding: 5px 15px 5px 15px; /* Espace autour de la div */
+    background-color: lightpink; /* Couleur de fond de la div */
+    margin: 30px 180px 0 180px; /* Marge autour de la div */
+    max-width: calc(100% - 40px); /* S'adapte à la largeur de l'écran */
+    border: none; /* Pas de bordure */
+    box-shadow: 10px 10px 20px grey; /* Ombre portée de la div */
+    border-radius: 15px; /* Bords arrondis */
+    box-sizing: border-box; /* Inclut padding et border dans la width */
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+    align-items: center;
+}
+
+.divAllocationsFamiliales {
+    margin: 30px 180px 0 180px; /* Marge autour de la div */ /* Marge autour de la div */
+    max-width: calc(100% - 40px); /* S'adapte à la largeur de l'écran */
+    padding: 10px 20px 10px 20px; /* Espace interne */
+    border: none; /* Pas de bordure */
+    background-color: #e3e3f1; /* Couleur de fond */
+    box-shadow: 10px 10px 20px grey; /* Ombre portée */
+    border-radius: 15px; /* Bords arrondis */
+    box-sizing: border-box; /* Inclut padding et border dans la width */
+}
+
+@media (max-width: 480px) {
+    .BodyViePersonnelle {
+        padding: 10px; /* Réduit le padding sur mobile */
+        margin: 15px; /* Réduit la marge sur mobile */
+        height: auto; /* Permet à la hauteur de s'adapter au contenu */
+        flex-direction: column; /* Empile les éléments verticalement */
+    }
+
+    .divAllocationsFamiliales {
+        margin: 15px; /* Réduit la marge sur mobile */
+        padding: 10px; /* Réduit le padding sur mobile */
+    }
+}
+
+
+
+
+
+.Texte {
+    background-color: whitesmoke;
+    padding: 15px;
+}
+
+.ConditionsGenerales, .EnfantsACharge, .Ressources, .TelechargerDemande, .Lien {
+    background:none;
+    border: none;
+    color: #141455;
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.ConditionsGenerales:hover, .EnfantsACharge:hover, .Ressources:hover, .TelechargerDemande:hover, .Lien:hover {
+    color: #000;
+    cursor: pointer;
+    background-color:#e3e3f1;
+}
+
+.Capture1AF, .Capture2AF {
+    background-color: whitesmoke;
+    padding: 15px;
+    border: 2px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+/*===================================
+  QUESTIONS
+===================================*/
+
+.FaqQuestionEnfantTravaille, .FaqQuestion3Enfants, .FaqQuestionSeparation, .FaqQuestionFoyer, .FaqQuestionTemps {
+    background-color: #141455; /* Couleur de fond */
+    color:white; /* Couleur du texte */
+    padding: 15px; /* Espace interne */
+    cursor: pointer; /* Change le curseur au survol */
+    transition: background-color 0.3s ease; /* Transition douce */
+    margin:15px;
+    text-align: center;
+    width:70%;
+    margin: 10 auto;
+    font-size: 18px;
+}
+
+.FaqQuestionEnfantTravaille:hover, .FaqQuestion3Enfants:hover, .FaqQuestionSeparation:hover, .FaqQuestionFoyer:hover, .FaqQuestionTemps:hover {
+    background-color:#e3e3f1; /* Couleur de fond au survol */
+    color: #141455; /* Couleur du texte au survol */
+    border: 2px solid #141455;
+}
+
+/* Responsive : Réduction du padding sur petits écrans */
+@media (max-width: 480px) {
+    .FaqQuestionEnfantTravaille, .FaqQuestion3Enfants, .FaqQuestionSeparation, .FaqQuestionFoyer, .FaqQuestionTemps {
+        padding: 10px; /* Padding réduit pour mobiles */
+        font-size: 18px; /* Taille de police réduite */
+        width: fit-content;
+    }
+}
+
+.FaqReponseEnfantTravaille, .FaqReponse3Enfants, .FaqReponseSeparation, .FaqReponseFoyer, .FaqReponseTemps {
+    display: none; /* Cachée par défaut */
+    background-color: whitesmoke; /* Couleur de fond */
+    border: 3px solid #141455;
+    color: black;
+    padding: 15px; /* Espace interne */
+    margin-top: 5px; /* Marge en haut */
+    font-size: 18px;
+}
+
+/* Responsive : Réduction du padding sur petits écrans */
+@media (max-width: 480px) {
+    .FaqReponseEnfantTravaille, .FaqReponse3Enfants, .FaqReponseSeparation, .FaqReponseFoyer, .FaqReponseTemps {
+        padding: 10px; /* Padding réduit pour mobiles */
+        font-size: 18px; /* Taille de police réduite */
+    }
+}
+
+/*===================================
+  FOOTER
+===================================*/
+
+    /*===================================
+    DIV FOOTER
+    ===================================*/
+
+.divFooter {
+    background-color: #141455;
+    color: white;
+    padding: 5px 15px 15px 15px;
+    margin: 20px;
+    justify-content: space-around;
+    display: flex;
+}
+
+@media (max-width:768px) {
+    .divFooter {
+        display: inline-block;
+        margin: 10px;
+    }
+}
+
+@media (max-width:480px) {
+    .divFooter {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+}
+
+    /*===================================
+    CONTACT - RESEAUX SOCIAUX
+    ===================================*/
+
+.ReseauxSociaux {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.Facebook {
+    background-color: white;
+    padding: 8px; /* Réduit le padding */
+    cursor: pointer;
+    display: inline-flex; /* Important ! */
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    transition: background-color 0.3s ease; /* Transition douce */
+}
+
+.Facebook:hover {
+    border: 3px solid black;
+    background-color: #b9b9dd;
+}
+
+.X {
+    background-color: white;
+    padding: 8px; /* Réduit le padding */
+    cursor: pointer;
+    display: inline-flex; /* Important ! */
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; /* Transition douce */
+}
+
+.X:hover {
+    border: 3px solid black;
+    background-color: #b9b9dd;
+}
+
+.NousContacter {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 20px 8px; /* Réduit le padding */
+    cursor: pointer;
+    display: inline-flex; /* Important ! */
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    transition: background-color 0.3s ease; /* Transition douce */
+    margin-left: 5px;
+}
+
+.NousContacter:hover {
+    border: 3px solid black;
+    background-color: #b9b9dd;
+    color: #141455;
+}
+
+    /*===================================
+    INFORMATIONS GENERALES
+    ===================================*/
+
+.BoutonAccessibilite, 
+.BoutonMentionsLegales, 
+.BoutonDonneesPerso, 
+.BoutonSecurite, 
+.BoutonCSIRT, 
+.BoutonFAQ {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    border: none;
+    background-color: #141455;
+    color: white;
+}
+
+.BoutonAccessibilite:hover, 
+.BoutonMentionsLegales:hover, 
+.BoutonDonneesPerso:hover, 
+.BoutonSecurite:hover, 
+.BoutonCSIRT:hover, 
+.BoutonFAQ:hover {
+    border: 2px solid white;
+    padding:5px;
+    background-color: #b9b9dd;
+    color: black;
+    width: fit-content;
+    cursor: pointer;
+}
+
+/*=====================AUTRES SITES===============*/
+
+.LiensAutresSites {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.LiensAutresSites:hover {
+    border: 2px solid white;
+    padding:5px;
+    background-color: #b9b9dd;
+    color: black;
+    cursor: pointer;
+}

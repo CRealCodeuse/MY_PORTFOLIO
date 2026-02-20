@@ -883,21 +883,3 @@ header > div:first-child {
     color: black;
     cursor: pointer;
 }
-
-    /*===================IMAGES =======================*/
-
-.divLogicielMalveillant {
-    display: inline-block;
-}
-
-.ImgLogicielMalveillant {
-    margin:15px;
-    border: 2px solid #141455;
-    display: block;
-}
-
-@media (max-width: 480px) {
-    .ImgLogicielMalveillant {
-        width: 90%;
-    }
-}
