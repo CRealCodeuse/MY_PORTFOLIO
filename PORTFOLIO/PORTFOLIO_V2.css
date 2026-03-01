@@ -137,7 +137,7 @@ header { /*Propriétés de l'en-tête*/
 }
 
 .FormulaireContact label {
-    font-family: "Oswald";
+    
     display: block;
     margin-top: 15px;
 }
@@ -260,7 +260,8 @@ header { /*Propriétés de l'en-tête*/
 }
 
 .TitreBienvenue {
-    background-color: whitesmoke;
+    color: white;
+    font-weight: 900;
     padding: 15px;
     width: fit-content;
     border-radius: 5px;
