@@ -416,7 +416,8 @@ header { /*Propriétés de l'en-tête*/
     background: linear-gradient(to right, rgb(98, 41, 48), rgb(71, 28, 35), rgb(52, 21, 26)); /*couleur de fond de la présentation*/
     margin: 25px 100px; /*marge autour de la grille*/
     padding: 0 15px 0 15px;
-    border-radius: 15px;    
+    border-radius: 15px;
+    text-align: center;
 }
 
 @media (max-width:480px) {
@@ -437,19 +438,20 @@ header { /*Propriétés de l'en-tête*/
     }
 }
 
-.divCompetences, .divOutilsInformatiques {
+.divCompetences {
     border: none;
     flex: 1;
     min-width: 300px;
-    
+    padding: 25px;
 }
 
-.TitreCompetences, .TitreOutils {
+.TitreCompetences {
     background-color: none;
     padding: 10px;
     width: fit-content;
     border-radius: 5px;
     color: black;
+    text-align: center;
 }
 
 .CompetencesOutils {
