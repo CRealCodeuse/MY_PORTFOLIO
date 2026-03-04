@@ -54,6 +54,15 @@ button.addEventListener('click', function() {
     const translations = {
         // Header
         'English': 'Français',
+
+        //Me Contacter
+        "Pour me contacter,": "To contact me",
+        "c'est ici !": "it's here !",
+        'Nom :': 'Last name :',
+        'Prénom :': 'First name :',
+        'Email :': 'Email :',
+        'Message :': 'Message :',
+        'Envoyer': 'Send',
         
         // Sections
         'Me contacter':'Contact me',
@@ -62,7 +71,7 @@ button.addEventListener('click', function() {
         'BTS Services Informatiques aux Organisations': 'IT Services for Organizations BTS',
         'de manière autodidacte': 'in a self-taught way',
         'compétences': 'skills',
-        'développement Fullstack': 'Fullstack development',
+        'Développement Web Fullstack': 'Fullstack  Web Development',
         'projets': 'projects',
         'Projet 1:':'1st project:',
         'Projet 2:':'2nd project:',
@@ -84,7 +93,7 @@ button.addEventListener('click', function() {
 
         // Présentation
         'Bienvenue sur mon portfolio !': 'Welcome on my portfolio !',
-        "Je m'appelle Elise, j'ai 29 ans et je suis actuellement en": "My name is Elise, I am 29 years old and I am currently in a",
+        "Je m'appelle Elise et je suis actuellement en": "My name is Elise and I am currently in a",
         "en alternance.": "in work-study.",
         "Concernant les": "Regarding",
         ", j'ai pu apprendre le": ", I learned",

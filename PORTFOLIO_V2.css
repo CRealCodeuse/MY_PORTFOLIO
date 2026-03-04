@@ -1,5 +1,9 @@
 /***********************************PROPRIETES GENERALES**************************************/
 
+*{
+    font-family: "Poppins", sans-serif; /*police et style d'écriture*/
+}
+
 a{ /*propriétés des liens*/
     text-decoration: none; /*décoration du texte des liens*/
     color: white; /*couleur des liens*/
@@ -22,7 +26,6 @@ h3 {
 
 body{  /*Propriétés du corps de page*/
     background-color: black; /*couleur de fond du corps de page*/
-    font-family: "Oswald", sans-serif; /*police et style d'écriture*/
     font-weight: 300; /*Epaisseur de police*/
     font-style: normal; /*Style de police*/
     font-size: 20px; /*taille de la police*/
@@ -84,7 +87,6 @@ header { /*Propriétés de l'en-tête*/
 
 .BoutonContact {
     border: 2px solid black;
-    font-family: "Oswald", sans-serif;
     font-size: 20px;
     background: linear-gradient(to right, rgb(98, 41, 48), rgb(71, 28, 35), rgb(52, 21, 26)); /*couleur de fond de la présentation*/
     cursor: pointer;
@@ -95,6 +97,10 @@ header { /*Propriétés de l'en-tête*/
 
 .BoutonContact:hover {
     background-color:#fff3f3;
+}
+
+.TitrePopUp {
+    text-align: center;
 }
 
 .PopUp {
@@ -143,7 +149,8 @@ header { /*Propriétés de l'en-tête*/
 }
 
 .FormulaireContact input, .FormulaireContact textarea {
-    width: 100%;
+    width: 500px;
+    size-adjust: auto;
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ddd;
@@ -155,7 +162,6 @@ header { /*Propriétés de l'en-tête*/
     margin-top: 20px;
     padding: 10px 15px;
     background-color:#e09095;
-    font-family: "Oswald", sans-serif;
     color: black;
     border: none;
     border-radius: 10px;
@@ -166,15 +172,13 @@ header { /*Propriétés de l'en-tête*/
 .envoyer:hover {
     background-color:#471c23;
     color: white;
-    border: 2px solid white;
 }
 
 /*BOUTON TRADUCTION*/
 .English { /*Bouton pour passer en anglais*/
     font-size: 20px; /*taille de la police*/
     border: black 2px solid; /*bordure du bouton*/
-    background: linear-gradient(to right, #622930, #471c23, rgb(52, 21, 26)); /*couleur de fond de la présentation*/
-    font-family: "Oswald", sans-serif; /*police et style d'écriture*/
+    background: linear-gradient(to right, #622930, #471c23, rgb(52, 21, 26)); /*couleur de fond de la présentation*/ /*police et style d'écriture*/
     cursor:pointer;
     border-radius: 5px;
     padding:8px;
@@ -230,7 +234,7 @@ header { /*Propriétés de l'en-tête*/
     height: auto;
     flex-shrink: 0;
     margin-top: 20px;
-    border-radius: 5px;
+    border-radius: 50%;
     margin: 10px 0 15px 0;
     column-span: 1;
     
@@ -272,16 +276,20 @@ header { /*Propriétés de l'en-tête*/
     padding: 0 15px;
 }
 
-.LinkedIn, .GitHub {
+.LinkedIn, .GitHub, .Codeberg, .Logo {
     color: black;
     background-color: whitesmoke;
-    padding: 5px;
+    padding: 10px;
     margin: 5px;
     border-radius: 5px;
 }
 
-.LinkedIn:hover, .GitHub:hover {
+.LinkedIn:hover, .GitHub:hover, .Codeberg:hover {
     color: #5b1717;
+}
+
+.ImgLinkedIn, .ImgGitHub, .ImgCodeberg {
+    vertical-align: middle;
 }
 
 /**********TITRES MES PROJETS ET CE QUE J'UTILISE***********/
@@ -437,7 +445,7 @@ header { /*Propriétés de l'en-tête*/
 }
 
 .TitreCompetences, .TitreOutils {
-    background-color: white;
+    background-color: none;
     padding: 10px;
     width: fit-content;
     border-radius: 5px;
@@ -449,6 +457,3 @@ header { /*Propriétés de l'en-tête*/
     border: none;
     padding: 15px;
 }
-
-/***********************************FOOTER**************************************/
-
