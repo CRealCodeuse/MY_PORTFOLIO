@@ -71,7 +71,7 @@ button.addEventListener('click', function() {
         'BTS Services Informatiques aux Organisations': 'IT Services for Organizations BTS',
         'de manière autodidacte': 'in a self-taught way',
         'compétences': 'skills',
-        'Développement Web Fullstack': 'Fullstack  Web Development',
+        'Développement Web Fullstack': 'Fullstack Web Development',
         'projets': 'projects',
         'Projet 1:':'1st project:',
         'Projet 2:':'2nd project:',
