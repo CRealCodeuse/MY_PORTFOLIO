@@ -103,7 +103,7 @@ button.addEventListener('click', function() {
         "le": "the", 
         "et bien d'autres afin d'acquérir toutes les compétences nécessaires au": "and many others to learn all the skills necessary for", 
         "nécessaires au": "necessary for", 
-        "Ici, vous pourrez voir les": "Here, you will be able to see the", 
+        "Ici, vous pourrez voir les": "Here, you will be able to see the",
         "que j'ai": "I have", 
         ", qui vous permettront de comprendre mon": ", which will allow you to understand my", 
         "viendront s'ajouter au fur et à mesure de mon": "will be added as I progress in my",
