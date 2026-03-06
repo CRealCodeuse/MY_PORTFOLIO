@@ -16,7 +16,7 @@
 ![Image projets](<README-Images/Image - Projets.png>)
 
 💻 PROJECTS :
-- <a href="https://elise-degardin-portfoliodev.fr">My Porfolio</a> Always updating it (HTML, CSS, JS),
+- <a href="https://elise-degardin-portfoliodev.fr">My Porfolio</a> : Always updating it (HTML, CSS, JS),
 - <a href="https://elise-degardin-portfoliodev.fr/PROJET-2-TODOLIST/ToDoList.html">Project 2 : To Do List</a> : FINISHED (HTML, CSS, JS),
 - <a href="https://elise-degardin-portfoliodev.fr/PROJET-3-CAF-REFONTE-SITE/CafRefonteSite.html">Project 3 : CAF WEBSITE RECODING</a> : UNDER CONSTRUCTION.
 - Others are on the way !
@@ -34,7 +34,7 @@
 ![Image - Pros and Cons](<README-Images/Image - Pros and Cons.png>)
 
 👌 PROS : 
-May be obsessed with having a clean code, and learning fast.
+May be obsessed with having a clean code, and can learn fast.
 
 🥲 CONS : 
 I hate letting some bug interfere in my work, so I always try to debog my code by myself as soon as I see one even If I have to spend time on it.
