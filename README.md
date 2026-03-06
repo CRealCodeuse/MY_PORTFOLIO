@@ -23,15 +23,25 @@
 
 ![Image Coding](<README-Images/Image - Coding.png>)
 
-✅​ LANGUAGES I WORK WITH : 
-- HTML, CSS : Basic but needed so I put it everywhere.
-- JavaScript : Portfolio, ToDoList and other projects have it. 
-- Python : Really love this one. Learned but not on any project yet.
-- SQL : Learned it but not used yet.
-- Php : Learned some.
-- And others I want to learn soon (TypeScript, Angular, Rust, React, etc).
+✅​ SKILLS AND TOOLS :
+
+- HTML5, CSS3, JavaScript, TypeScript, (Node.js), Python, SQL, PHP;
+
+- Visual Code Studio, Git, GitHub, Codeberg, Stack Overflow, Tailwind CSS;
+
+- MacOS, Linux/Ubuntu, Windows, Shell, Bash;
+
+- Word, Excel, PowerPoint, Outlook, LO Writer, LO Calc, LO Impress, Canva;
+
+- Claude AI, Qwen Coder, GitHub Copilot;
+
+- FileZilla, Cisco Packet Tracer, BlockChain & Web 3.0.
 
 ![Image - Pros and Cons](<README-Images/Image - Pros and Cons.png>)
+
+✅​ CERTIFICATS :
+
+- Certificat Web 3.0 et Blockchain.
 
 👌 PROS : 
 May be obsessed with having a clean code, and can learn fast.
