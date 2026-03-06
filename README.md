@@ -4,13 +4,22 @@
 
 🎓 My name is Elise. 
 
-💻 I'm in a Web Developpement Bachelor and currently looking for an apprenticeship for now.
+💻 I'm in a Web Developpement Bachelor and currently looking for an apprenticeship.
 
-💼 There you can see projects I coded or working on currently.
+💼 There you can see projects I coded or working on actually.
 
 🔗 LINKS 
-- My portfolio : https://www.elise-degardin-portfoliodev.fr
-- My LinkedIn : https://www.linkedin.com/in/elise-degardin/
+- <a href="https://elise-degardin-portfoliodev.fr">My Porfolio</a>,
+- <a href="https://www.linkedin.com/in/elise-degardin/">My LinkedIn</a>,
+- <a href="https://www.codeberg.org/CRealCodeuse">My Codeberg</a> which has the same state as here.
+
+![Image projets](<README-Images/Image - Projets.png>)
+
+💻 PROJECTS :
+- <a href="https://elise-degardin-portfoliodev.fr">My Porfolio</a> Always updating it (HTML, CSS, JS),
+- <a href="https://elise-degardin-portfoliodev.fr/PROJET-2-TODOLIST/ToDoList.html">Project 2 : To Do List</a> : FINISHED (HTML, CSS, JS),
+- <a href="https://elise-degardin-portfoliodev.fr/PROJET-3-CAF-REFONTE-SITE/CafRefonteSite.html">Project 3 : CAF WEBSITE RECODING</a> : UNDER CONSTRUCTION.
+- Others are on the way !
 
 ![Image Coding](<README-Images/Image - Coding.png>)
 
@@ -21,15 +30,6 @@
 - SQL : Learned it but not used yet.
 - Php : Learned some.
 - And others I want to learn soon (TypeScript, Angular, Rust, React, etc).
-
-![Image projets](<README-Images/Image - Projets.png>)
-
-💻 PROJECTS :
-- Portfolio : Always updating it (HTML, CSS, JS)
-- Project 1 : Pipounes Création - FINISHED (HTML, CSS, JS)
-- Project 2 : To Do List - FINISHED (HTML, CSS, JS)
-- Project 3 : CAF WEBSITE RECODING : UNDER CONSTRUCTION
-- Others are on the way !
 
 ![Image - Pros and Cons](<README-Images/Image - Pros and Cons.png>)
 
