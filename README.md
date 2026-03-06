@@ -17,8 +17,8 @@
 
 💻 PROJECTS :
 - <a href="https://elise-degardin-portfoliodev.fr">My Porfolio</a> : Always updating it (HTML, CSS, JS),
-- <a href="https://elise-degardin-portfoliodev.fr/PROJET-2-TODOLIST/ToDoList.html">Project 2 : To Do List</a> : FINISHED (HTML, CSS, JS),
-- <a href="https://elise-degardin-portfoliodev.fr/PROJET-3-CAF-REFONTE-SITE/CafRefonteSite.html">Project 3 : CAF WEBSITE RECODING</a> : UNDER CONSTRUCTION.
+- <a href="https://elise-degardin-portfoliodev.fr/PROJET-2-TODOLIST/ToDoList.html">Project 2 : To Do List</a> : COMPLETE (HTML, CSS, JS),
+- <a href="https://elise-degardin-portfoliodev.fr/PROJET-3-CAF-REFONTE-SITE/CafRefonteSite.html">Project 3 : CAF WEBSITE RECODING</a> : UNDER CONSTRUCTION (HTML, CSS, JS).
 - Others are on the way !
 
 ![Image Coding](<README-Images/Image - Coding.png>)
