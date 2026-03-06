@@ -443,6 +443,7 @@ header { /*Propriétés de l'en-tête*/
     flex: 1;
     min-width: 300px;
     padding: 25px;
+    text-align: center;
 }
 
 .TitreCompetences {
