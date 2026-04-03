@@ -18,7 +18,8 @@
 💻 PROJECTS :
 - <a href="https://elise-degardin-portfoliodev.fr">MY PORTFOLIO</a> : Always updating it (HTML, CSS, JS),
 - <a href="https://elise-degardin-portfoliodev.fr/PROJET-2-TODOLIST/ToDoList.html">2ND PROJETCT : TO DO LIST</a> : Complete (HTML, CSS, JS),
-- <a href="https://elise-degardin-portfoliodev.fr/PROJET-3-CAF-REFONTE-SITE/CafRefonteSite.html">3RD PROJECT : CAF WEBSITE RECODING</a> : Under construction (HTML, CSS, JS).
+- <a href="https://elise-degardin-portfoliodev.fr/PROJET-3-CAF-REFONTE-SITE/CafRefonteSite.html">3RD PROJECT : CAF WEBSITE RECODING</a> : Complete (HTML, CSS, JS).
+- 4TH PROJECT : PASSWORD GENERATOR : Under construction. 
 - Others are on the way.
 
 ![Image Coding](<README-Images/Image - Coding.png>)
